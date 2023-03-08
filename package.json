@@ -14,19 +14,14 @@
   },
   "homepage": "https://github.com/CVarisco/CVarisco.github.io#readme",
   "scripts": {
-    "build:css": "npx tailwindcss build styles.css -o output/output.css",
-    "build:js": "npx webpack --config webpack.config.js"
+    "start": "npx parcel serve index.html"
   },
-  "dependencies": {
-    "tailwindcss": "3.0.23"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "7.17.7",
-    "@babel/preset-env": "7.16.11",
-    "babel-loader": "8.2.3",
-    "core-js": "3.21.1",
-    "regenerator-runtime": "0.13.9",
-    "webpack": "5.70.0",
-    "webpack-cli": "4.9.2"
+    "@parcel/packager-raw-url": "2.8.3",
+    "@parcel/transformer-webmanifest": "2.8.3",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6"
   }
 }

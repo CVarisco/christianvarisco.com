@@ -3,10 +3,11 @@ module.exports = {
     enabled: true,
     content: ["./*.html"],
   },
+  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      heading: ["SofiaPro", "sans-serif"],
-      body: ["Hind", "sans-serif"],
+      body: ['"Lusitana"', "serif"],
     },
   },
+  plugins: [],
 };
