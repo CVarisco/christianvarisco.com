@@ -1,13 +1,20 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ["./*.html"],
-  },
-  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
+  content: [
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./content/**/*.{md,mdx}",
+  ],
+  darkMode: ["class"],
   theme: {
-    fontFamily: {
-      body: ['"Lusitana"', "serif"],
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-helvetica)"],
+      },
+      colors: {
+        lime: "#CBFC01",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
