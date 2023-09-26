@@ -13,10 +13,9 @@ export default function Home() {
           <span className="text-lime"> for your Startup</span>
         </h1>
         <div>
-          <p className="my-6 ">
-            Having worked for 10 years in the startup environment, I have
-            developed a deep understanding of what it takes to build software
-            products.
+          <p className="my-6">
+            After 10 years in the startup environment, I have developed a deep
+            understanding of what it takes to build solid software products.
           </p>
         </div>
       </section>
