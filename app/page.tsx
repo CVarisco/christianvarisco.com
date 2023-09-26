@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="mx-auto lg:px-8 mt-10 space-y-16 max-w-2xl lg:max-w-5xl">
-      <section>
+      <section className="">
         <h1 className="hidden md:block text-5xl font-bold sm:text-6xl">
           <span className="text-lime">CTO</span> as a Service
           <span className="text-lime"> for your Startup</span>
@@ -16,21 +15,21 @@ export default function Home() {
         <div>
           <p className="my-6 text-zinc-400">
             Having worked for 10 years in the startup environment, I have
-            developed a deep understanding of what it takes to build successful
-            software products.
+            developed a deep understanding of what it takes to build software
+            products.
           </p>
         </div>
       </section>
       <section>
         <h2 className="mb-5 text-3xl font-bold">
-          Ok but, how can I help your Startup?
+          How can I help your Startup?
         </h2>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
           <div>
             <h3 className="mb-5 text-2xl text-zinc-500 font-bold">
               Do you need to build your first product version?
             </h3>
-            <p>
+            <p className="leading-2">
               As your dedicated CTO, I specialize in transforming your
               groundbreaking ideas into tangible products. I&apos;ll work
               closely with your startup to develop a robust and scalable initial
@@ -77,7 +76,9 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full">
-        <h2 className="mb-5 text-3xl font-bold">Startups I contribute to</h2>
+        <h2 className="mb-5 text-3xl font-bold text-center">
+          Startups I contribute to
+        </h2>
         <div className="flex flex-wrap space-y-3">
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
@@ -103,7 +104,6 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/qwist.svg"
@@ -112,7 +112,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 invert-colors h-[100px]">
+          <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/BeyondMoney.svg"
               alt="BeyondMoney-logo"
@@ -128,7 +128,6 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/lendbox.svg"
