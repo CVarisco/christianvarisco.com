@@ -82,7 +82,7 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/finleap.svg"
-              alt="Image 1"
+              alt="finleap-logo"
               fill
               objectFit="contain"
             />
@@ -90,7 +90,7 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/igenius.svg"
-              alt="Image 2"
+              alt="igenius-logo"
               fill
               objectFit="contain"
             />
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/nodus.svg"
-              alt="Image 3"
+              alt="nodus-logo"
               fill
               objectFit="contain"
             />
@@ -107,7 +107,7 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/qwist.svg"
-              alt="Image 3"
+              alt="qwist.logo"
               fill
               objectFit="contain"
             />
@@ -115,7 +115,7 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 invert-colors h-[100px]">
             <Image
               src="/images/BeyondMoney.svg"
-              alt="Image 3"
+              alt="BeyondMoney-logo"
               fill
               objectFit="contain"
             />
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/zerocento.svg"
-              alt="Image 3"
+              alt="zerocento-logo"
               fill
               objectFit="contain"
             />
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/lendbox.svg"
-              alt="Image 3"
+              alt="lendbox-logo"
               fill
               objectFit="contain"
             />
@@ -140,7 +140,7 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/wedelay.svg"
-              alt="Image 3"
+              alt="wedelay-logo"
               fill
               objectFit="contain"
             />
@@ -148,15 +148,15 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/zebras.svg"
-              alt="Image 3"
+              alt="zebras-logo"
               fill
               objectFit="contain"
             />
           </div>
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
-              src="/images/flashkey.svg"
-              alt="Image 3"
+              src="/images/Flashkey.svg"
+              alt="flashkey-logo"
               fill
               objectFit="contain"
             />
@@ -164,7 +164,7 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/linsen.svg"
-              alt="Image 3"
+              alt="linsen-logo"
               fill
               objectFit="contain"
             />
@@ -172,7 +172,7 @@ export default function Home() {
           <div className="relative w-1/4 mb-2 h-[100px]">
             <Image
               src="/images/ypath.svg"
-              alt="Image 3"
+              alt="ypath-logo"
               fill
               objectFit="contain"
             />
