@@ -102,6 +102,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </div>
           </header>
           <main className="mx-auto grow px-6 md:px-0">{children}</main>
+          <footer className="w-full flex gap-6 justify-center py-4 mt-10">
+            <p className="text-zinc-400">Build with ❤️ with Next.js</p>
+          </footer>
         </div>
         <Analytics />
       </body>

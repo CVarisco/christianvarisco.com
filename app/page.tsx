@@ -29,7 +29,7 @@ export default function Home() {
             <h3 className="mb-5 text-2xl text-zinc-500 font-bold">
               Do you need to build your first product version?
             </h3>
-            <p className="leading-2">
+            <p className="leading-7">
               As your dedicated CTO, I specialize in transforming your
               groundbreaking ideas into tangible products. I&apos;ll work
               closely with your startup to develop a robust and scalable initial
@@ -41,7 +41,7 @@ export default function Home() {
               Struggling with technical strategy and assembling the perfect tech
               team?
             </h3>
-            <p>
+            <p className="leading-7">
               Crafting a strong technical strategy is crucial for startups.
               I&apos;ll help you make informed decisions about technologies,
               architecture, and development processes, while also guiding you
@@ -53,7 +53,7 @@ export default function Home() {
             <h3 className="mb-5 text-2xl text-zinc-500 font-bold">
               Ready to scale your product and grow your user base?
             </h3>
-            <p>
+            <p className="leading-7">
               Scaling can be challenging, but I&apos;ve got you covered.
               I&apos;ll devise a scaling plan that ensures your product can
               handle increased demand, while also optimizing for performance,
@@ -65,7 +65,7 @@ export default function Home() {
             <h3 className="mb-5 text-2xl text-zinc-500 font-bold">
               Need a trusted technology partner to navigate challenges?
             </h3>
-            <p>
+            <p className="leading-7">
               I&apos;m more than just an advisor; I&apos;m your dedicated
               technology partner. I&apos;ll be with you every step of the way,
               providing ongoing guidance, troubleshooting, and support to
