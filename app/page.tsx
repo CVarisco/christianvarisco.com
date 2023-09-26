@@ -13,7 +13,7 @@ export default function Home() {
           <span className="text-lime"> for your Startup</span>
         </h1>
         <div>
-          <p className="my-6 text-zinc-400">
+          <p className="my-6 ">
             Having worked for 10 years in the startup environment, I have
             developed a deep understanding of what it takes to build software
             products.
@@ -80,7 +80,7 @@ export default function Home() {
           Startups I contribute to
         </h2>
         <div className="flex flex-wrap space-y-3">
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/finleap.svg"
               alt="finleap-logo"
@@ -88,7 +88,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/igenius.svg"
               alt="igenius-logo"
@@ -96,7 +96,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/nodus.svg"
               alt="nodus-logo"
@@ -104,7 +104,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/qwist.svg"
               alt="qwist.logo"
@@ -112,7 +112,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/BeyondMoney.svg"
               alt="BeyondMoney-logo"
@@ -120,7 +120,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/zerocento.svg"
               alt="zerocento-logo"
@@ -128,7 +128,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/lendbox.svg"
               alt="lendbox-logo"
@@ -136,7 +136,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/wedelay.svg"
               alt="wedelay-logo"
@@ -144,7 +144,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/zebras.svg"
               alt="zebras-logo"
@@ -152,7 +152,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/Flashkey.svg"
               alt="flashkey-logo"
@@ -160,7 +160,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/linsen.svg"
               alt="linsen-logo"
@@ -168,7 +168,7 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div className="relative w-1/4 mb-2 h-[100px]">
+          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/ypath.svg"
               alt="ypath-logo"
