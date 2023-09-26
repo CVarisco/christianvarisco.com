@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="mx-auto lg:px-8 mt-10 space-y-18 max-w-2xl lg:max-w-5xl">
+    <div className="mx-auto lg:px-8 mt-10 space-y-16 max-w-2xl lg:max-w-5xl">
       <section>
         <h1 className="hidden md:block text-5xl font-bold sm:text-6xl">
           <span className="text-lime">CTO</span> as a Service
