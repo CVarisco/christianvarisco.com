@@ -129,8 +129,8 @@ export default function Home() {
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
-              src="/images/lendbox.svg"
-              alt="lendbox-logo"
+              src="/images/liquinvex.svg"
+              alt="liquinvex-logo"
               fill
               objectFit="contain"
             />
@@ -161,16 +161,16 @@ export default function Home() {
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
-              src="/images/linsen.svg"
-              alt="linsen-logo"
+              src="/images/lendbox.svg"
+              alt="lendbox-logo"
               fill
               objectFit="contain"
             />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
-              src="/images/ypath.svg"
-              alt="ypath-logo"
+              src="/images/lexroom.svg"
+              alt="lexroom-logo"
               fill
               objectFit="contain"
             />
