@@ -97,7 +97,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </a>
                 <a
                   className="bg-lime text-black font-bold py-1 px-2 md:py-2 md:px-4 rounded-full cursor-pointer min-w-[100px] text-center"
-                  href="https://cal.com/christian-varisco/30min"
+                  href="https://cal.com/christian-varisco/discovery-call"
                   target="_blank"
                 >
                   Book a call
