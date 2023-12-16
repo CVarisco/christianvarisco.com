@@ -2,45 +2,61 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="mx-auto lg:px-8 mt-10 space-y-16 max-w-2xl lg:max-w-5xl">
-      <section className="">
-        <h1 className="hidden md:block text-5xl font-bold sm:text-6xl">
-          <span className="text-lime">CTO</span> as a Service
-          <span className="text-lime"> for your Startup</span>
-        </h1>
-        <h1 className="md:hidden text-5xl font-bold sm:text-6xl">
-          <span className="text-lime">CTO</span> as a Service<br></br>
-          <span className="text-lime"> for your Startup</span>
-        </h1>
-        <div>
-          <p className="my-6">
-            After 10 years in the startup environment, I have developed a deep
-            understanding of what it takes to build solid software products.
+    <div className="mx-auto lg:px-8 mt-10 space-y-16 max-w-2xl lg:max-w-7xl">
+      <section className="relative isolate px-6 py-14 lg:px-8">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold leading-10 tracking-tight sm:text-6xl">
+            Avoid expensive mistakes.
+            <br />
+            Let&apos;s <span className="text-lime">
+              build your startup
+            </span>{" "}
+            together.
+          </h1>
+          <p className="mt-6 text-xl text-zinc-400">
+            Are you looking for a{" "}
+            <span className="text-lime">Fractional CTO</span> with more than{" "}
+            <span className="text-lime">10 years of experience</span> in the
+            building startups? Here I am.
           </p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <a
+              className="bg-lime text-black font-bold py-1 px-2 md:py-2 md:px-4 rounded-xl cursor-pointer min-w-[100px] text-center"
+              href="https://cal.com/christian-varisco/discovery-call"
+              target="_blank"
+            >
+              Book a call
+            </a>
+            <a
+              href="mailto:info@christianvarisco.com"
+              className="text-sm font-semibold leading-6 "
+            >
+              Contact me <span aria-hidden="true">→</span>
+            </a>
+          </div>
         </div>
       </section>
-      <section>
-        <h2 className="mb-5 text-3xl font-bold">
+      <section className="py-4">
+        <h2 className="mb-12 text-2xl md:text-3xl font-bold">
           How can I help your Startup?
         </h2>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
-          <div>
-            <h3 className="mb-5 text-2xl text-zinc-500 font-bold">
-              Do you need to build your first product version?
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12">
+          <div className="bg-[#1e1e1e] p-8 rounded-2xl">
+            <h3 className="mb-5 text-xl font-bold">
+              Building your first product version
             </h3>
-            <p className="leading-7">
+            <p className="leading-8 text-zinc-300">
               As your dedicated CTO, I specialize in transforming your
               groundbreaking ideas into tangible products. I&apos;ll work
               closely with your startup to develop a robust and scalable initial
               product version that sets the foundation for your success.
             </p>
           </div>
-          <div>
-            <h3 className="mb-5 text-2xl text-zinc-500 font-bold">
-              Struggling with technical strategy and assembling the perfect tech
-              team?
+          <div className="bg-[#1e1e1e] p-8 rounded-2xl">
+            <h3 className="mb-5 text-xl font-bold">
+              Guiding with technical strategy and hiring the perfect tech team
             </h3>
-            <p className="leading-7">
+            <p className="leading-8 text-zinc-300">
               Crafting a strong technical strategy is crucial for startups.
               I&apos;ll help you make informed decisions about technologies,
               architecture, and development processes, while also guiding you
@@ -48,11 +64,11 @@ export default function Home() {
               right technical talent.
             </p>
           </div>
-          <div>
-            <h3 className="mb-5 text-2xl text-zinc-500 font-bold">
-              Ready to scale your product and grow your user base?
+          <div className="bg-[#1e1e1e] p-8 rounded-2xl">
+            <h3 className="mb-5 text-xl font-bold">
+              Helping to scale your product and growing your user base
             </h3>
-            <p className="leading-7">
+            <p className="leading-8 text-zinc-300">
               Scaling can be challenging, but I&apos;ve got you covered.
               I&apos;ll devise a scaling plan that ensures your product can
               handle increased demand, while also optimizing for performance,
@@ -60,24 +76,11 @@ export default function Home() {
               growth trajectory.
             </p>
           </div>
-          <div>
-            <h3 className="mb-5 text-2xl text-zinc-500 font-bold">
-              Need a trusted technology partner to navigate challenges?
-            </h3>
-            <p className="leading-7">
-              I&apos;m more than just an advisor; I&apos;m your dedicated
-              technology partner. I&apos;ll be with you every step of the way,
-              providing ongoing guidance, troubleshooting, and support to
-              address any technical hurdles and keep your startup on the path to
-              success.
-            </p>
-          </div>
         </div>
       </section>
-      <section className="w-full">
-        <h2 className="mb-5 text-3xl font-bold text-center">
-          Startups I contribute to
-        </h2>
+      <section className="w-full py-8">
+        <h2 className="mb-12 text-3xl font-bold">Startups I contribute to</h2>
+
         <div className="flex flex-wrap space-y-3">
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
@@ -145,8 +148,8 @@ export default function Home() {
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
-              src="/images/zebras.svg"
-              alt="zebras-logo"
+              src="/images/banca-aidexa.svg"
+              alt="banca-aidexa-logo"
               fill
               objectFit="contain"
             />
