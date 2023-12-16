@@ -16,7 +16,7 @@ export default function Home() {
           <p className="mt-6 text-xl text-zinc-400">
             Are you looking for a{" "}
             <span className="text-lime">Fractional CTO</span> with more than{" "}
-            <span className="text-lime">10 years of experience</span> in the
+            <span className="text-lime">10 years of experience</span> in
             building startups? Here I am.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
