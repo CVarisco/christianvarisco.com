@@ -37,6 +37,16 @@ const helvetica = localFont({
   variable: "--font-helvetica",
 });
 
+const novela = localFont({
+  src: [
+    {
+      path: "../public/fonts/novela-regular-webfont.ttf",
+      weight: "400",
+    },
+  ],
+  variable: "--font-novela",
+});
+
 export const metadata = {
   title: "Christian Varisco | CTO as a Service | Fractional CTO",
   description: "I'm Christian. I help startups through their tech challenges",
@@ -50,9 +60,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`antialiased bg-[#131313] text-zinc-50 ${helvetica.variable} font-sans`}
+        className={`antialiased bg-[#131313] text-zinc-50 ${helvetica.variable} ${novela.variable} font-sans`}
       >
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col h-screen container mx-auto max-w-2xl lg:max-w-7xl">
           <header className="px-4 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center justify-between h-11 space-x-2">

@@ -10,9 +10,13 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-helvetica)"],
+        serif: ["var(--font-novela)"],
       },
       colors: {
         lime: "#CBFC01",
+      },
+      lineHeight: {
+        hero: "4.5rem",
       },
     },
   },
