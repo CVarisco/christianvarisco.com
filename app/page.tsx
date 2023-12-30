@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className="mx-auto lg:px-8 mt-10 space-y-16">
-      <section className="flex justify-center items-center isolate px-6 py-14 lg:px-8 min-h-[60vh]">
+      <section className="flex justify-center items-center isolate  lg:px-8 min-h-[60vh]">
         <div className="text-center">
           <h1 className="text-4xl sm:text-6xl sm:leading-hero font-serif">
             Avoid expensive mistakes.
@@ -35,7 +35,7 @@ export default function Home() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              className="bg-lime text-black font-bold py-1 px-2 md:py-2 md:px-4 rounded-xl cursor-pointer min-w-[100px] text-center"
+              className="bg-lime text-black font-bold py-2 px-4 rounded-xl cursor-pointer min-w-[100px] text-center"
               href="https://cal.com/christian-varisco/discovery-call"
               target="_blank"
             >
@@ -50,51 +50,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section className="py-4">
-        <h2 className="mb-12 text-2xl md:text-3xl font-bold">
-          How can I help your Startup?
-        </h2>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12">
-          <div className="bg-[#1e1e1e] p-8 rounded-2xl">
-            <h3 className="mb-5 text-xl font-bold">
-              Building your first product version
-            </h3>
-            <p className="leading-8 text-zinc-300">
-              As your dedicated CTO, I specialize in transforming your
-              groundbreaking ideas into tangible products. I&apos;ll work
-              closely with your startup to develop a robust and scalable initial
-              product version that sets the foundation for your success.
-            </p>
-          </div>
-          <div className="bg-[#1e1e1e] p-8 rounded-2xl">
-            <h3 className="mb-5 text-xl font-bold">
-              Guiding with technical strategy and hiring the perfect tech team
-            </h3>
-            <p className="leading-8 text-zinc-300">
-              Crafting a strong technical strategy is crucial for startups.
-              I&apos;ll help you make informed decisions about technologies,
-              architecture, and development processes, while also guiding you
-              through the process of recruiting, evaluating, and onboarding the
-              right technical talent.
-            </p>
-          </div>
-          <div className="bg-[#1e1e1e] p-8 rounded-2xl">
-            <h3 className="mb-5 text-xl font-bold">
-              Helping to scale your product and growing your user base
-            </h3>
-            <p className="leading-8 text-zinc-300">
-              Scaling can be challenging, but I&apos;ve got you covered.
-              I&apos;ll devise a scaling plan that ensures your product can
-              handle increased demand, while also optimizing for performance,
-              security, and cost-effectiveness to support your startup&apos;s
-              growth trajectory.
-            </p>
-          </div>
-        </div>
-      </section> */}
       <section className="py-4 grid grid-cols-1 md:grid-cols-2 sticky">
         <div>
-          <h2 className="mt-10 text-2xl md:text-3xl font-bold sticky top-10">
+          <h2 className="mt-10 mb-8 sm:mb-0 text-2xl md:text-3xl font-bold sticky top-10">
             How can I help your Startup?
           </h2>
         </div>
