@@ -16,7 +16,7 @@ module.exports = {
         lime: "#CBFC01",
       },
       lineHeight: {
-        hero: "4.5rem",
+        hero: "5.5rem",
       },
     },
   },
