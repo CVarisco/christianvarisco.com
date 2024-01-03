@@ -1,9 +1,10 @@
 "use client";
 
+import ConvertkitSignupForm from "@/components/convertKitSignupForm";
 import { useIsVisible } from "@/lib/useIsVisible";
 import Image from "next/image";
+import Script from "next/script";
 import { useRef } from "react";
-// import Script from "next/script";
 
 export default function Home() {
   const ref1 = useRef<HTMLDivElement>(null);
@@ -17,7 +18,7 @@ export default function Home() {
 
   return (
     <div className="mx-auto lg:px-8 mt-10 space-y-16">
-      <section className="flex justify-center items-center isolate lg:px-8 min-h-[70vh]">
+      <section className="flex flex-col justify-center items-center isolate lg:px-8 min-h-[70vh]">
         <div className="text-center">
           <h1 className="text-4xl sm:text-7xl sm:leading-hero font-serif">
             Avoid expensive mistakes.
@@ -33,20 +34,12 @@ export default function Home() {
             <span className="text-lime">10 years of experience</span> in
             building startups? Here I am.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              className="bg-lime text-black font-bold py-2 px-4 rounded-xl cursor-pointer min-w-[100px] text-center"
-              href="https://cal.com/christian-varisco/discovery-call"
-              target="_blank"
-            >
-              Book a call
-            </a>
-            <a
-              href="mailto:info@christianvarisco.com"
-              className="text-sm font-semibold leading-6 "
-            >
-              Contact me <span aria-hidden="true">→</span>
-            </a>
+          <div className="mt-10 flex flex-col space-y-2 items-center justify-center gap-x-6">
+            <span className="text-sm px-4 text-gray-500">
+              Build-in-public Fractional CTO business, how to build startups,
+              teams and digital products (Italian language only 🇮🇹)
+            </span>
+            <ConvertkitSignupForm />
           </div>
         </div>
       </section>
@@ -165,125 +158,49 @@ export default function Home() {
       </section>
       <section className="w-full py-8">
         <h2 className="mb-12 text-3xl font-bold">Startups I contribute to</h2>
-
         <div className="flex flex-wrap space-y-3">
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/finleap.svg"
-              alt="finleap-logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/finleap.svg" alt="finleap-logo" fill />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/igenius.svg"
-              alt="igenius-logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/igenius.svg" alt="igenius-logo" fill />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/nodus.svg"
-              alt="nodus-logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/nodus.svg" alt="nodus-logo" fill />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/qwist.svg"
-              alt="qwist.logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/qwist.svg" alt="qwist.logo" fill />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/BeyondMoney.svg"
-              alt="BeyondMoney-logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/BeyondMoney.svg" alt="BeyondMoney-logo" fill />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/zerocento.svg"
-              alt="zerocento-logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/zerocento.svg" alt="zerocento-logo" fill />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/liquinvex.svg"
-              alt="liquinvex-logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/liquinvex.svg" alt="liquinvex-logo" fill />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/wedelay.svg"
-              alt="wedelay-logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/wedelay.svg" alt="wedelay-logo" fill />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
             <Image
               src="/images/banca-aidexa.svg"
               alt="banca-aidexa-logo"
               fill
-              objectFit="contain"
             />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/Flashkey.svg"
-              alt="flashkey-logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/Flashkey.svg" alt="flashkey-logo" fill />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/lendbox.svg"
-              alt="lendbox-logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/lendbox.svg" alt="lendbox-logo" fill />
           </div>
           <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image
-              src="/images/lexroom.svg"
-              alt="lexroom-logo"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/lexroom.svg" alt="lexroom-logo" fill />
           </div>
         </div>
       </section>
-      {/* <section className="py-4 min-h-100">
-        <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
-        <Script
-          type="text/javascript"
-          src="https://testimonial.to/js/iframeResizer.min.js"
-          onLoad={() => {
-            // @ts-ignore
-            iFrameResize(
-              { log: false, checkOrigin: false },
-              "#testimonialto-carousel-christian-fractional-cto-tag-all-dark"
-            );
-          }}
-        />
-        <iframe
-          id="testimonialto-carousel-christian-fractional-cto-tag-all-dark"
-          src="https://embed-v2.testimonial.to/carousel/all/christian-fractional-cto?theme=dark&autoplay=on&showmore=off&one-row=on&same-height=off&tag=all&arrowColor=9BA9B4"
-          width="100%"
-        />
-      </section> */}
     </div>
   );
 }
