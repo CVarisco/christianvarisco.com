@@ -44,7 +44,7 @@ const ConvertkitSignupForm = () => {
   return (
     <form
       target="_blank"
-      className={`space-x-4 flex w-full justify-center`}
+      className={`space-y-4 md:space-y-0 md:space-x-4 flex md:flex-row flex-col w-full justify-center`}
       onSubmit={onSubmit}
     >
       <input
