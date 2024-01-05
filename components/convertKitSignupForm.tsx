@@ -44,19 +44,19 @@ const ConvertkitSignupForm = () => {
   return (
     <form
       target="_blank"
-      className={`space-y-4 md:space-y-0 md:space-x-4 flex md:flex-row flex-col w-full justify-center`}
+      className={`space-y-4 md:space-y-0 md:space-x-4 flex md:flex-row flex-col w-full justify-center items-center`}
       onSubmit={onSubmit}
     >
       <input
         type="email"
-        className=" bg-[#1e1e1e] text-white p-4 rounded-xl min-w-[300px]"
+        className="w-full sm:w-auto bg-[#1e1e1e] text-white p-4 rounded-xl min-w-[300px]"
         name={"email"}
         aria-label="Enter your email"
         placeholder="Enter your email"
         required
       />
 
-      <button className="bg-lime text-black font-bold py-2 px-4 rounded-xl cursor-pointer min-w-[100px] text-center">
+      <button className="bg-lime text-black font-bold py-2 px-4 rounded-xl cursor-pointer min-w-[100px] w-full sm:w-auto  text-center">
         Join the newsletter!
       </button>
     </form>
