@@ -37,7 +37,10 @@ export default function Home() {
             <br /> groundbreaking ideas into market-ready successes.
           </p>
           <div className="mt-10 flex">
-            <a className="bg-lime py-4 px-6 md:px-10 md:py-4 text-black text-xl rounded-full font-serif font-semibold cursor-pointer">
+            <a
+              className="bg-lime py-4 px-6 md:px-10 md:py-4 text-black text-xl rounded-full font-serif font-semibold cursor-pointer"
+              href="https://cal.com/christian-varisco/discovery-call"
+            >
               Book a FREE call {"->"}
             </a>
           </div>

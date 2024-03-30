@@ -100,7 +100,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   height={60}
                 />
               </div>
-              <nav className="flex items-center text-sm space-x-4 md:space-x-10">
+              <nav className=" hidden md:block flex items-center text-sm space-x-4 md:space-x-10">
                 <Link
                   className="text-lg  leading-6 hover:underline"
                   href="/newsletter"
@@ -126,10 +126,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   FAQ
                 </Link>
               </nav>
-
               <a
-                className="bg-black text-white py-4 px-6 rounded-full cursor-pointer min-w-[100px] text-center border-white border-2"
-                // href="https://cal.com/christian-varisco/discovery-call"
+                className="bg-black text-white py-2 px-4 md:py-4 md:px-6 rounded-full cursor-pointer min-w-[100px] text-center border-white border-2"
                 href="mailto:info@christianvarisco.com"
                 target="_blank"
               >
