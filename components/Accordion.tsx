@@ -33,7 +33,11 @@ const Accordion: React.FC<Props> = ({ title, children }) => {
       </div>
       <motion.div
         initial={false}
-        animate={{ height: isOpen ? contentRef.current?.scrollHeight : 0 }}
+        animate={{
+          height: isOpen
+            ? (contentRef.current as HTMLElement | null)?.scrollHeight
+            : 0,
+        }}
         transition={{ duration: 0.5 }}
         className="overflow-hidden"
       >

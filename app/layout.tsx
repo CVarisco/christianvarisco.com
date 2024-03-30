@@ -100,7 +100,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   height={60}
                 />
               </div>
-              <nav className=" hidden md:block flex items-center text-sm space-x-4 md:space-x-10">
+              <nav className=" hidden md:flex items-center text-sm space-x-4 md:space-x-10">
                 <Link
                   className="text-lg  leading-6 hover:underline"
                   href="/newsletter"
