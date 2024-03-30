@@ -4,6 +4,7 @@ import LogoCarousel from "@/components/LogoCarousel";
 import { useIsVisible } from "@/lib/useIsVisible";
 import { useRef } from "react";
 import Image from "next/image";
+import Accordion from "@/components/Accordion";
 
 const sectionClassName =
   "flex flex-col justify-center items-center container mx-auto space-y-12 md:space-y-20 md:min-h-[80vh] py-20 md:py-0 px-6 md:px-10";
@@ -215,6 +216,18 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className={sectionClassName}>
+        <h2 className="text-3xl md:text-4xl font-semibold">
+          Frequently asked questions
+        </h2>
+        <div>
+          <Accordion title="What services does Christian offer to startups?">
+            Bambolina
+          </Accordion>
+          <Accordion title="Domanda 1">Bambolina</Accordion>
+          <Accordion title="Domanda 1">Bambolina</Accordion>
         </div>
       </section>
     </div>
