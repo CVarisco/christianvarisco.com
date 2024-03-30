@@ -4,7 +4,66 @@
 
 h1,
 h2,
-h3 {
-  font-family: var(--font-novela), sans-serif;
-  font-weight: 700;
+h3,
+h4 {
+  font-family: var(--font-bricolage), sans-serif;
+}
+
+.scroll {
+  display: flex;
+  width: calc(100vw - 20px);
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 10%,
+    #fff 90%,
+    transparent
+  );
+}
+
+.scroll div {
+  white-space: nowrap;
+  animation: scroll 100s linear infinite;
+  animation-delay: calc(100s * -1);
+}
+
+.scroll div:nth-child(2) {
+  animation: scroll2 100s linear infinite;
+  animation-delay: calc(100s / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.image-box div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  max-width: 400px;
+}
+
+#hero {
+  height: calc(100vh - 180px);
 }

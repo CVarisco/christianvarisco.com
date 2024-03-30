@@ -7,29 +7,29 @@ import { Analytics } from "@/components/analytics";
 const helvetica = localFont({
   src: [
     {
-      path: "../public/fonts/HelveticaNeue-Regular.ttf",
+      path: "../public/fonts/helvetica/HelveticaNeue-Regular.ttf",
       weight: "400",
     },
     {
-      path: "../public/fonts/HelveticaNeue-Medium.ttf",
+      path: "../public/fonts/helvetica/HelveticaNeue-Medium.ttf",
       weight: "500",
     },
     {
-      path: "../public/fonts/HelveticaNeue-Bold.ttf",
+      path: "../public/fonts/helvetica/HelveticaNeue-Bold.ttf",
       weight: "700",
     },
     {
-      path: "../public/fonts/HelveticaNeue-Italic.ttf",
+      path: "../public/fonts/helvetica/HelveticaNeue-Italic.ttf",
       style: "italic",
       weight: "400",
     },
     {
-      path: "../public/fonts/HelveticaNeue-MediumItalic.ttf",
+      path: "../public/fonts/helvetica/HelveticaNeue-MediumItalic.ttf",
       style: "italic",
       weight: "500",
     },
     {
-      path: "../public/fonts/HelveticaNeue-BoldItalic.ttf",
+      path: "../public/fonts/helvetica/HelveticaNeue-BoldItalic.ttf",
       style: "italic",
       weight: "700",
     },
@@ -37,19 +37,28 @@ const helvetica = localFont({
   variable: "--font-helvetica",
 });
 
-const novela = localFont({
+const bricolage = localFont({
   src: [
     {
-      path: "../public/fonts/novela-regular-webfont.ttf",
+      path: "../public/fonts/bricolage/BricolageGrotesque-Regular.ttf",
       weight: "400",
     },
+    {
+      path: "../public/fonts/bricolage/BricolageGrotesque-Medium.ttf",
+      weight: "500",
+    },
+    {
+      path: "../public/fonts/bricolage/BricolageGrotesque-Bold.ttf",
+      weight: "700",
+    },
   ],
-  variable: "--font-novela",
+  variable: "--font-bricolage",
 });
 
 export const metadata = {
-  title: "Christian Varisco | CTO as a Service | Fractional CTO",
-  description: "I'm Christian. I help startups through their tech challenges",
+  title: "Christian Varisco | Fractional CTO | CTO as a Service | Italy",
+  description:
+    "Hi, I'm Christian Varisco, your go-to Fractional CTO. Together, we'll turn your groundbreaking ideas into market-ready successes.",
 };
 
 interface RootLayoutProps {
@@ -60,42 +69,58 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`antialiased bg-[#131313] text-zinc-50 ${helvetica.variable} ${novela.variable} font-sans`}
+        className={`antialiased bg-black text-zinc-50 ${helvetica.variable}  ${bricolage.variable} font-sans`}
       >
-        <div className="flex flex-col h-screen container mx-auto max-w-2xl lg:max-w-7xl">
-          <header className="px-4 py-4">
+        <div className="flex flex-col h-screen">
+          <header className="px-6 md:px-12 py-8">
             <div className="flex items-center justify-between">
-              <div className="flex items-center justify-between h-11 space-x-2">
+              <div className="flex items-center h-11 space-x-2">
                 <Image
                   src="/images/Logo.svg"
                   alt="my-logo"
-                  width={30}
-                  height={30}
+                  width={60}
+                  height={60}
                 />
-                <Link href="/" className="text-xl sm:text-2xl">
-                  Christian Varisco
-                </Link>
               </div>
-
-              <nav className="flex items-center text-sm font-medium space-x-4 md:space-x-6">
-                {/* <Link
-                  className="text-md font-semibold leading-6 text-zinc-400 hover:underline"
+              <nav className="flex items-center text-sm space-x-4 md:space-x-10">
+                <Link
+                  className="text-lg  leading-6 hover:underline"
                   href="/newsletter"
                 >
-                  Newsletter
-                </Link> */}
-
-                <a
-                  className="bg-lime text-black font-bold py-2 px-4 rounded-xl cursor-pointer min-w-[100px] text-center"
-                  href="https://cal.com/christian-varisco/discovery-call"
-                  target="_blank"
+                  About
+                </Link>
+                <Link
+                  className="text-lg  leading-6 hover:underline"
+                  href="/newsletter"
                 >
-                  Book a call
-                </a>
+                  Services
+                </Link>
+                <Link
+                  className="text-lg  leading-6 hover:underline"
+                  href="/newsletter"
+                >
+                  Testimonials
+                </Link>
+                <Link
+                  className="text-lg  leading-6 hover:underline"
+                  href="/newsletter"
+                >
+                  FAQ
+                </Link>
               </nav>
+
+              <a
+                className="bg-black text-white py-4 px-6 rounded-full cursor-pointer min-w-[100px] text-center border-white border-2"
+                // href="https://cal.com/christian-varisco/discovery-call"
+                href="mailto:info@christianvarisco.com"
+                target="_blank"
+              >
+                Get in touch
+              </a>
             </div>
           </header>
-          <main className="mx-auto grow px-6 md:px-0">{children}</main>
+
+          <main className="mx-auto grow">{children}</main>
           <footer className="w-full flex gap-6 justify-center py-4 mt-10 text-sm font-semibold leading-6 text-zinc-400">
             <p className="">© 2024 Christian Varisco</p>
             <a href="mailto:info@christianvarisco.com" className="">
@@ -133,6 +158,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </a>
           </footer>
         </div>
+
         <Analytics />
       </body>
     </html>
