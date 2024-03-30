@@ -164,45 +164,54 @@ export default function Home() {
           }`}
         >
           <div>
-            <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4 p-4">
-              <div className="bg-lime rounded-full inline-block">
-                <span className="text-xl md:text-2xl text-black font-semibold">
+            <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4 px-4 py-8">
+              <div className="bg-lime rounded-full w-12 h-12 flex justify-center items-center">
+                <span className="text-2xl md:text-3xl text-black font-serif font-semibold">
                   1
                 </span>
               </div>
             </div>
-            <div className="w-full bg-[#111111] p-8 rounded-xl md:min-h-[170px]">
+            <div className="w-full bg-[#111111] p-8 rounded-xl space-y-6 md:min-h-[170px]">
+              <h3 className="text-xl md:text-2xl font-semibold">Book a call</h3>
               <p className="text-lg md:text-xl">
-                How often do you find yourself chasing innovation without a
-                clear direction, leading to wasted resources and missed
-                opportunities?
+                Schedule a free discovery session with me through my link,
+                fitting your timetable.
               </p>
             </div>
           </div>
           <div>
-            <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4">
-              <h3 className="text-xl md:text-2xl text-lime p-8 md:p-10 font-semibold">
-                Are your processes holding you back?
-              </h3>
+            <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4 px-4 py-8">
+              <div className="bg-lime rounded-full w-12 h-12 flex justify-center items-center">
+                <span className="text-2xl md:text-3xl text-black font-serif font-semibold">
+                  2
+                </span>
+              </div>
             </div>
-            <div className="w-full bg-[#111111] p-8 rounded-xl md:min-h-[170px]">
+            <div className="w-full bg-[#111111] p-8 rounded-xl space-y-6 md:min-h-[170px]">
+              <h3 className="text-xl md:text-2xl font-semibold">
+                Discuss Goals
+              </h3>
               <p className="text-lg md:text-xl">
-                Do you lack a cohesive plan, causing your development to lag and
-                pushing your market entry further away?
+                Let&apos;s Talk about your startup&apos;s and technical
+                challenges with me during the call.
               </p>
             </div>
           </div>
           <div>
-            <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4">
-              <h3 className="text-xl md:text-2xl text-lime p-8 md:p-10 font-semibold">
-                Do you have the right team in place?
-              </h3>
+            <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4 px-4 py-8">
+              <div className="bg-lime rounded-full w-12 h-12 flex justify-center items-center">
+                <span className="text-2xl md:text-3xl text-black font-serif font-semibold">
+                  3
+                </span>
+              </div>
             </div>
-            <div className="w-full bg-[#111111] p-8 rounded-xl md:min-h-[170px]">
+            <div className="w-full bg-[#111111] p-8 rounded-xl space-y-6 md:min-h-[170px]">
+              <h3 className="text-xl md:text-2xl font-semibold">
+                Execute & Launch
+              </h3>
               <p className="text-lg md:text-xl">
-                Are you struggling to find and integrate the tech talent you
-                need, slowing your progress and affecting your product&apos;s
-                potential?
+                Receive a tailor made offer to move your startup forward
+                effectively.
               </p>
             </div>
           </div>

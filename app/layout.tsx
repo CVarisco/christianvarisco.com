@@ -4,6 +4,24 @@ import localFont from "next/font/local";
 import Image from "next/image";
 import { Analytics } from "@/components/analytics";
 
+const novela = localFont({
+  src: [
+    {
+      path: "../public/fonts/novela/novela-displayregular-webfont.ttf",
+      weight: "100",
+    },
+    {
+      path: "../public/fonts/novela/novela-regular-webfont.ttf",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/novela/novela-semibold-webfont.ttf",
+      weight: "500",
+    },
+  ],
+  variable: "--font-novela",
+});
+
 const helvetica = localFont({
   src: [
     {
@@ -69,7 +87,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`antialiased bg-black text-zinc-50 ${helvetica.variable}  ${bricolage.variable} font-sans`}
+        className={`antialiased bg-black text-zinc-50 ${helvetica.variable}  ${bricolage.variable} ${novela.variable} font-sans`}
       >
         <div className="flex flex-col h-screen">
           <header className="px-6 md:px-12 py-8">
