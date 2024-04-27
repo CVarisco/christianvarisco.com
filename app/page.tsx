@@ -2,12 +2,14 @@
 
 import LogoCarousel from "@/components/LogoCarousel";
 import { useIsVisible } from "@/lib/useIsVisible";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Accordion from "@/components/Accordion";
+import StartupCarousel from "@/components/Carousel";
+import { cn } from "@/lib/utils";
 
 const sectionClassName =
-  "flex flex-col justify-center items-center container mx-auto space-y-12 sm:space-y-20 sm:min-h-[80vh] py-20 sm:py-0 px-6 sm:px-10";
+  "flex flex-col justify-center items-center container mx-auto sm:min-h-[100vh] py-20  px-6 sm:px-10";
 
 export default function Home() {
   const ref1 = useRef<HTMLDivElement>(null);
@@ -20,7 +22,7 @@ export default function Home() {
   const isVisible3 = useIsVisible(ref3);
 
   return (
-    <div className="mx-auto">
+    <>
       <section id="hero" className="flex flex-col justify-between">
         <div className="text-left flex flex-col justify-center h-full px-6 sm:px-10">
           <h1 className="text-4xl sm:text-7xl sm:leading-hero font-serif font-semibold">
@@ -50,7 +52,7 @@ export default function Home() {
           <LogoCarousel />
         </div>
       </section>
-      <section className={sectionClassName}>
+      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-20")}>
         <h2 className="text-3xl sm:text-4xl self-start">
           Is your{" "}
           <span className=" font-semibold">
@@ -106,7 +108,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={sectionClassName}>
+      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-20")}>
         <h2 className="text-3xl sm:text-4xl font-regular self-start mb-6 sm:mb-8">
           <span className="font-semibold">
             Turn obstacles into opportunities
@@ -157,10 +159,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className={cn(sectionClassName, "space-y-6", "sm:space-y-12")}>
+        <h2 className="text-3xl sm:text-4xl font-regular self-start mb-6 sm:mb-8">
+          Work with me to achieve <span className="font-semibold">results</span>
+        </h2>
+        <StartupCarousel />
+      </section>
       <section
         className={`flex justify-center items-center container mx-auto space-y-12 sm:space-y-0 sm:min-h-[80vh] py-20 sm:py-0 px-6 sm:px-10`}
       >
-        <div className="flex">
+        <div className="sm:flex space-y-12 sm:space-y-0">
           <div>
             <h2 className="text-3xl sm:text-4xl self-start">
               3 steps to{" "}
@@ -227,19 +235,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={sectionClassName}>
-        <div className={`flex gap-8 transition-opacity ease-in duration-700 `}>
-          <div className="w-full min-h-[250px] md:min-h-[350px] rounded-xl relative min-w-32">
-            <div>
-              <Image
-                src="/images/me.jpg"
-                fill
-                alt="me"
-                className="rounded-xl"
-              />
-            </div>
+      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-20")}>
+        <div
+          className={`grid grid-cols-1 sm:grid-cols-5 gap-8 transition-opacity ease-in duration-700`}
+        >
+          <div className="sm:col-span-2 mx-auto rounded-xl relative">
+            <Image
+              src="/images/me.jpg"
+              width={400}
+              height={400}
+              alt="me"
+              className="rounded-xl"
+            />
           </div>
-          <div>
+          <div className="sm:col-span-3">
             <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4 px-6 py-8">
               <h2 className="text-3xl md:text-4xl self-start text-lime font-semibold">
                 About me
@@ -267,7 +276,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={sectionClassName}>
+      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-20")}>
         <h2 className="text-3xl sm:text-4xl font-semibold">
           Frequently asked questions
         </h2>
@@ -279,6 +288,6 @@ export default function Home() {
           <Accordion title="Domanda 1">Bambolina</Accordion>
         </div>
       </section>
-    </div>
+    </>
   );
 }
