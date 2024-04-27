@@ -119,9 +119,8 @@ const STARTUPS = [
     ),
     description: (
       <p className="text-lg">
-        Liquinvex is a mobile app that democratizes the investment in fine
-        wines, offering users a virtual cellar to buy, store, and manage wine
-        investments without the hassles of physical storage
+        Lexroom.ai is an AI-powered legal research tool that quickly provides
+        relevant legal sources and drafts opinions based on user queries
       </p>
     ),
     achievements: [
