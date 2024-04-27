@@ -15,10 +15,10 @@ const Accordion: React.FC<Props> = ({ title, children }) => {
   };
 
   return (
-    <div className="border-b-2 border-gray-200 overflow-hidden min-w-[200px]">
+    <div className="border-b-2 border-gray-200 overflow-hidden mi-w-90% sm:min-w-[600px]">
       <div className="flex justify-between items-center">
         <button
-          className="py-5 w-full text-xl text-left font-serif flex justify-between "
+          className="py-5 w-full text-xl text-left font-serif flex justify-between"
           onClick={toggleAccordion}
         >
           {title}

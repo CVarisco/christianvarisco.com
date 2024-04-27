@@ -61,90 +61,97 @@ const STARTUPS = [
     ],
   },
   {
-    name: "talentware",
-    image: "/images/talentware.svg",
+    name: "liquinvex",
+    image: "/images/liquinvex.svg",
     title: (
       <span className="text-2xl">
-        Empower your talent, <strong>elevate your business</strong>
+        Making wine investing <strong>easy for everyone</strong>
       </span>
     ),
     description: (
       <p className="text-lg">
-        Talentware is the talent management platform designed to help businesses
-        effectively engage, develop, and retain talent through a skill-based
-        approach
+        Liquinvex is a mobile app that democratizes the investment in fine
+        wines, offering users a virtual cellar to buy, store, and manage wine
+        investments without the hassles of physical storage
       </p>
     ),
     achievements: [
       {
-        image: "/images/Isometric.svg",
+        image: "/images/hiring.svg",
         description: (
           <p className="text-lg sm:text-xl">
-            How often do you find yourself chasing innovation without a clear
-            direction, leading to wasted resources and missed opportunities?
+            Built a top-notch team in{" "}
+            <strong className="text-lime">just a week.</strong>
           </p>
         ),
       },
       {
-        image: "/images/Isometric.svg",
+        image: "/images/money.svg",
         description: (
           <p className="text-lg sm:text-xl">
-            How often do you find yourself chasing innovation without a clear
-            direction, leading to wasted resources and missed opportunities?
+            Liquinvex quickly got into{" "}
+            <strong className="text-lime">
+              Nana Bianca accelerator program
+            </strong>
+            , showing how fast they&apos;re growing!
           </p>
         ),
       },
+
       {
-        image: "/images/Isometric.svg",
+        image: "/images/grow.svg",
         description: (
           <p className="text-lg sm:text-xl">
-            How often do you find yourself chasing innovation without a clear
-            direction, leading to wasted resources and missed opportunities?
+            New app features on a weekly basis and the user base saw a{" "}
+            <strong className="text-lime">100% increase</strong>
           </p>
         ),
       },
     ],
   },
   {
-    name: "talentware",
-    image: "/images/talentware.svg",
+    name: "lexroom",
+    image: "/images/lexroom.svg",
     title: (
       <span className="text-2xl">
-        Empower your talent, <strong>elevate your business</strong>
+        A startup that <strong>uses AI to simplify legal tasks</strong>
       </span>
     ),
     description: (
       <p className="text-lg">
-        Talentware is the talent management platform designed to help businesses
-        effectively engage, develop, and retain talent through a skill-based
-        approach
+        Liquinvex is a mobile app that democratizes the investment in fine
+        wines, offering users a virtual cellar to buy, store, and manage wine
+        investments without the hassles of physical storage
       </p>
     ),
     achievements: [
       {
-        image: "/images/Isometric.svg",
+        image: "/images/hiring.svg",
         description: (
           <p className="text-lg sm:text-xl">
-            How often do you find yourself chasing innovation without a clear
-            direction, leading to wasted resources and missed opportunities?
+            Assembled a{" "}
+            <strong className="text-lime">talented team quickly</strong>,
+            setting the stage for rapid progress.
           </p>
         ),
       },
       {
-        image: "/images/Isometric.svg",
+        image: "/images/money.svg",
         description: (
           <p className="text-lg sm:text-xl">
-            How often do you find yourself chasing innovation without a clear
-            direction, leading to wasted resources and missed opportunities?
+            Significant early achievements, including a successful{" "}
+            <strong className="text-lime">€500k pre-seed funding round</strong>{" "}
+            in January 2024.
           </p>
         ),
       },
+
       {
-        image: "/images/Isometric.svg",
+        image: "/images/grow.svg",
         description: (
           <p className="text-lg sm:text-xl">
-            How often do you find yourself chasing innovation without a clear
-            direction, leading to wasted resources and missed opportunities?
+            Led the development of the MVP, preparing for{" "}
+            <strong className="text-lime">future growth.</strong>
           </p>
         ),
       },

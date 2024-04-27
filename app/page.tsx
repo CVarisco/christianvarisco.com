@@ -33,18 +33,26 @@ export default function Home() {
             </span>{" "}
             together.
           </h1>
-          <p className="mt-6 text-xl sm:text-2xl text-white">
-            Hi, I&apos;m Christian Varisco, your go-to Fractional CTO. Together,
-            we&apos;ll turn your
-            <br /> groundbreaking ideas into market-ready successes.
+          <p className="mt-8 sm:mt-10 text-xl sm:text-2xl text-white">
+            Hi, I&apos;m <strong>Christian Varisco</strong>, your go-to
+            Fractional CTO 🇮🇹.
+            <br /> Together, we&apos;ll turn your groundbreaking ideas into
+            market-ready successes.
           </p>
-          <div className="mt-10 flex">
+          <div className="mt-6 sm:mt-8 flex">
             <a
-              className="bg-lime py-4 px-6 sm:px-10 sm:py-4 text-black text-xl rounded-full font-serif font-semibold cursor-pointer"
+              className="bg-lime py-4 px-6 sm:px-10 sm:py-4 text-black text-xl rounded-full font-serif font-semibold cursor-pointer flex gap-4"
               href="https://cal.com/christian-varisco/discovery-call"
               target="_blank"
             >
-              Book a FREE call {"->"}
+              Book a FREE call{" "}
+              <Image
+                src="/images/arrow-black.svg"
+                width={30}
+                height={14}
+                alt={"arrow"}
+                className="color-black"
+              />
             </a>
           </div>
         </div>
@@ -108,7 +116,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-20")}>
+      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-24")}>
         <h2 className="text-3xl sm:text-4xl font-regular self-start mb-6 sm:mb-8">
           <span className="font-semibold">
             Turn obstacles into opportunities
@@ -122,7 +130,7 @@ export default function Home() {
           }`}
         >
           <div className="flex flex-col -mb-4 space-y-6">
-            <div className="w-full min-h-[250px] relative">
+            <div className="w-full min-h-[200px] relative">
               <Image src="/images/Isometric.svg" fill alt="service-1" />
             </div>
             <h3 className="text-xl sm:text-2xl font-semibold pt-8">
@@ -134,7 +142,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col -mb-4 space-y-6">
-            <div className="w-full min-h-[250px] relative">
+            <div className="w-full min-h-[200px] relative">
               <Image src="/images/Isometric1.svg" fill alt="service-2" />
             </div>
             <h3 className="text-xl sm:text-2xl font-semibold pt-8">
@@ -146,7 +154,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col -mb-4 space-y-6">
-            <div className="w-full min-h-[250px] relative">
+            <div className="w-full min-h-[200px] relative">
               <Image src="/images/Isometric2.svg" fill alt="service-3" />
             </div>
             <h3 className="text-xl sm:text-2xl font-semibold pt-8">
@@ -158,8 +166,23 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <div className="flex">
+          <a
+            className="bg-black py-4 px-6 sm:px-10 sm:py-4 border-white border text-white text-xl rounded-full font-serif cursor-pointer flex gap-3"
+            href="https://cal.com/christian-varisco/discovery-call"
+            target="_blank"
+          >
+            Let&apos;s get to work{" "}
+            <Image
+              src="/images/arrow.svg"
+              width={30}
+              height={14}
+              alt={"arrow"}
+            />
+          </a>
+        </div>
       </section>
-      <section className={cn(sectionClassName, "space-y-6", "sm:space-y-12")}>
+      <section className={cn(sectionClassName, "space-y-6 sm:space-y-12")}>
         <h2 className="text-3xl sm:text-4xl font-regular self-start mb-6 sm:mb-8">
           Work with me to achieve <span className="font-semibold">results</span>
         </h2>
@@ -235,7 +258,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-20")}>
+      <section
+        className={cn(sectionClassName, "space-y-12 sm:space-y-20 pb-4")}
+      >
         <div
           className={`grid grid-cols-1 sm:grid-cols-5 gap-8 transition-opacity ease-in duration-700`}
         >
@@ -249,43 +274,58 @@ export default function Home() {
             />
           </div>
           <div className="sm:col-span-3">
-            <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4 px-6 py-8">
+            <div className="w-[80%] sm:w-[70%] border-2 border-[#1a1a1a] rounded-xl -mb-4 px-6 py-8">
               <h2 className="text-3xl md:text-4xl self-start text-lime font-semibold">
                 About me
               </h2>
             </div>
-            <div className="w-full bg-[#111111] p-8 rounded-xl space-y-6 md:min-h-[170px]">
+            <div className="w-full sm:w-[80%] bg-[#111111] p-8 rounded-xl space-y-6 md:min-h-[170px]">
               <p className="text-lg md:text-xl">
-                Hi, I&apos;m Christian and I help startups through their tech
-                challenges. I am a passionate tech startup enthusiast with a
-                decade of experience in the field. Over the years, I have had
-                the privilege of working in various startups, both as a
-                developer and as a manager/founder.I also had a significant role
-                in a venture builder, where I was tasked with crafting the
-                technical aspects of new startups. Throughout this ten-year
-                journey, I&apos;ve honed my skills in building tech startups.The
-                value I bring month by month is shielding you from expensive
-                mistakes that can derail your startup. Together, we&apos;ll
-                speed up your time to market, bringing your vision into the
-                hands of your users. I&apos;ll onboard and grow your talent on
-                the right path, nurturing their potential for long-term
-                success.My expertise guarantees a rock-solid technical strategy,
-                transforming your startup into a robust and competitive reality.
+                Hi, I&apos;m Christian and I help{" "}
+                <strong>startups through their tech challenges.</strong>
+                <br />
+                <br /> I am a passionate tech startup enthusiast with a{" "}
+                <strong>decade of experience</strong> in the field. Over the
+                years, I have had the privilege of working in various startups,
+                both as a developer and as a manager/founder.
+                <br />
+                <br />I also had a significant role in a venture builder, where
+                I was tasked with crafting the technical aspects of new
+                startups. Throughout this ten-year journey, I&apos;ve honed my
+                skills in building tech startups. <br />
+                <br />
+                The value I bring month by month is{" "}
+                <strong>shielding you from expensive mistakes</strong> that can
+                derail your startup. Together, we&apos;ll{" "}
+                <strong>speed up your time to market</strong>, bringing your
+                vision into the hands of your users. I&apos;ll{" "}
+                <strong>onboard and grow your talent</strong> on the right path,
+                nurturing their potential for long-term success.
+                <br />
+                <br />
+                My expertise guarantees a{" "}
+                <strong>rock-solid technical strategy</strong>, transforming
+                your startup into a robust and competitive reality.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-20")}>
+      <section
+        className={`flex flex-col justify-center items-center container mx-auto space-y-8 pt-12 pb-24 px-6 sm:px-10`}
+      >
         <h2 className="text-3xl sm:text-4xl font-semibold">
           Frequently asked questions
         </h2>
         <div>
           <Accordion title="What services does Christian offer to startups?">
-            Bambolina
+            TBD
           </Accordion>
-          <Accordion title="Domanda 1">Bambolina</Accordion>
-          <Accordion title="Domanda 1">Bambolina</Accordion>
+          <Accordion title="How many startup do you work with in parallel?">
+            TBD
+          </Accordion>
+          <Accordion title="Do you write code too?">TBD</Accordion>
+          <Accordion title="Are you working alone?">TBD</Accordion>
         </div>
       </section>
     </>
