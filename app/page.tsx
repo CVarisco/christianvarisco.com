@@ -1,10 +1,15 @@
 "use client";
 
-import ConvertkitSignupForm from "@/components/convertKitSignupForm";
+import LogoCarousel from "@/components/LogoCarousel";
 import { useIsVisible } from "@/lib/useIsVisible";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Script from "next/script";
-import { useRef } from "react";
+import Accordion from "@/components/Accordion";
+import StartupCarousel from "@/components/Carousel";
+import { cn } from "@/lib/utils";
+
+const sectionClassName =
+  "flex flex-col justify-center items-center container mx-auto sm:min-h-[100vh] py-20  px-6 sm:px-10";
 
 export default function Home() {
   const ref1 = useRef<HTMLDivElement>(null);
@@ -17,10 +22,10 @@ export default function Home() {
   const isVisible3 = useIsVisible(ref3);
 
   return (
-    <div className="mx-auto lg:px-8 mt-10 space-y-16">
-      <section className="flex flex-col justify-center items-center isolate lg:px-8 min-h-[70vh]">
-        <div className="text-center">
-          <h1 className="text-4xl sm:text-7xl sm:leading-hero font-serif">
+    <>
+      <section id="hero" className="flex flex-col justify-between">
+        <div className="text-left flex flex-col justify-center h-full px-6 sm:px-10">
+          <h1 className="text-4xl sm:text-7xl sm:leading-hero font-serif font-semibold">
             Avoid expensive mistakes.
             <br />
             Let&apos;s <span className="text-lime">
@@ -28,179 +33,301 @@ export default function Home() {
             </span>{" "}
             together.
           </h1>
-          <p className="mt-6 text-xl text-zinc-400">
-            Are you looking for a{" "}
-            <span className="text-lime">Fractional CTO</span> with more than{" "}
-            <span className="text-lime">10 years of experience</span> in
-            building startups? Here I am.
+          <p className="mt-8 sm:mt-10 text-xl sm:text-2xl text-white">
+            Hi, I&apos;m <strong>Christian Varisco</strong>, your go-to
+            Fractional CTO 🇮🇹.
+            <br /> Together, we&apos;ll turn your groundbreaking ideas into
+            market-ready successes.
           </p>
-          <div className="mt-10 flex flex-col space-y-2 items-center justify-center gap-x-6">
-            <span className="text-sm px-4 text-gray-500">
-              Build-in-public Fractional CTO business, how to build startups,
-              teams and digital products (Italian language only 🇮🇹)
-            </span>
-            <ConvertkitSignupForm />
+          <div className="mt-6 sm:mt-8 flex">
+            <a
+              className="bg-lime py-4 px-6 sm:px-10 sm:py-4 text-black text-xl rounded-full font-serif font-semibold cursor-pointer flex gap-4"
+              href="https://cal.com/christian-varisco/discovery-call"
+              target="_blank"
+            >
+              Book a FREE call{" "}
+              <Image
+                src="/images/arrow-black.svg"
+                width={30}
+                height={14}
+                alt={"arrow"}
+                className="color-black"
+              />
+            </a>
+          </div>
+        </div>
+        <div className="w-full">
+          <LogoCarousel />
+        </div>
+      </section>
+      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-20")}>
+        <h2 className="text-3xl sm:text-4xl self-start">
+          Is your{" "}
+          <span className=" font-semibold">
+            startup&apos;s product development on the right track?
+          </span>
+        </h2>
+        <div
+          ref={ref1}
+          className={`grid grid-cols-1 sm:grid-cols-3 gap-8 transition-opacity ease-in duration-700 ${
+            isVisible1 ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <div>
+            <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4">
+              <h3 className="text-xl sm:text-2xl text-lime p-8 sm:p-10 font-semibold">
+                Are you navigating without a map?
+              </h3>
+            </div>
+            <div className="w-full bg-[#111111] p-8 rounded-xl sm:min-h-[170px]">
+              <p className="text-lg sm:text-xl">
+                How often do you find yourself chasing innovation without a
+                clear direction, leading to wasted resources and missed
+                opportunities?
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4">
+              <h3 className="text-xl sm:text-2xl text-lime p-8 sm:p-10 font-semibold">
+                Are your processes holding you back?
+              </h3>
+            </div>
+            <div className="w-full bg-[#111111] p-8 rounded-xl sm:min-h-[170px]">
+              <p className="text-lg sm:text-xl">
+                Do you lack a cohesive plan, causing your development to lag and
+                pushing your market entry further away?
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="w-[90%] border-2 border-[#1a1a1a] rounded-xl -mb-4">
+              <h3 className="text-xl sm:text-2xl text-lime p-8 sm:p-10 font-semibold">
+                Do you have the right team in place?
+              </h3>
+            </div>
+            <div className="w-full bg-[#111111] p-8 rounded-xl sm:min-h-[170px]">
+              <p className="text-lg sm:text-xl">
+                Are you struggling to find and integrate the tech talent you
+                need, slowing your progress and affecting your product&apos;s
+                potential?
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center min-h-screen space-y-10 pb-4 md:pb-12">
-        <div className="relative items-center px-4">
-          <Image
-            className="rounded-full border-4 border-lime"
-            src="/images/me.jpg"
-            alt="me"
-            width={200}
-            height={90}
-          />
-        </div>
-        <div className="max-w-2xl px-4 space-y-12">
-          <h2 className="text-3xl md:text-5xl font-semibold">
-            Hi, I&apos;m Christian and I help startups through their tech
-            challenges.
-          </h2>
-          <p className="mt-4 text-md md:text-xl text-blueGray-500 leading-8 md:leading-8">
-            I am a passionate tech startup enthusiast with a decade of
-            experience in the field. Over the years, I have had the privilege of
-            working in various startups, both{" "}
-            <span className="font-bold">
-              as a developer and as a manager/founder.
-            </span>
-            <br />
-            <br /> I also had a significant role in a{" "}
-            <span className="font-bold">venture builder</span>, where I was
-            tasked with crafting the technical aspects of new startups.
-            Throughout this ten-year journey, I&apos;ve honed my skills in
-            building tech startups.
-            <br />
-            <br /> <span className="font-bold">The value I bring</span> month by
-            month is
-            <span className="text-lime font-medium">
-              {" "}
-              shielding you from expensive mistakes
-            </span>{" "}
-            that can derail your startup. Together, we&apos;ll{" "}
-            <span className="text-lime font-medium">
-              speed up your time to market
-            </span>
-            , bringing your vision into the hands of your users.{" "}
-            <span className="text-lime font-medium">
-              I&apos;ll onboard and grow your talent
-            </span>{" "}
-            on the right path, nurturing their potential for long-term success.{" "}
-            <br />
-            <br />
-            My expertise guarantees a{" "}
-            <span className="text-lime font-medium">
-              rock-solid technical strategy
-            </span>
-            , transforming your startup into a robust and competitive reality.
-          </p>
-        </div>
-      </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 sticky py-8 md:py-12">
-        <div>
-          <h2 className="mt-10 mb-8 sm:mb-0 text-3xl md:text-5xl font-bold sticky top-10">
-            How can I help your Startup?
-          </h2>
-        </div>
-        <div className="flex space-y-4 flex-col gap-12 relative">
-          <div
-            ref={ref1}
-            className={`bg-[#1e1e1e] p-8 rounded-2xl transition-opacity ease-in duration-700 ${
-              isVisible1 ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <h3 className="mb-5 text-xl font-bold">
-              Building your first product version
+      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-24")}>
+        <h2 className="text-3xl sm:text-4xl font-regular self-start mb-6 sm:mb-8">
+          <span className="font-semibold">
+            Turn obstacles into opportunities
+          </span>{" "}
+          with an expert who understands your journey. Team up with me to:
+        </h2>
+        <div
+          ref={ref2}
+          className={`grid grid-cols-1 sm:grid-cols-3 gap-8 space-y-10 sm:space-y-0 transition-opacity ease-in duration-700 ${
+            isVisible2 ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <div className="flex flex-col -mb-4 space-y-6">
+            <div className="w-full min-h-[200px] relative">
+              <Image src="/images/Isometric.svg" fill alt="service-1" />
+            </div>
+            <h3 className="text-xl sm:text-2xl font-semibold pt-8">
+              Launch First Product
             </h3>
-            <p className="leading-8 text-zinc-300">
-              As your dedicated CTO, I specialize in transforming your
-              groundbreaking ideas into tangible products. I&apos;ll work
-              closely with your startup to develop a robust and scalable initial
-              product version that sets the foundation for your success.
+            <p className="text-lg sm:text-xl">
+              How often do you find yourself chasing innovation without a clear
+              direction, leading to wasted resources and missed opportunities?
             </p>
           </div>
-          <div
-            ref={ref2}
-            className={`bg-[#1e1e1e] p-8 rounded-2xl transition-opacity ease-in duration-700 ${
-              isVisible2 ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <h3 className="mb-5 text-xl font-bold">
-              Guiding with technical strategy and hiring the perfect tech team
+          <div className="flex flex-col -mb-4 space-y-6">
+            <div className="w-full min-h-[200px] relative">
+              <Image src="/images/Isometric1.svg" fill alt="service-2" />
+            </div>
+            <h3 className="text-xl sm:text-2xl font-semibold pt-8">
+              Navigate Technical Strategy
             </h3>
-            <p className="leading-8 text-zinc-300">
-              Crafting a strong technical strategy is crucial for startups.
-              I&apos;ll help you make informed decisions about technologies,
-              architecture, and development processes, while also guiding you
-              through the process of recruiting, evaluating, and onboarding the
-              right technical talent.
+            <p className="text-lg sm:text-xl">
+              Navigate the complexities of technology, architecture, and
+              development processes with expert guidance.
             </p>
           </div>
-          <div
-            ref={ref3}
-            className={`bg-[#1e1e1e] p-8 rounded-2xl transition-opacity ease-in duration-700 ${
-              isVisible3 ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <h3 className="mb-5 text-xl font-bold">
-              Helping to scale your product and growing your user base
+          <div className="flex flex-col -mb-4 space-y-6">
+            <div className="w-full min-h-[200px] relative">
+              <Image src="/images/Isometric2.svg" fill alt="service-3" />
+            </div>
+            <h3 className="text-xl sm:text-2xl font-semibold pt-8">
+              Build Dream Team
             </h3>
-            <p className="leading-8 text-zinc-300">
-              Scaling can be challenging, but I&apos;ve got you covered.
-              I&apos;ll devise a scaling plan that ensures your product can
-              handle increased demand, while also optimizing for performance,
-              security, and cost-effectiveness to support your startup&apos;s
-              growth trajectory.
+            <p className="text-lg sm:text-xl">
+              Identify and integrate the right technical skills, streamlining
+              your path to innovation and growth.
             </p>
           </div>
         </div>
-      </section>
-      <section className="w-full py-8">
-        <h2 className="mb-12 text-3xl font-bold">Startups I contribute to</h2>
-        <div className="flex flex-wrap space-y-3">
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/finleap.svg" alt="finleap-logo" fill />
-          </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/igenius.svg" alt="igenius-logo" fill />
-          </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/nodus.svg" alt="nodus-logo" fill />
-          </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/qwist.svg" alt="qwist.logo" fill />
-          </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/BeyondMoney.svg" alt="BeyondMoney-logo" fill />
-          </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/zerocento.svg" alt="zerocento-logo" fill />
-          </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/liquinvex.svg" alt="liquinvex-logo" fill />
-          </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/wedelay.svg" alt="wedelay-logo" fill />
-          </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
+        <div className="flex">
+          <a
+            className="bg-black py-4 px-6 sm:px-10 sm:py-4 border-white border text-white text-xl rounded-full font-serif cursor-pointer flex gap-3"
+            href="https://cal.com/christian-varisco/discovery-call"
+            target="_blank"
+          >
+            Let&apos;s get to work{" "}
             <Image
-              src="/images/banca-aidexa.svg"
-              alt="banca-aidexa-logo"
-              fill
+              src="/images/arrow.svg"
+              width={30}
+              height={14}
+              alt={"arrow"}
+            />
+          </a>
+        </div>
+      </section>
+      <section className={cn(sectionClassName, "space-y-6 sm:space-y-12")}>
+        <h2 className="text-3xl sm:text-4xl font-regular self-start mb-6 sm:mb-8">
+          Work with me to achieve <span className="font-semibold">results</span>
+        </h2>
+        <StartupCarousel />
+      </section>
+      <section
+        className={`flex justify-center items-center container mx-auto space-y-12 sm:space-y-0 sm:min-h-[80vh] py-20 sm:py-0 px-6 sm:px-10`}
+      >
+        <div className="sm:flex space-y-12 sm:space-y-0">
+          <div>
+            <h2 className="text-3xl sm:text-4xl self-start">
+              3 steps to{" "}
+              <span className=" font-semibold">transform your startup</span>
+            </h2>
+          </div>
+          <div
+            className={`flex flex-col gap-8 transition-opacity ease-in duration-700`}
+          >
+            <div className="flex">
+              <div className="border-2 border-[#1a1a1a] rounded-[32px] rounded-r-lg px-6 pt-6 border-r-0 h-24 min-w-[130px] -mr-8">
+                <div className="bg-lime rounded-full w-12 h-12 flex justify-center items-center">
+                  <span className="text-2xl sm:text-3xl text-black font-serif font-semibold">
+                    1
+                  </span>
+                </div>
+              </div>
+              <div className="w-full bg-[#111111] p-8 rounded-[32px] space-y-6 sm:min-h-[170px]">
+                <h3 className="text-xl sm:text-2xl font-semibold">
+                  Book a call
+                </h3>
+                <p className="text-lg sm:text-xl">
+                  Schedule a free discovery session with me through my link,
+                  fitting your timetable.
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="border-2 border-[#1a1a1a] rounded-[32px] rounded-r-lg px-6 pt-6 border-r-0 h-24 min-w-[130px] -mr-8">
+                <div className="bg-lime rounded-full w-12 h-12 flex justify-center items-center">
+                  <span className="text-2xl sm:text-3xl text-black font-serif font-semibold">
+                    2
+                  </span>
+                </div>
+              </div>
+              <div className="w-full bg-[#111111] p-8 rounded-[32px] space-y-6 sm:min-h-[170px]">
+                <h3 className="text-xl sm:text-2xl font-semibold">
+                  Discuss Goals
+                </h3>
+                <p className="text-lg sm:text-xl">
+                  Let&apos;s Talk about your startup&apos;s and technical
+                  challenges with me during the call.
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="border-2 border-[#1a1a1a] rounded-[32px] rounded-r-lg px-6 pt-6 border-r-0 h-24 min-w-[130px] -mr-8">
+                <div className="bg-lime rounded-full w-12 h-12 flex justify-center items-center">
+                  <span className="text-2xl sm:text-3xl text-black font-serif font-semibold">
+                    3
+                  </span>
+                </div>
+              </div>
+              <div className="w-full bg-[#111111] p-8 rounded-[32px] space-y-6 sm:min-h-[170px]">
+                <h3 className="text-xl sm:text-2xl font-semibold">
+                  Execute & Launch
+                </h3>
+                <p className="text-lg sm:text-xl">
+                  Receive a tailor made offer to move your startup forward
+                  effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className={cn(sectionClassName, "space-y-12 sm:space-y-20 pb-4")}
+      >
+        <div
+          className={`grid grid-cols-1 sm:grid-cols-5 gap-8 transition-opacity ease-in duration-700`}
+        >
+          <div className="sm:col-span-2 mx-auto rounded-xl relative">
+            <Image
+              src="/images/me.jpg"
+              width={400}
+              height={400}
+              alt="me"
+              className="rounded-xl"
             />
           </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/Flashkey.svg" alt="flashkey-logo" fill />
-          </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/lendbox.svg" alt="lendbox-logo" fill />
-          </div>
-          <div className="relative w-1/2 md:w-1/4 mb-2 h-[120px]">
-            <Image src="/images/lexroom.svg" alt="lexroom-logo" fill />
+          <div className="sm:col-span-3">
+            <div className="w-[80%] sm:w-[70%] border-2 border-[#1a1a1a] rounded-xl -mb-4 px-6 py-8">
+              <h2 className="text-3xl md:text-4xl self-start text-lime font-semibold">
+                About me
+              </h2>
+            </div>
+            <div className="w-full sm:w-[80%] bg-[#111111] p-8 rounded-xl space-y-6 md:min-h-[170px]">
+              <p className="text-lg md:text-xl">
+                Hi, I&apos;m Christian and I help{" "}
+                <strong>startups through their tech challenges.</strong>
+                <br />
+                <br /> I am a passionate tech startup enthusiast with a{" "}
+                <strong>decade of experience</strong> in the field. Over the
+                years, I have had the privilege of working in various startups,
+                both as a developer and as a manager/founder.
+                <br />
+                <br />I also had a significant role in a venture builder, where
+                I was tasked with crafting the technical aspects of new
+                startups. Throughout this ten-year journey, I&apos;ve honed my
+                skills in building tech startups. <br />
+                <br />
+                The value I bring month by month is{" "}
+                <strong>shielding you from expensive mistakes</strong> that can
+                derail your startup. Together, we&apos;ll{" "}
+                <strong>speed up your time to market</strong>, bringing your
+                vision into the hands of your users. I&apos;ll{" "}
+                <strong>onboard and grow your talent</strong> on the right path,
+                nurturing their potential for long-term success.
+                <br />
+                <br />
+                My expertise guarantees a{" "}
+                <strong>rock-solid technical strategy</strong>, transforming
+                your startup into a robust and competitive reality.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-    </div>
+      <section
+        className={`flex flex-col justify-center items-center container mx-auto space-y-8 pt-12 pb-24 px-6 sm:px-10`}
+      >
+        <h2 className="text-3xl sm:text-4xl font-semibold">
+          Frequently asked questions
+        </h2>
+        <div>
+          <Accordion title="What services does Christian offer to startups?">
+            TBD
+          </Accordion>
+          <Accordion title="How many startup do you work with in parallel?">
+            TBD
+          </Accordion>
+          <Accordion title="Do you write code too?">TBD</Accordion>
+          <Accordion title="Are you working alone?">TBD</Accordion>
+        </div>
+      </section>
+    </>
   );
 }
