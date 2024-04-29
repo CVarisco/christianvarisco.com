@@ -220,12 +220,12 @@ export default function StartupCarousel() {
         </CarouselContent>
       </Carousel>
 
-      <div className="flex gap-2 w-full justify-center items-center">
+      <div className="flex gap-3 w-full justify-center items-center">
         {new Array(count).fill("").map((_, i) => (
           <span
             key={i}
-            className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-              current === i + 1 ? "w-12 bg-lime" : "w-8 bg-white/50"
+            className={`block h-3 cursor-pointer rounded-2xl transition-all content-[''] ${
+              current === i + 1 ? "w-16 bg-lime" : "w-10 bg-white/50"
             }`}
             onClick={() => api?.scrollTo(i)}
           />

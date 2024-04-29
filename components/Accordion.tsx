@@ -16,13 +16,13 @@ const Accordion: React.FC<Props> = ({ title, children }) => {
 
   return (
     <div className="border-b-2 border-gray-200 overflow-hidden mi-w-90% sm:min-w-[600px]">
-      <div className="flex justify-between items-center">
-        <button
-          className="py-5 w-full text-xl text-left font-serif flex justify-between"
-          onClick={toggleAccordion}
-        >
+      <div
+        className="flex justify-between items-center cursor-pointer"
+        onClick={toggleAccordion}
+      >
+        <span className="py-5 w-full text-xl text-left font-serif flex justify-between">
           {title}
-        </button>
+        </span>
         <motion.span
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.2 }}

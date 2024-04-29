@@ -60,7 +60,10 @@ export default function Home() {
           <LogoCarousel />
         </div>
       </section>
-      <section className={cn(sectionClassName, "space-y-12", "sm:space-y-20")}>
+      <section
+        id="services"
+        className={cn(sectionClassName, "space-y-12", "sm:space-y-20")}
+      >
         <h2 className="text-3xl sm:text-4xl self-start">
           Is your{" "}
           <span className=" font-semibold">
@@ -79,7 +82,7 @@ export default function Home() {
                 Are you navigating without a map?
               </h3>
             </div>
-            <div className="w-full bg-[#111111] p-8 rounded-xl sm:min-h-[170px]">
+            <div className="w-full bg-[#111111] p-8 rounded-xl sm:min-h-[190px]">
               <p className="text-lg sm:text-xl">
                 How often do you find yourself chasing innovation without a
                 clear direction, leading to wasted resources and missed
@@ -93,7 +96,7 @@ export default function Home() {
                 Are your processes holding you back?
               </h3>
             </div>
-            <div className="w-full bg-[#111111] p-8 rounded-xl sm:min-h-[170px]">
+            <div className="w-full bg-[#111111] p-8 rounded-xl sm:min-h-[190px]">
               <p className="text-lg sm:text-xl">
                 Do you lack a cohesive plan, causing your development to lag and
                 pushing your market entry further away?
@@ -106,7 +109,7 @@ export default function Home() {
                 Do you have the right team in place?
               </h3>
             </div>
-            <div className="w-full bg-[#111111] p-8 rounded-xl sm:min-h-[170px]">
+            <div className="w-full bg-[#111111] p-8 rounded-xl sm:min-h-[190px]">
               <p className="text-lg sm:text-xl">
                 Are you struggling to find and integrate the tech talent you
                 need, slowing your progress and affecting your product&apos;s
@@ -182,7 +185,10 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <section className={cn(sectionClassName, "space-y-6 sm:space-y-12")}>
+      <section
+        id="testimonials"
+        className={cn(sectionClassName, "space-y-6 sm:space-y-12")}
+      >
         <h2 className="text-3xl sm:text-4xl font-regular self-start mb-6 sm:mb-8">
           Work with me to achieve <span className="font-semibold">results</span>
         </h2>
@@ -259,6 +265,7 @@ export default function Home() {
         </div>
       </section>
       <section
+        id="about"
         className={cn(sectionClassName, "space-y-12 sm:space-y-20 pb-4")}
       >
         <div
@@ -312,6 +319,7 @@ export default function Home() {
         </div>
       </section>
       <section
+        id="faq"
         className={`flex flex-col justify-center items-center container mx-auto space-y-8 pt-12 pb-24 px-6 sm:px-10`}
       >
         <h2 className="text-3xl sm:text-4xl font-semibold">

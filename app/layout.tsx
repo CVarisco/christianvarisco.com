@@ -103,25 +103,25 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <nav className="hidden sm:flex items-center text-sm space-x-4 sm:space-x-10">
                 <Link
                   className="text-lg  leading-6 hover:underline"
-                  href="/newsletter"
+                  href="#about"
                 >
                   About
                 </Link>
                 <Link
                   className="text-lg  leading-6 hover:underline"
-                  href="/newsletter"
+                  href="#services"
                 >
                   Services
                 </Link>
                 <Link
                   className="text-lg  leading-6 hover:underline"
-                  href="/newsletter"
+                  href="#testimonials"
                 >
                   Testimonials
                 </Link>
                 <Link
                   className="text-lg  leading-6 hover:underline"
-                  href="/newsletter"
+                  href="#faq"
                 >
                   FAQ
                 </Link>
