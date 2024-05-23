@@ -327,13 +327,45 @@ export default function Home() {
         </h2>
         <div>
           <Accordion title="What services does Christian offer to startups?">
-            TBD
+            I solve problems in three key areas: Product, Tech, and Team. For
+            Product, I help you define which features need to be developed and
+            when. For Tech, I lead on what technology to use, how to implement
+            it, and when to roll it out. For Team, I assist in finding and
+            leading the best people to work in your startup, whether they are
+            freelancers or part of an internally hired team.
           </Accordion>
           <Accordion title="How many startup do you work with in parallel?">
-            TBD
+            I work with a maximum of three startups in parallel. This allows me
+            to focus on delivering quality results for each project.
           </Accordion>
-          <Accordion title="Do you write code too?">TBD</Accordion>
-          <Accordion title="Are you working alone?">TBD</Accordion>
+          <Accordion title="Do you write code too?">
+            If needed, yes. However, my primary goal is to leverage my
+            experience to guide you on how to build a successful startup, rather
+            than just writing software.
+          </Accordion>
+          <Accordion title="Do you have a team?">
+            Yes, I have a network of collaborators that includes developers,
+            designers, product managers, and various other professionals. They
+            can step in to assist both me and your startup whenever necessary.
+          </Accordion>
+          <Accordion title="What stage startups do you typically work with?">
+            I typically work with early-stage startups that have at least a $20k
+            budget to invest in technology (not for me, but for the rest of the
+            team). These startups may or may not have a CTO to collaborate with,
+            and they can either have an internal team or rely on my network of
+            professionals.
+          </Accordion>
+          <Accordion title="What is the typical duration of your engagements with startups?">
+            Generally, my engagements last between 3 to 9 months to ensure we
+            build a solid foundation in terms of product, technology, and team.
+            However, if needed, I can also provide advisory services for as
+            little as one hour a week, with engagements lasting just one month.
+          </Accordion>
+          <Accordion title=" How do you handle confidentiality and data security?">
+            Before we start working together, it&apos;s up to you. I can sign an
+            NDA and term sheet if needed (and if they make sense) to ensure your
+            confidentiality and data security.
+          </Accordion>
         </div>
       </section>
     </>
