@@ -179,19 +179,32 @@ a:hover {
 
 /* Primary button */
 .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  font-size: var(--font-size-base);
+  font-weight: 600;
   background-color: var(--color-accent);
   color: var(--color-text-alternate);
-  box-shadow: var(--shadow-solid);
+  border-radius: var(--radius-full);
+  transition: all 0.2s ease;
 }
 
 .btn-primary:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: var(--shadow-solid-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(203, 252, 1, 0.3);
+  color: var(--color-text-alternate);
 }
 
-.btn-primary:active {
-  transform: translate(0, 0);
-  box-shadow: 2px 2px 0 0 var(--color-accent);
+.btn-primary:hover svg {
+  transform: translateX(4px);
+}
+
+.btn-primary svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
 }
 
 /* Secondary button */

@@ -59,7 +59,7 @@
       "industry": "Legal Tech",
       "product": "AI Platform",
       "website": "https://lexroom.ai",
-      "thumbnail": "/images/case-studies/lexroom-thumb.svg",
+      "thumbnail": "/images/logos/lexroom.svg",
       "heroImage": "/images/case-studies/lexroom-hero.jpg",
       "shortDescription": "Lexroom uses AI to revolutionize legal research: it analyzes documents, finds precedents, and generates answers.",
       "stats": [
@@ -84,7 +84,7 @@
       "industry": "HR Tech",
       "product": "SaaS Platform",
       "website": "https://talentware.io",
-      "thumbnail": "/images/case-studies/talentware-thumb.svg",
+      "thumbnail": "/images/logos/talentware.svg",
       "heroImage": "/images/case-studies/talentware-hero.jpg",
       "shortDescription": "Talentware manages talent with skill-based AI: it maps real competencies and suggests careers and corporate successions.",
       "stats": [
@@ -109,7 +109,7 @@
       "industry": "Health Tech",
       "product": "Medical Platform",
       "website": "https://pausetiv.com",
-      "thumbnail": "/images/case-studies/pausetiv-thumb.svg",
+      "thumbnail": "/images/logos/pausetiv.svg",
       "heroImage": "/images/case-studies/pausetiv-hero.jpg",
       "shortDescription": "Pausetiv helps women navigate menopause with a medical approach, connecting patients with healthcare professionals.",
       "stats": [
@@ -134,7 +134,7 @@
       "industry": "Fintech",
       "product": "Mobile App",
       "website": "https://liquinvex.com",
-      "thumbnail": "/images/case-studies/liquinvex-thumb.svg",
+      "thumbnail": "/images/logos/liquinvex.svg",
       "heroImage": "/images/case-studies/liquinvex-hero.jpg",
       "shortDescription": "Liquinvex is a premium wine marketplace where you can buy rare bottles, invest in wine, and sell online.",
       "stats": [
@@ -156,35 +156,35 @@
     {
       "slug": "triadi",
       "company": "Triadi",
-      "thumbnail": "/images/case-studies/triadi-thumb.svg",
+      "thumbnail": "/images/logos/triadi.svg",
       "shortDescription": "Coming soon",
       "comingSoon": true
     },
     {
       "slug": "recivu",
       "company": "Recivu",
-      "thumbnail": "/images/case-studies/recivu-thumb.svg",
+      "thumbnail": "/images/logos/recivu.svg",
       "shortDescription": "Coming soon",
       "comingSoon": true
     },
     {
       "slug": "istory",
       "company": "iStory",
-      "thumbnail": "/images/case-studies/istory-thumb.svg",
+      "thumbnail": "/images/logos/istory.svg",
       "shortDescription": "Coming soon",
       "comingSoon": true
     },
     {
       "slug": "wedelay",
       "company": "Wedelay",
-      "thumbnail": "/images/case-studies/wedelay-thumb.svg",
+      "thumbnail": "/images/logos/wedelay.svg",
       "shortDescription": "Coming soon",
       "comingSoon": true
     },
     {
       "slug": "tot",
       "company": "Tot.",
-      "thumbnail": "/images/case-studies/tot-thumb.svg",
+      "thumbnail": "/images/logos/tot.svg",
       "shortDescription": "Coming soon",
       "comingSoon": true
     }
