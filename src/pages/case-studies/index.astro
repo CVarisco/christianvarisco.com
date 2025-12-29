@@ -8,7 +8,7 @@ import CaseStudyCTA from '../../components/case-studies/CaseStudyCTA.astro';
 import { getTranslations } from '../../i18n/utils';
 import type { Lang } from '../../i18n';
 
-const lang: Lang = 'en';
+const lang: Lang = 'it';
 const currentPath = Astro.url.pathname;
 
 // Load translations
@@ -65,10 +65,10 @@ const caseStudies = getTranslations(lang, 'caseStudies');
               slug={item.slug}
               company={item.company}
               thumbnail={item.thumbnail}
-              logo={item.logo}
               shortDescription={item.shortDescription}
               lang={lang}
               index={index}
+              comingSoon={item.comingSoon}
             />
           ))}
         </div>

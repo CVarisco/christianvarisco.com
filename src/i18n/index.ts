@@ -3,7 +3,7 @@ export const languages = {
   it: 'Italiano',
 } as const;
 
-export const defaultLang = 'en' as const;
+export const defaultLang = 'it' as const;
 
 export type Lang = keyof typeof languages;
 
@@ -20,10 +20,10 @@ export function useTranslatedPath(lang: Lang) {
 }
 
 export function getAlternatePath(currentLang: Lang, currentPath: string): Record<Lang, string> {
-  const cleanPath = currentPath.replace(/^\/it/, '') || '/';
+  const cleanPath = currentPath.replace(/^\/en/, '') || '/';
 
   return {
-    en: cleanPath,
-    it: `/it${cleanPath === '/' ? '' : cleanPath}`,
+    en: `/en${cleanPath === '/' ? '' : cleanPath}`,
+    it: cleanPath,
   };
 }

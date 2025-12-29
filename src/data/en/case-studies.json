@@ -32,7 +32,7 @@
   "detailPage": {
     "backLink": {
       "label": "Back to case studies",
-      "href": "/case-studies/"
+      "href": "/en/case-studies/"
     },
     "testimonialTitle": "What they say",
     "footerCTA": {
@@ -42,7 +42,7 @@
       },
       "cta": {
         "label": "See my other experiences",
-        "href": "/case-studies/"
+        "href": "/en/case-studies/"
       }
     },
     "labels": {
@@ -54,29 +54,78 @@
   },
   "items": [
     {
+      "slug": "lexroom",
+      "company": "Lexroom.ai",
+      "industry": "Legal Tech",
+      "product": "AI Platform",
+      "website": "https://lexroom.ai",
+      "thumbnail": "/images/case-studies/lexroom-thumb.svg",
+      "heroImage": "/images/case-studies/lexroom-hero.jpg",
+      "shortDescription": "Lexroom uses AI to revolutionize legal research: it analyzes documents, finds precedents, and generates answers.",
+      "stats": [
+        { "value": "€16M", "label": "Seed round" },
+        { "value": "3 → 15", "label": "Team growth" }
+      ],
+      "testimonial": {
+        "quote": "Christian helped us a lot to design an initial product development roadmap and to understand how to build the tech team.",
+        "author": "Martina Domenicali",
+        "role": "Co-founder & CRO, Lexroom",
+        "image": "/images/testimonials/martina.jpg",
+        "rating": 5
+      },
+      "seo": {
+        "title": "Lexroom.ai Case Study | Christian Varisco",
+        "description": "How I helped Lexroom.ai go from €500K pre-seed to €16M seed round in less than 2 years."
+      }
+    },
+    {
       "slug": "talentware",
       "company": "Talentware",
       "industry": "HR Tech",
       "product": "SaaS Platform",
       "website": "https://talentware.io",
-      "thumbnail": "/images/case-studies/talentware-thumb.jpg",
-      "logo": "/images/case-studies/talentware-logo.svg",
+      "thumbnail": "/images/case-studies/talentware-thumb.svg",
       "heroImage": "/images/case-studies/talentware-hero.jpg",
-      "shortDescription": "Talent management platform helping businesses effectively engage, develop, and retain talent through a skill-based approach.",
+      "shortDescription": "Talentware manages talent with skill-based AI: it maps real competencies and suggests careers and corporate successions.",
       "stats": [
-        { "value": "€800k", "label": "Pre-seed raised" },
-        { "value": "3 months", "label": "From zero to paying customers" }
+        { "value": "€1.2M", "label": "Pre-seed raised" },
+        { "value": "4 months", "label": "ISO 27001" }
       ],
       "testimonial": {
-        "quote": "The project is still ongoing and so far Christian has been very supportive! He is driving the entire Tech team towards the milestones we have and he is making sure we deliver a zero-defect product to our customers.",
+        "quote": "Christian joined when we only had an idea and a no-code prototype. In less than two years, he helped us build not only the product, but the entire technology infrastructure.",
         "author": "Giacomo Marchiori",
-        "role": "Founder @Talentware",
+        "role": "CEO & Founder, Talentware",
         "image": "/images/testimonials/giacomo.jpg",
         "rating": 5
       },
       "seo": {
         "title": "Talentware Case Study | Christian Varisco",
-        "description": "How I helped Talentware raise €800k in pre-seed funding and go from idea to paying customers in just 3 months."
+        "description": "How I helped Talentware raise €1.2M in pre-seed and achieve ISO 27001 in just 4 months."
+      }
+    },
+    {
+      "slug": "pausetiv",
+      "company": "Pausetiv",
+      "industry": "Health Tech",
+      "product": "Medical Platform",
+      "website": "https://pausetiv.com",
+      "thumbnail": "/images/case-studies/pausetiv-thumb.svg",
+      "heroImage": "/images/case-studies/pausetiv-hero.jpg",
+      "shortDescription": "Pausetiv helps women navigate menopause with a medical approach, connecting patients with healthcare professionals.",
+      "stats": [
+        { "value": "4 months", "label": "Zero to live" },
+        { "value": "B2B", "label": "First partnerships" }
+      ],
+      "testimonial": {
+        "quote": "Christian is not just a technical partner, but a true strategic partner. Beyond delivering with impeccable quality and on time, he combines technology and business aspects with transparency and exemplary team management.",
+        "author": "Clarice Pinto",
+        "role": "Founder, Pausetiv",
+        "image": "/images/testimonials/clarice.jpg",
+        "rating": 5
+      },
+      "seo": {
+        "title": "Pausetiv Case Study | Christian Varisco",
+        "description": "How I helped Pausetiv launch a professional medical platform in just 4 months."
       }
     },
     {
@@ -85,51 +134,59 @@
       "industry": "Fintech",
       "product": "Mobile App",
       "website": "https://liquinvex.com",
-      "thumbnail": "/images/case-studies/liquinvex-thumb.jpg",
-      "logo": "/images/case-studies/liquinvex-logo.svg",
+      "thumbnail": "/images/case-studies/liquinvex-thumb.svg",
       "heroImage": "/images/case-studies/liquinvex-hero.jpg",
-      "shortDescription": "Mobile app that democratizes wine investment, offering users a virtual cellar to buy, store, and manage wine investments.",
+      "shortDescription": "Liquinvex is a premium wine marketplace where you can buy rare bottles, invest in wine, and sell online.",
       "stats": [
-        { "value": "100%", "label": "User base increase" },
-        { "value": "1 week", "label": "Team assembled" }
+        { "value": "€110K", "label": "Funding raised" },
+        { "value": "1 week", "label": "Stuck to live" }
       ],
       "testimonial": {
-        "quote": "A competent, dynamic and always available person. A fractional CTO as it should be!",
+        "quote": "A competent, dynamic, and always available person. A fractional CTO as it should be!",
         "author": "Riccardo Tripodi",
-        "role": "CEO & Co-Founder Liquinvex",
+        "role": "Co-founder, Liquinvex",
         "image": "/images/testimonials/riccardo.jpg",
         "rating": 5
       },
       "seo": {
         "title": "Liquinvex Case Study | Christian Varisco",
-        "description": "How I helped Liquinvex build a top-notch team in one week and achieve 100% user base growth through rapid feature development."
+        "description": "How I helped Liquinvex unblock in 1 week and raise €110K while getting into Nana Bianca accelerator."
       }
     },
     {
-      "slug": "lexroom",
-      "company": "Lexroom.ai",
-      "industry": "Legal Tech",
-      "product": "AI Platform",
-      "website": "https://lexroom.ai",
-      "thumbnail": "/images/case-studies/lexroom-thumb.jpg",
-      "logo": "/images/case-studies/lexroom-logo.svg",
-      "heroImage": "/images/case-studies/lexroom-hero.jpg",
-      "shortDescription": "AI-powered legal research tool that quickly provides relevant legal sources and drafts opinions based on user queries.",
-      "stats": [
-        { "value": "€500k", "label": "Pre-seed raised" },
-        { "value": "2024", "label": "Successful funding round" }
-      ],
-      "testimonial": {
-        "quote": "Christian helped us a lot to draw up an initial product development roadmap and to understand how to build the tech team, identifying the necessary figures to start with limited resources.",
-        "author": "Martina Domenicali",
-        "role": "Co-founder & CSO at Lexroom.ai and Community Builder",
-        "image": "/images/testimonials/martina.jpg",
-        "rating": 5
-      },
-      "seo": {
-        "title": "Lexroom.ai Case Study | Christian Varisco",
-        "description": "How I helped Lexroom.ai secure €500k in pre-seed funding by building a strong technical foundation and talented team."
-      }
+      "slug": "triadi",
+      "company": "Triadi",
+      "thumbnail": "/images/case-studies/triadi-thumb.svg",
+      "shortDescription": "Coming soon",
+      "comingSoon": true
+    },
+    {
+      "slug": "recivu",
+      "company": "Recivu",
+      "thumbnail": "/images/case-studies/recivu-thumb.svg",
+      "shortDescription": "Coming soon",
+      "comingSoon": true
+    },
+    {
+      "slug": "istory",
+      "company": "iStory",
+      "thumbnail": "/images/case-studies/istory-thumb.svg",
+      "shortDescription": "Coming soon",
+      "comingSoon": true
+    },
+    {
+      "slug": "wedelay",
+      "company": "Wedelay",
+      "thumbnail": "/images/case-studies/wedelay-thumb.svg",
+      "shortDescription": "Coming soon",
+      "comingSoon": true
+    },
+    {
+      "slug": "tot",
+      "company": "Tot.",
+      "thumbnail": "/images/case-studies/tot-thumb.svg",
+      "shortDescription": "Coming soon",
+      "comingSoon": true
     }
   ]
 }

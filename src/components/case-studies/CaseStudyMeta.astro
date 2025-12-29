@@ -44,7 +44,7 @@ const { company, industry, product, website, stats, labels } = Astro.props;
       <!-- Stats -->
       <div class="meta-stats">
         {stats.map((stat) => (
-          <div class="stat-card">
+          <div class="stat-item">
             <span class="stat-value">{stat.value}</span>
             <span class="stat-label">{stat.label}</span>
           </div>
@@ -56,61 +56,59 @@ const { company, industry, product, website, stats, labels } = Astro.props;
 
 <style>
   .case-study-meta {
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-lg) 0;
     background-color: var(--color-background-primary);
-    border-bottom: 1px solid var(--Border-tertiary, #444444);
   }
 
   @media (min-width: 768px) {
     .case-study-meta {
-      padding: var(--spacing-lg) 0;
+      padding: var(--spacing-xl) 0;
     }
   }
 
   .meta-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
   }
 
   @media (min-width: 768px) {
     .meta-grid {
       grid-template-columns: 1fr auto;
-      align-items: start;
-      gap: var(--spacing-xl);
+      align-items: end;
+      gap: var(--spacing-2xl);
     }
   }
 
   .meta-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-xs) var(--spacing-md);
-  }
-
-  @media (min-width: 640px) {
-    .meta-info {
-      grid-template-columns: repeat(4, auto);
-      gap: var(--spacing-lg);
-    }
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
   }
 
   .meta-item {
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    gap: var(--spacing-sm);
+    align-items: baseline;
   }
 
   .meta-label {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     font-weight: 600;
-    color: var(--color-text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: var(--color-text-primary);
+    min-width: 80px;
+  }
+
+  @media (min-width: 768px) {
+    .meta-label {
+      font-size: var(--font-size-base);
+      min-width: 100px;
+    }
   }
 
   .meta-value {
     font-size: var(--font-size-sm);
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
   }
 
   @media (min-width: 768px) {
@@ -121,9 +119,8 @@ const { company, industry, product, website, stats, labels } = Astro.props;
 
   .meta-link {
     font-size: var(--font-size-sm);
-    color: var(--color-text-primary);
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    color: var(--color-text-secondary);
+    text-decoration: none;
     transition: color 0.2s ease;
   }
 
@@ -139,56 +136,45 @@ const { company, industry, product, website, stats, labels } = Astro.props;
 
   .meta-stats {
     display: flex;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xl);
   }
 
   @media (min-width: 768px) {
     .meta-stats {
-      gap: var(--spacing-md);
+      gap: var(--spacing-3xl);
     }
   }
 
-  .stat-card {
+  .stat-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacing-sm) var(--spacing-md);
-    background-color: var(--color-background-secondary);
-    border: 2px solid var(--color-accent);
-    min-width: 100px;
+    min-width: 120px;
   }
 
   @media (min-width: 768px) {
-    .stat-card {
-      padding: var(--spacing-md) var(--spacing-lg);
-      min-width: 140px;
+    .stat-item {
+      min-width: 160px;
     }
   }
 
   .stat-value {
-    font-size: var(--font-size-xl);
+    font-size: clamp(1.75rem, 5vw, 3rem);
     font-weight: 700;
     color: var(--color-accent);
     line-height: 1;
   }
 
-  @media (min-width: 768px) {
-    .stat-value {
-      font-size: var(--font-size-2xl);
-    }
-  }
-
   .stat-label {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
-    text-align: center;
-    margin-top: 4px;
+    margin-top: var(--spacing-xs);
+    max-width: 200px;
+    line-height: 1.4;
   }
 
   @media (min-width: 768px) {
     .stat-label {
-      font-size: var(--font-size-sm);
+      font-size: var(--font-size-base);
     }
   }
 </style>

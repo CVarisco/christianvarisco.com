@@ -28,19 +28,19 @@ const { data } = Astro.props;
     <!-- Text Content -->
     <div class="hero-content">
       <h1 class="hero-headline">
-        <span class="hero-headline-line">
+        <span class="hero-headline-line hero-animate hero-delay-1">
           {data.headline.line1.before}<span class="text-accent">{data.headline.line1.highlight}</span>{data.headline.line1.after}
         </span>
-        <span class="hero-headline-line">
+        <span class="hero-headline-line hero-animate hero-delay-2">
           {data.headline.line2.before}<span class="text-accent">{data.headline.line2.highlight}</span>{data.headline.line2.after}
         </span>
       </h1>
 
-      <p class="hero-subheadline">
+      <p class="hero-subheadline hero-animate hero-delay-3">
         {data.subheadline}
       </p>
 
-      <div class="hero-cta">
+      <div class="hero-cta hero-animate hero-delay-4">
         <Button
           href={data.cta.href}
           variant="primary"
@@ -57,7 +57,7 @@ const { data } = Astro.props;
     </div>
 
     <!-- Video -->
-    <div id="video" class="hero-video">
+    <div id="video" class="hero-video hero-animate hero-delay-5">
       <div class="youtube-facade" data-video-id={data.video.youtubeId}>
         <img
           src={data.video.thumbnail}

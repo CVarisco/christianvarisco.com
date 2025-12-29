@@ -2,44 +2,44 @@
 slug: lexroom
 ---
 
+## L'Azienda
+
+Lexroom è una piattaforma che usa l'intelligenza artificiale per rivoluzionare la ricerca legale. Il sistema analizza documenti, trova precedenti rilevanti e genera risposte precise in tempo reale per studi legali e professionisti.
+
 ## La Sfida
 
-Lexroom.ai aveva un obiettivo ambizioso: sfruttare la potenza dell'AI per trasformare la ricerca legale. La loro piattaforma avrebbe aiutato i professionisti legali a trovare fonti rilevanti e redigere pareri più velocemente che mai. Ma costruire strumenti legali basati su AI comporta sfide uniche.
-
-Il team affrontava diversi ostacoli:
-- **Complessità tecnica** - i sistemi AI/ML richiedono competenze specializzate
-- **Sensibilità dei dati** - i documenti legali richiedono sicurezza robusta
-- **Vincoli di risorse** - startup in fase iniziale con finanziamenti limitati
-- **Team building** - trovare ingegneri a proprio agio con carichi di lavoro AI
+La startup aveva competenze tecniche solide ma mancava di focus strategico. Gli sviluppatori stavano creando funzionalità senza una direzione chiara e rischiavano di sprecare risorse limitate. Il team desiderava "qualcuno che ci aiuti a capire su cosa concentrarsi davvero."
 
 ## Il Nostro Approccio
 
-Abbiamo sviluppato una strategia completa che affrontava sia le esigenze immediate che la scalabilità a lungo termine:
+Ho introdotto una serie di cambiamenti strutturali per dare direzione al team:
 
-### Sviluppo Strategico della Roadmap
+### Metodologia e Processo
 
-Prima di scrivere una singola riga di codice, abbiamo mappato una roadmap dettagliata di sviluppo prodotto. Questa fase di pianificazione è stata cruciale per identificare le giuste priorità tecniche ed evitare costosi cambi di rotta successivi.
+- **Metodologia Kanban strutturata** con backlog refinement settimanale
+- **Prioritization basata su impatto business vs effort tecnico**
+- **Sprint chiari** con obiettivi misurabili
 
-### Assemblaggio Team Snello
+### Decisioni Strategiche
 
-Con risorse limitate, non potevamo permetterci di assumere male. Ho aiutato a identificare i ruoli essenziali necessari per la prima fase - ingegneri che comprendessero sia lo sviluppo software tradizionale che le sfumature dei sistemi AI.
+Decisione strategica di rimandare il refactoring del backend per concentrarsi su feature richieste dai clienti. Questo ha permesso al team di mantenere il focus su ciò che generava valore immediato.
 
-### Architettura AI-Ready
+### Team Building
 
-Abbiamo progettato l'architettura del sistema pensando ai carichi di lavoro AI/ML fin dall'inizio. Questo ha significato considerare fattori come il serving dei modelli, le pipeline di dati e la capacità di iterare sui modelli ML senza interrompere l'esperienza utente.
+Recruitment di developer e product designer freelance dal mio network per accelerare lo sviluppo senza appesantire la struttura.
 
 ## I Risultati
 
-L'approccio strategico ha prodotto risultati significativi:
+La partnership ha prodotto risultati straordinari:
 
-### Round Pre-Seed di Successo
+### Crescita del Funding
 
-A gennaio 2024, Lexroom.ai ha chiuso un **round di finanziamento pre-seed da €500k**. Gli investitori erano fiduciosi sia nell'approccio tecnico che nella capacità di esecuzione del team.
+Da **€500K pre-seed** a **€16M seed round** in meno di 2 anni. Una crescita che dimostra la solidità delle fondamenta tecniche e del prodotto.
 
-### Lancio MVP Solido
+### Scaling del Team
 
-Abbiamo consegnato un MVP funzionante che dimostrava la proposta di valore principale. La piattaforma ha aiutato con successo i professionisti legali ad accelerare i loro flussi di lavoro di ricerca.
+Il team è cresciuto da **3 a 15 persone**, mantenendo la qualità e la cultura aziendale.
 
-### Fondamenta per la Crescita
+### Autonomia Operativa
 
-Oltre ai deliverable immediati, abbiamo stabilito le fondamenta tecniche e organizzative per la prossima fase di crescita. Il team è ben posizionato per scalare man mano che l'azienda si espande.
+Dopo 6 mesi, il team ha raggiunto **autonomia operativa completa**, segno di processi ben strutturati e trasferimento di competenze efficace.

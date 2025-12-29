@@ -10,14 +10,16 @@ import StarRating from '../../../components/ui/StarRating.astro';
 import { getTranslations } from '../../../i18n/utils';
 import type { Lang } from '../../../i18n';
 
-const lang: Lang = 'it';
+const lang: Lang = 'en';
 
 export async function getStaticPaths() {
-  const caseStudies = getTranslations('it', 'caseStudies');
-  return caseStudies.items.map((item) => ({
-    params: { slug: item.slug },
-    props: { caseStudy: item },
-  }));
+  const caseStudies = getTranslations('en', 'caseStudies');
+  return caseStudies.items
+    .filter((item) => !item.comingSoon)
+    .map((item) => ({
+      params: { slug: item.slug },
+      props: { caseStudy: item },
+    }));
 }
 
 const { slug } = Astro.params;
@@ -31,7 +33,7 @@ const caseStudiesData = getTranslations(lang, 'caseStudies');
 
 // Get markdown content
 const entries = await getCollection('case-studies');
-const entry = entries.find((e) => e.id === `it/${slug}.md`);
+const entry = entries.find((e) => e.id === `en/${slug}.md`);
 const { Content } = entry ? await entry.render() : { Content: null };
 ---
 
@@ -61,8 +63,7 @@ const { Content } = entry ? await entry.render() : { Content: null };
     <div class="container">
       <CaseStudyHero
         company={caseStudy.company}
-        logo={caseStudy.logo}
-        heroImage={caseStudy.heroImage}
+        thumbnail={caseStudy.thumbnail}
       />
     </div>
 
@@ -81,31 +82,31 @@ const { Content } = entry ? await entry.render() : { Content: null };
       <div class="container">
         <div class="content-wrapper">
           {Content && <Content />}
+        </div>
 
-          <!-- Testimonial -->
-          {caseStudy.testimonial && (
-            <aside class="testimonial-section">
-              <div class="testimonial-card">
-                <StarRating rating={caseStudy.testimonial.rating} />
-                <blockquote class="testimonial-quote">
-                  {caseStudy.testimonial.quote}
-                </blockquote>
-                <div class="testimonial-author">
-                  <img
-                    src={caseStudy.testimonial.image}
-                    alt={`Foto di ${caseStudy.testimonial.author}`}
-                    class="author-image"
-                    loading="lazy"
-                  />
-                  <div class="author-info">
-                    <span class="author-name">{caseStudy.testimonial.author}</span>
-                    <span class="author-role">{caseStudy.testimonial.role}</span>
-                  </div>
+        <!-- Testimonial - Full width -->
+        {caseStudy.testimonial && (
+          <aside class="testimonial-section">
+            <div class="testimonial-card">
+              <StarRating rating={caseStudy.testimonial.rating} />
+              <blockquote class="testimonial-quote">
+                {caseStudy.testimonial.quote}
+              </blockquote>
+              <div class="testimonial-author">
+                <img
+                  src={caseStudy.testimonial.image}
+                  alt={`Photo of ${caseStudy.testimonial.author}`}
+                  class="author-image"
+                  loading="lazy"
+                />
+                <div class="author-info">
+                  <span class="author-name">{caseStudy.testimonial.author}</span>
+                  <span class="author-role">{caseStudy.testimonial.role}</span>
                 </div>
               </div>
-            </aside>
-          )}
-        </div>
+            </div>
+          </aside>
+        )}
       </div>
     </article>
 
@@ -163,6 +164,7 @@ const { Content } = entry ? await entry.render() : { Content: null };
 
   .content-wrapper {
     max-width: 800px;
+    margin: 0 auto;
   }
 
   /* Markdown content styles */
@@ -232,11 +234,15 @@ const { Content } = entry ? await entry.render() : { Content: null };
     border: 1px solid var(--Border-tertiary, #444444);
   }
 
-  /* Testimonial Section */
+  /* Testimonial Section - Full width */
   .testimonial-section {
     margin-top: var(--spacing-xl);
-    padding-top: var(--spacing-lg);
-    border-top: 1px solid var(--Border-tertiary, #444444);
+  }
+
+  @media (min-width: 768px) {
+    .testimonial-section {
+      margin-top: var(--spacing-2xl);
+    }
   }
 
   .testimonial-card {
@@ -247,7 +253,7 @@ const { Content } = entry ? await entry.render() : { Content: null };
 
   @media (min-width: 768px) {
     .testimonial-card {
-      padding: var(--spacing-lg);
+      padding: var(--spacing-lg) var(--spacing-xl);
     }
   }
 

@@ -2,44 +2,42 @@
 slug: talentware
 ---
 
+## The Company
+
+Talentware is a startup that helps large companies manage talent with an AI skill-based approach. They map employees' real competencies and use AI to suggest career paths, development plans, and automatic successions. Target: Enterprises that want to retain talent and optimize performance.
+
 ## The Challenge
 
-Talentware came to me with a clear vision: revolutionize how businesses approach talent management through a skill-based methodology. However, they faced the classic startup challenge - transforming a great idea into a market-ready product while building a capable technical team from scratch.
-
-The founders had domain expertise but needed guidance on:
-- **Technical architecture** that could scale with their ambitions
-- **Team building** to assemble the right engineering talent
-- **Product development** roadmap aligned with business goals
-- **Fundraising preparation** with solid technical foundations
+Three brilliant co-founders with an MVP on no-code tools were looking for someone who could "build enterprise-ready infrastructure from day zero" and manage growing technical teams, navigating the complexities of B2B enterprise without the typical startup mistakes.
 
 ## Our Approach
 
-We started by defining a clear technical roadmap that balanced immediate needs with long-term scalability. The approach focused on three pillars:
+I adopted a **smart compromise**: moderate speed + enterprise quality from day one.
 
-### Building the Right Team
+### Architectural Strategy
 
-Rather than rushing to hire, we carefully identified the key roles needed for the initial phase. This meant finding engineers who could wear multiple hats while maintaining high code quality standards.
+- **Think about ISO 27001 certification from day zero** - not as an afterthought
+- **Set up single-tenant architecture** for enterprise clients
+- **Infrastructure as Code from the first commit** - solid foundations from the start
 
-### Agile Development Process
+### Team Building
 
-We implemented a lean development methodology that allowed for rapid iteration based on early customer feedback. This approach helped us validate assumptions quickly and adjust course when needed.
-
-### Technical Excellence
-
-From day one, we prioritized clean architecture and robust engineering practices. This investment in quality paid dividends when it came time to demonstrate our technical capabilities to investors.
+Hybrid approach: external developers for initial speed + structured recruitment to build the internal team over time.
 
 ## The Results
 
-The partnership delivered exceptional outcomes across multiple dimensions:
+### Team Scaling
 
-### Rapid Time-to-Market
+From 3 founders + Fractional CTO to a **tech team of 15 people** in less than 2 years.
 
-In just three months, we went from concept to a working product with paying customers. This speed was crucial for building momentum and demonstrating traction to investors.
+### Fundraising
 
-### Successful Fundraising
+**€1.2M pre-seed round** thanks to solid technical foundations and an enterprise-ready product.
 
-The solid technical foundation and clear roadmap helped Talentware secure **€800k in pre-seed funding**. Investors were impressed by both the product quality and the team's execution capability.
+### Accelerated Certification
 
-### Sustainable Growth
+**ISO 27001 in 4 months** (vs standard 12-24 months) - possible thanks to early planning.
 
-Beyond the initial launch, we established processes and practices that continue to serve the company well. The team I helped build is now driving the product forward independently.
+### Successful Transition
+
+Transition to **internal CTO completed with zero interruptions**. Team 80% autonomous, a sign of effective processes and documentation.

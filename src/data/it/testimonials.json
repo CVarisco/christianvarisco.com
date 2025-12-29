@@ -2,18 +2,32 @@
   "title": "Testimonianze",
   "items": [
     {
-      "quote": "Christian ci ha aiutato molto a stilare una roadmap iniziale di sviluppo prodotto e a capire come costruire il team tech, identificando le figure necessarie per iniziare con risorse limitate.",
+      "quote": "Ho lavorato con Christian in passato e ho particolarmente apprezzato la sua chiarezza e capacità di collegare le esigenze di business con gli aspetti tecnici. Lavora in modo costante ed efficiente per trovare soluzioni efficaci.",
+      "author": "Bruno Reggiani",
+      "role": "COO & Co Founder at Tot",
+      "image": "/images/testimonials/bruno.png",
+      "rating": 5
+    },
+    {
+      "quote": "Christian ci ha aiutato molto a definire una roadmap iniziale di sviluppo prodotto e a capire come costruire il team tech, identificando le figure necessarie per iniziare con risorse limitate.",
       "author": "Martina Domenicali",
-      "role": "Co-founder & CSO at Lexroom.ai and Community Builder",
+      "role": "CSO & Co-founder at Lexroom.ai",
       "image": "/images/testimonials/martina.jpg",
       "rating": 5
     },
     {
-      "quote": "Il progetto è ancora in corso e finora Christian è stato molto di supporto! Sta guidando l'intero team Tech verso i milestone che abbiamo e si sta assicurando che consegniamo un prodotto a zero difetti ai nostri clienti.",
-      "author": "Giacomo Marchiori",
-      "role": "Founder @Talentware",
-      "image": "/images/testimonials/giacomo.jpg",
+      "quote": "Christian non è solo un partner tecnico, ma un vero partner strategico. Oltre a consegnare qualità impeccabile e puntuale, combina tecnologia e aspetti di business con grande trasparenza e gestione esemplare del team. Sa come costruire team con eccellenza tecnica e valori condivisi forti, portando quel \"qualcosa in più\" al progetto.",
+      "author": "Clarice Pinto",
+      "role": "CEO & Founder at Pausetiv",
+      "image": "/images/testimonials/clarice.png",
       "rating": 5
+    },
+    {
+      "quote": "Il progetto è ancora in corso e finora Christian è stato molto di supporto! Sta guidando l'intero team Tech verso i milestone che abbiamo e si assicura che consegniamo un prodotto a zero difetti ai nostri clienti.",
+      "author": "Giacomo Marchiori",
+      "role": "CEO & Founder at Talentware",
+      "image": "/images/testimonials/giacomo.jpg",
+      "rating": 4.5
     },
     {
       "quote": "Una persona competente, dinamica e sempre disponibile. Un fractional CTO come dovrebbe essere!",
@@ -23,29 +37,43 @@
       "rating": 5
     },
     {
-      "quote": "Christian ha dimostrato una straordinaria capacità nel guidare il team tecnico di Recivu. La sua capacità di comprendere e risolvere problemi complessi, scomponendoli in parti piccole, è stata fondamentale.",
-      "author": "Dariush Haghighi",
+      "quote": "Qualità, Affidabilità, Velocità, Professionalità. Come fractional CTO, Christian si è integrato rapidamente nelle dinamiche del nostro team. Grazie alla sua gestione impeccabile di progetti complessi e al suo supporto oltre le singole iniziative, Christian ha contribuito a un significativo salto di qualità nelle nostre soluzioni digitali, mantenendo costantemente alti standard di precisione e puntualità. La sua presenza ha fatto davvero la differenza, e siamo estremamente soddisfatti del lavoro che stiamo facendo insieme.",
+      "author": "Gabriele Guzzetti",
+      "role": "Managing Director at Triadi",
+      "image": "/images/testimonials/gabriele.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "Christian ci ha dato consigli molto professionali nelle fasi iniziali del nostro MVP. Come fractional CTO, può essere una risorsa per qualsiasi startup early-stage che costruisce tech per la prima volta!",
+      "author": "Adriana Crovetto",
+      "role": "CEO & Co-founder at Offmap",
+      "image": "/images/testimonials/adriana.png",
+      "rating": 5
+    },
+    {
+      "quote": "Christian ha dimostrato straordinaria capacità nel guidare il team tecnico di Recivu. La sua abilità di comprendere e risolvere problemi complessi, scomponendoli in parti piccole, è stata fondamentale, portando alla consegna del progetto in tempo. Inoltre, la sua attitudine a collaborare e guidarci nelle decisioni di sviluppo ci ha permesso di trovare sempre il giusto focus.",
+      "author": "Dariush Haghighi Tajvar",
       "role": "CEO & Founder at Recivu",
       "image": "/images/testimonials/dariush.jpg",
       "rating": 5
     },
     {
-      "quote": "Lavorare con Christian è stato un punto di svolta per la nostra startup. Ha portato chiarezza alla nostra roadmap tecnica e ci ha aiutato a dare priorità a ciò che contava davvero per il lancio del nostro MVP.",
-      "author": "Marco Rossi",
-      "role": "Co-founder & CEO at TechStartup",
+      "quote": "Christian porta a termine le cose senza fronzoli, aiuta a verificare che i soldi non vengano spesi inutilmente.",
+      "author": "Marco Cipriani",
+      "role": "Co-Founder of Ringas & Wedelay | biomethane | fintech | entrepreneur",
       "image": "/images/testimonials/marco.jpg",
       "rating": 5
     },
     {
-      "quote": "L'approccio strategico di Christian alle decisioni tecnologiche ci ha fatto risparmiare mesi di tempo di sviluppo. La sua esperienza con le startup è inestimabile.",
-      "author": "Elena Bianchi",
-      "role": "Founder at InnovateLab",
-      "image": "/images/testimonials/elena.jpg",
+      "quote": "Lavorare con Christian e il suo team è stata un'esperienza davvero preziosa. La loro visione e contributo sono stati cruciali nell'allineare l'azienda con un approccio tecnico più robusto e rigoroso, mantenendo chiarezza, collaborazione e focus sull'impatto reale.",
+      "author": "Denis Stets",
+      "role": "Tech Lead @Cassandra",
+      "image": "/images/testimonials/denis.png",
       "rating": 5
     }
   ],
   "cta": {
-    "label": "Mostra altro",
-    "href": "https://www.linkedin.com/in/christianvarisco/details/recommendations/"
+    "label": "Mostra di più",
+    "labelExpanded": "Mostra meno"
   }
 }

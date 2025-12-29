@@ -2,44 +2,50 @@
 slug: liquinvex
 ---
 
+## L'Azienda
+
+Liquinvex è un marketplace di vini pregiati dove gli utenti possono comprare bottiglie rare, investire nel vino e vendere attraverso la piattaforma. Il target sono investitori che vogliono diversificare i portafogli d'investimento con posizioni in vini pregiati.
+
 ## La Sfida
 
-Liquinvex si è proposta di democratizzare l'investimento in vini pregiati - un mercato tradizionalmente accessibile solo a collezionisti facoltosi con capacità di stoccaggio fisico. Il loro concetto di app mobile avrebbe creato cantine virtuali, ma avevano bisogno di leadership tecnica per trasformare questa visione in realtà.
+Paradossalmente, Liquinvex possedeva un'applicazione funzionante con utenti iOS attivi e richieste concrete da utenti Android, ma non riusciva a pubblicare sull'app store.
 
-Le sfide principali includevano:
-- **Velocità di lancio** - il settore degli investimenti vinicoli si stava scaldando
-- **Assemblaggio del team** - necessità di sviluppatori mobile qualificati rapidamente
-- **Architettura tecnica** - costruire per scalare fin dal primo giorno
-- **Esperienza utente** - rendere l'investimento vinicolo accessibile ai neofiti
+Una collaborazione precedente fallita aveva lasciato i due founder (privi di competenze tecniche) bloccati con un prodotto quasi pronto al lancio. Dopo due mesi di stallo, gli investitori erano in attesa e i clienti chiedevano la versione Android.
 
 ## Il Nostro Approccio
 
-Data la competitività del mercato, abbiamo adottato una strategia di sviluppo aggressiva ma sostenibile:
+### Sblocco Immediato
 
-### Costruzione del Team Fulminea
+Ho proposto uno sblocco immediato: **sviluppo gratuito per la prima settimana**, successivamente valutazione della collaborazione. Questo ha permesso di costruire fiducia e dimostrare valore rapidamente.
 
-In una sola settimana, abbiamo assemblato un team di sviluppo di prima classe. Non si trattava di tagliare gli angoli - si trattava di sfruttare la mia rete ed esperienza per identificare rapidamente il talento giusto.
+### Team Assembly
 
-### Architettura Mobile-First
+Ho coordinato quattro professionisti freelance fidati:
+- **Backend developer**
+- **Frontend developer**
+- **Product manager**
+- **Designer**
 
-Abbiamo costruito l'app con una mentalità mobile-first, garantendo un'esperienza fluida per gli utenti che gestiscono i loro investimenti vinicoli in movimento. L'architettura supportava aggiornamenti del portfolio in tempo reale ed elaborazione sicura delle transazioni.
+### Metodologia
 
-### Rilascio Continuo
-
-Abbiamo stabilito una cadenza di rilascio settimanale, introducendo costantemente nuove funzionalità per gli utenti. Questa iterazione rapida ci ha permesso di rispondere velocemente ai feedback degli utenti e alle opportunità di mercato.
+- **Metodologia MoSCoW** con Kanban board per prioritizzare efficacemente
+- **Stack tecnologico**: React Native (mobile), Laravel (backend), PostgreSQL (database)
+- **Focus su esecuzione rapida** piuttosto che perfezione tecnica
 
 ## I Risultati
 
-I risultati hanno superato le aspettative su più fronti:
+### Sblocco Rapido
 
-### Accettazione nell'Acceleratore
+Da bloccati a **live in 1 settimana** - un turnaround che ha sbloccato l'intera azienda.
 
-Liquinvex è stata rapidamente accettata nel **programma acceleratore Nana Bianca**, validando sia il concetto di business che l'esecuzione tecnica.
+### Fundraising
 
-### Crescita Esplosiva degli Utenti
+Raccolta di **€110.000** dopo 6 mesi dalla ripresa dello sviluppo.
 
-I nostri rilasci settimanali di funzionalità e il focus sull'esperienza utente hanno guidato un **aumento del 100% della base utenti**. Gli utenti hanno adorato l'interfaccia intuitiva e le ricche funzionalità.
+### Riconoscimento
 
-### Velocità Sostenibile
+**Ammissione a Nana Bianca** (uno degli acceleratori più competitivi d'Italia) dopo 6 mesi.
 
-Il team e i processi che abbiamo stabilito continuano a generare valore. Nuove funzionalità vengono rilasciate settimanalmente, e il codebase rimane manutenibile ed estensibile.
+### Partnership Duratura
+
+**2 anni di collaborazione stabile**, durante i quali abbiamo implementato: sistema di acquisto revisionato, riscatto accelerato per bottiglie premium, marketplace completo con funzionalità di vendita.

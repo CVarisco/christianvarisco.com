@@ -64,9 +64,9 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       <!-- Case Study: Talentware (bottom-left) -->
       <div class="bento-item case-talentware scroll-reveal stagger-2">
         <div class="case-card">
-          <h3 class="case-logo talentware-logo">
-            <span class="logo-icon">𝕿</span>alentware
-          </h3>
+          <div class="case-logo">
+            <img src="/images/case-studies/talentware-logo.svg" alt="Talentware" class="logo-img" />
+          </div>
           <p class="case-description">{data.caseStudies.talentware.description}</p>
           <ul class="achievements-list">
             {data.caseStudies.talentware.achievements.map((achievement) => (
@@ -84,7 +84,9 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       <!-- Case Study: Liquinvex (center, tall) -->
       <div class="bento-item case-liquinvex scroll-reveal stagger-3">
         <div class="case-card">
-          <h3 class="case-logo liquinvex-logo">liquinve<span class="logo-x">x</span></h3>
+          <div class="case-logo">
+            <img src="/images/case-studies/liquinvex-logo.svg" alt="Liquinvex" class="logo-img" />
+          </div>
           <p class="case-description">{data.caseStudies.liquinvex.description}</p>
           <ul class="achievements-list">
             {data.caseStudies.liquinvex.achievements.map((achievement) => (
@@ -110,7 +112,9 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       <!-- Case Study: Lexroom (bottom-right) -->
       <div class="bento-item case-lexroom scroll-reveal stagger-4">
         <div class="case-card">
-          <h3 class="case-logo lexroom-logo">LEXR<span class="logo-o">○</span><span class="logo-o">○</span>M.AI</h3>
+          <div class="case-logo">
+            <img src="/images/case-studies/lexroom-logo.svg" alt="Lexroom.ai" class="logo-img" />
+          </div>
           <p class="case-description">{data.caseStudies.lexroom.description}</p>
           <ul class="achievements-list">
             {data.caseStudies.lexroom.achievements.map((achievement) => (
@@ -285,38 +289,13 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
   /* Bento grid scroll animation - handled by .scroll-reveal class in global.css */
 
   .case-logo {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--color-text-primary);
     margin-bottom: var(--spacing-sm);
-    letter-spacing: -0.02em;
+    width: 100%;
   }
 
-  @media (min-width: 768px) {
-    .case-logo {
-      font-size: var(--font-size-2xl);
-    }
-  }
-
-  .talentware-logo .logo-icon {
-    font-family: serif;
-    font-style: italic;
-  }
-
-  .liquinvex-logo {
-    font-weight: 400;
-  }
-
-  .liquinvex-logo .logo-x {
-    color: var(--color-accent);
-  }
-
-  .lexroom-logo {
-    letter-spacing: 0.05em;
-  }
-
-  .lexroom-logo .logo-o {
-    color: var(--color-accent);
+  .case-logo .logo-img {
+    width: 100%;
+    height: auto;
   }
 
   .case-description {

@@ -11,12 +11,49 @@ interface Props {
     }>;
     cta: {
       label: string;
-      href: string;
+      labelExpanded: string;
     };
   };
 }
 
 const { data } = Astro.props;
+const initialCount = 6;
+
+function generateStars(rating: number, index: number): string {
+  const starPath = 'M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z';
+  const accentColor = '#CBFC01';
+  let html = '';
+  for (let star = 1; star <= 5; star++) {
+    const isHalf = rating === star - 0.5;
+    const isFilled = star <= rating;
+    const isEmpty = star > rating && !isHalf;
+
+    if (isHalf) {
+      // Half star: filled left half, outline right half
+      html += `<svg class="star" viewBox="0 0 20 20" aria-hidden="true" width="24" height="24">
+        <defs>
+          <linearGradient id="half-${index}-${star}">
+            <stop offset="50%" stop-color="${accentColor}" />
+            <stop offset="50%" stop-color="transparent" />
+          </linearGradient>
+        </defs>
+        <path d="${starPath}" fill="url(#half-${index}-${star})" />
+        <path d="${starPath}" fill="none" stroke="${accentColor}" stroke-width="1" />
+      </svg>`;
+    } else if (isEmpty) {
+      // Empty star: just outline
+      html += `<svg class="star empty" viewBox="0 0 20 20" aria-hidden="true" width="24" height="24">
+        <path d="${starPath}" fill="none" stroke="${accentColor}" stroke-width="1" />
+      </svg>`;
+    } else {
+      // Filled star: solid fill
+      html += `<svg class="star" viewBox="0 0 20 20" aria-hidden="true" width="24" height="24">
+        <path d="${starPath}" fill="${accentColor}" />
+      </svg>`;
+    }
+  }
+  return html;
+}
 ---
 
 <section id="testimonials" class="testimonials-section" data-section="testimonials">
@@ -27,17 +64,14 @@ const { data } = Astro.props;
     </div>
 
     <!-- Testimonials Grid -->
-    <div class="testimonials-grid">
+    <div class="testimonials-grid" id="testimonials-grid">
       {data.items.map((testimonial, index) => (
-        <article class={`testimonial-card scroll-reveal stagger-${(index % 3) + 1}`}>
+        <article
+          class={`testimonial-card scroll-reveal stagger-${(index % 3) + 1} ${index >= initialCount ? 'hidden-card' : ''}`}
+          data-index={index}
+        >
           <!-- Stars -->
-          <div class="stars">
-            {[1, 2, 3, 4, 5].map(() => (
-              <svg class="star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-            ))}
-          </div>
+          <div class="stars" set:html={generateStars(testimonial.rating, index)} />
 
           <!-- Quote -->
           <blockquote class="quote">
@@ -62,16 +96,19 @@ const { data } = Astro.props;
     </div>
 
     <!-- CTA -->
-    <div class="testimonials-cta">
-      <a
-        href={data.cta.href}
-        class="cta-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {data.cta.label}
-      </a>
-    </div>
+    {data.items.length > initialCount && (
+      <div class="testimonials-cta">
+        <button
+          type="button"
+          class="cta-button"
+          id="testimonials-toggle"
+          data-label={data.cta.label}
+          data-label-expanded={data.cta.labelExpanded}
+        >
+          {data.cta.label}
+        </button>
+      </div>
+    )}
   </div>
 </section>
 
@@ -129,7 +166,7 @@ const { data } = Astro.props;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--Border-tertiary, #444444);
-    transition: transform 0.2s ease, border-color 0.2s ease, opacity 0.6s ease;
+    transition: transform 0.2s ease, border-color 0.2s ease, opacity 0.4s ease, max-height 0.4s ease;
   }
 
   .testimonial-card:hover {
@@ -137,18 +174,25 @@ const { data } = Astro.props;
     border-color: var(--color-accent);
   }
 
+  .testimonial-card.hidden-card {
+    display: none;
+  }
+
+  .testimonials-grid.expanded .testimonial-card.hidden-card {
+    display: flex;
+  }
+
   /* Scroll animation - handled by .scroll-reveal class in global.css */
 
   .stars {
     display: flex;
-    gap: 2px;
+    gap: 4px;
     margin-bottom: var(--spacing-sm);
   }
 
   .star {
-    width: 20px;
-    height: 20px;
-    color: var(--color-accent);
+    width: 24px;
+    height: 24px;
   }
 
   .quote {
@@ -169,6 +213,7 @@ const { data } = Astro.props;
     display: flex;
     align-items: center;
     gap: var(--spacing-xxs);
+    margin-top: auto;
   }
 
   .author-image {
@@ -177,6 +222,7 @@ const { data } = Astro.props;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+    border: 2px solid var(--color-accent);
   }
 
   .author-info {
@@ -224,16 +270,37 @@ const { data } = Astro.props;
     }
   }
 
-  .cta-link {
+  .cta-button {
     font-size: var(--font-size-base);
     font-weight: 500;
     color: var(--color-text-primary);
+    background: transparent;
+    border: none;
     text-decoration: underline;
     text-underline-offset: 4px;
+    cursor: pointer;
     transition: color 0.2s ease;
+    padding: 0;
   }
 
-  .cta-link:hover {
+  .cta-button:hover {
     color: var(--color-accent);
   }
 </style>
+
+<script>
+  const toggleButton = document.getElementById('testimonials-toggle');
+  const grid = document.getElementById('testimonials-grid');
+
+  if (toggleButton && grid) {
+    let isExpanded = false;
+    const labelCollapsed = toggleButton.dataset.label;
+    const labelExpanded = toggleButton.dataset.labelExpanded;
+
+    toggleButton.addEventListener('click', () => {
+      isExpanded = !isExpanded;
+      grid.classList.toggle('expanded', isExpanded);
+      toggleButton.textContent = isExpanded ? labelExpanded : labelCollapsed;
+    });
+  }
+</script>

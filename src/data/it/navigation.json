@@ -1,10 +1,10 @@
 {
   "links": [
-    { "label": "Servizi", "href": "#services" },
-    { "label": "Case Study", "href": "/it/case-studies/" },
-    { "label": "Testimonianze", "href": "#testimonials" },
-    { "label": "Processo", "href": "#steps" },
-    { "label": "FAQ", "href": "#faq" }
+    { "label": "Sfide", "href": "/#challenges" },
+    { "label": "Case Study", "href": "/case-studies/" },
+    { "label": "Testimonianze", "href": "/#testimonials" },
+    { "label": "Processo", "href": "/#steps" },
+    { "label": "FAQ", "href": "/#faq" }
   ],
   "cta": {
     "label": "Contattami",

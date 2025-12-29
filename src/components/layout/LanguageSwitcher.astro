@@ -11,16 +11,14 @@ const { currentLang, currentPath } = Astro.props;
 const alternatePaths = getAlternatePath(currentLang, currentPath);
 ---
 
-<nav class="flex items-center gap-1" aria-label="Language selection">
+<nav class="language-switcher" aria-label="Language selection">
   {Object.entries(languages).map(([code, name]) => (
     <a
       href={alternatePaths[code as Lang]}
       hreflang={code}
       class:list={[
-        'px-2 py-1 text-sm font-medium rounded transition-colors',
-        currentLang === code
-          ? 'bg-accent text-black'
-          : 'text-text-secondary hover:text-white'
+        'lang-link',
+        currentLang === code ? 'active' : ''
       ]}
       aria-current={currentLang === code ? 'page' : undefined}
     >
@@ -28,3 +26,33 @@ const alternatePaths = getAlternatePath(currentLang, currentPath);
     </a>
   ))}
 </nav>
+
+<style>
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .lang-link {
+    padding: 4px 8px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    color: var(--color-text-secondary);
+  }
+
+  .lang-link:hover {
+    color: var(--color-text-primary);
+  }
+
+  .lang-link.active {
+    background-color: var(--color-accent);
+    color: var(--color-text-alternate);
+  }
+
+  .lang-link.active:hover {
+    color: var(--color-text-alternate);
+  }
+</style>
