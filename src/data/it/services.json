@@ -1,0 +1,27 @@
+{
+  "title": "Trasforma la tua startup con una leadership tecnologica strategica",
+  "subtitle": "Risolvo problemi in tre aree chiave",
+  "items": [
+    {
+      "id": "product",
+      "icon": "product",
+      "title": "Prodotto",
+      "problem": "Le tue tempistiche di sviluppo stanno slittando? Ti senti sopraffatto dalle decisioni tecniche?",
+      "solution": "Ti aiuto a definire quali funzionalità devono essere sviluppate e quando. Creando una roadmap chiara dall'idea al prodotto pronto per il mercato."
+    },
+    {
+      "id": "tech",
+      "icon": "tech",
+      "title": "Tech",
+      "problem": "Fai fatica a scegliere lo stack tecnologico giusto? Il debito tecnico ti sta rallentando?",
+      "solution": "Guido le decisioni su quale tecnologia usare, come implementarla e quando rilasciarla. Costruendo sistemi scalabili che crescono con il tuo business."
+    },
+    {
+      "id": "team",
+      "icon": "team",
+      "title": "Team",
+      "problem": "Hai difficoltà a trovare e trattenere talenti tecnici? Il tuo team manca di direzione?",
+      "solution": "Aiuto a trovare e guidare le migliori persone per lavorare nella tua startup, che siano freelancer o parte di un team interno."
+    }
+  ]
+}

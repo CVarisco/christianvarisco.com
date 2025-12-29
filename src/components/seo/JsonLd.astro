@@ -1,0 +1,127 @@
+---
+import type { Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+  faqItems?: Array<{ question: string; answer: string }>;
+  services?: Array<{ title: string; solution: string }>;
+}
+
+const { lang, faqItems = [], services = [] } = Astro.props;
+
+const siteUrl = 'https://christianvarisco.com';
+
+// Person Schema
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${siteUrl}/#person`,
+  "name": "Christian Varisco",
+  "jobTitle": "Fractional CTO",
+  "description": lang === 'en'
+    ? "Fractional CTO helping early stage startups through tech challenges with a decade of experience"
+    : "Fractional CTO che aiuta le startup in fase iniziale con le sfide tecnologiche con un decennio di esperienza",
+  "url": siteUrl,
+  "image": `${siteUrl}/images/brand/christian-varisco.jpg`,
+  "sameAs": [
+    "https://www.linkedin.com/in/christianvarisco/",
+    "https://twitter.com/ChriVarisco",
+    "https://github.com/CVarisco",
+    "https://www.youtube.com/@christianvarisco",
+    "https://www.twitch.tv/christian_varisco"
+  ],
+  "knowsAbout": [
+    "Startup Development",
+    "Technical Leadership",
+    "Product Management",
+    "Team Building",
+    "Software Architecture",
+    "MVP Development",
+    "Technology Strategy",
+    "Agile Methodologies"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Christian Varisco Consulting"
+  },
+  "nationality": {
+    "@type": "Country",
+    "name": "Italy"
+  }
+};
+
+// Organization Schema
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": `${siteUrl}/#organization`,
+  "name": "Christian Varisco - Fractional CTO Services",
+  "url": siteUrl,
+  "logo": `${siteUrl}/images/brand/logo.svg`,
+  "description": lang === 'en'
+    ? "Fractional CTO services for early-stage startups in Italy and Europe"
+    : "Servizi di Fractional CTO per startup in fase iniziale in Italia ed Europa",
+  "areaServed": ["Italy", "Europe"],
+  "priceRange": "$$",
+  "founder": { "@id": `${siteUrl}/#person` },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "url": "https://cal.com/christian-varisco/discovery-call",
+    "contactType": "customer service",
+    "availableLanguage": ["English", "Italian"]
+  }
+};
+
+// FAQ Schema
+const faqSchema = faqItems.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map(item => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
+} : null;
+
+// Service Schemas
+const serviceSchemas = services.map(service => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": service.title,
+  "provider": { "@id": `${siteUrl}/#person` },
+  "description": service.solution,
+  "areaServed": "Europe"
+}));
+
+// WebPage Schema
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": lang === 'en'
+    ? "Christian Varisco | Fractional CTO | Italy"
+    : "Christian Varisco | Fractional CTO | Italia",
+  "description": lang === 'en'
+    ? "I help early stage startups through their tech challenges"
+    : "Aiuto le startup in fase iniziale ad affrontare le loro sfide tecnologiche",
+  "url": lang === 'en' ? siteUrl : `${siteUrl}/it`,
+  "inLanguage": lang,
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": siteUrl,
+    "name": "Christian Varisco"
+  },
+  "about": { "@id": `${siteUrl}/#person` },
+  "mainEntity": { "@id": `${siteUrl}/#person` }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+{serviceSchemas.map(schema => (
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+))}

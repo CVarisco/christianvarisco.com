@@ -1,0 +1,85 @@
+{
+  "headline": {
+    "before": "Lavora con me per ",
+    "highlight": "ottenere risultati"
+  },
+  "stats": {
+    "startups": {
+      "value": "000",
+      "label": "Startup con cui ho collaborato"
+    },
+    "leads": {
+      "value": "€ 00000",
+      "label": "Lead generati"
+    },
+    "funds": {
+      "value": "€ 00000",
+      "label": "Totale fondi pre-seed"
+    }
+  },
+  "caseStudies": {
+    "talentware": {
+      "name": "Talentware",
+      "description": "Talentware è la piattaforma di talent management progettata per aiutare le aziende a coinvolgere, sviluppare e trattenere i talenti attraverso un approccio basato sulle competenze.",
+      "achievements": [
+        {
+          "text": "Assemblato un team robusto, ",
+          "highlight": "garantendo agilità e innovazione."
+        },
+        {
+          "text": "In soli tre mesi, abbiamo già acquisito clienti e ottenuto ",
+          "highlight": "€800k in pre-seed",
+          "textAfter": "."
+        },
+        {
+          "text": "Formulata una strategia di prodotto e ",
+          "highlight": "roadmap tecnica",
+          "textAfter": ", mirando a obiettivi a breve-medio termine."
+        }
+      ]
+    },
+    "liquinvex": {
+      "name": "Liquinvex",
+      "description": "Liquinvex è un'app mobile che democratizza l'investimento in vini pregiati, offrendo agli utenti una cantina virtuale per acquistare, conservare e gestire investimenti vinicoli senza i problemi dello stoccaggio fisico.",
+      "achievements": [
+        {
+          "text": "Costruito un team di prima classe ",
+          "highlight": "in una sola settimana."
+        },
+        {
+          "text": "Liquinvex è entrato rapidamente nel ",
+          "highlight": "programma acceleratore Nana Bianca",
+          "textAfter": ", dimostrando quanto velocemente stanno crescendo!"
+        },
+        {
+          "text": "Nuove funzionalità dell'app su base settimanale e la base utenti ha visto un ",
+          "highlight": "aumento del 100%."
+        }
+      ]
+    },
+    "lexroom": {
+      "name": "Lexroom.ai",
+      "description": "Lexroom.ai è uno strumento di ricerca legale basato su AI che fornisce rapidamente fonti legali rilevanti e redige pareri basati sulle query degli utenti.",
+      "achievements": [
+        {
+          "text": "Assemblato un ",
+          "highlight": "team talentuoso rapidamente",
+          "textAfter": ", preparando il terreno per progressi rapidi."
+        },
+        {
+          "text": "Traguardi significativi raggiunti presto, incluso un ",
+          "highlight": "round pre-seed da €500k",
+          "textAfter": " a gennaio 2024."
+        },
+        {
+          "text": "Guidato lo sviluppo dell'MVP, preparando per la ",
+          "highlight": "crescita futura."
+        }
+      ]
+    }
+  },
+  "cta": {
+    "label": "Vedi le mie altre esperienze",
+    "href": "https://www.linkedin.com/in/christianvarisco/"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "headline": {
+    "before": "From where you are to ",
+    "highlight": "where you want to be"
+  },
+  "subheadline": "Whether you need an advisor, a hands-on CTO, or strategic consulting — I adapt to your stage and needs.",
+  "stages": [
+    {
+      "time": "Week 1",
+      "title": "Discovery",
+      "description": "Understand your challenges, team, and goals",
+      "role": "Advisor"
+    },
+    {
+      "time": "Month 1",
+      "title": "Foundations",
+      "description": "Define strategy, tech roadmap, and team structure",
+      "role": "Consultant"
+    },
+    {
+      "time": "Month 2-3",
+      "title": "Execution",
+      "description": "Build, launch, and iterate with expert guidance",
+      "role": "Fractional CTO"
+    },
+    {
+      "time": "Month 3+",
+      "title": "Scale",
+      "description": "Consolidate fundamentals and prepare for growth",
+      "role": "Advisor / CTO"
+    }
+  ],
+  "cta": {
+    "label": "Start your journey",
+    "href": "https://cal.com/christian-varisco/discovery-call"
+  }
+}

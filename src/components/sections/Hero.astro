@@ -1,0 +1,229 @@
+---
+import Button from '../ui/Button.astro';
+
+interface Props {
+  data: {
+    headline: {
+      line1: { before: string; highlight: string; after: string };
+      line2: { before: string; highlight: string; after: string };
+    };
+    subheadline: string;
+    cta: {
+      label: string;
+      href: string;
+    };
+    video: {
+      youtubeId: string;
+      thumbnail: string;
+      alt: string;
+    };
+  };
+}
+
+const { data } = Astro.props;
+---
+
+<section class="hero-section" data-section="hero">
+  <div class="container">
+    <!-- Text Content -->
+    <div class="hero-content">
+      <h1 class="hero-headline">
+        <span class="hero-headline-line">
+          {data.headline.line1.before}<span class="text-accent">{data.headline.line1.highlight}</span>{data.headline.line1.after}
+        </span>
+        <span class="hero-headline-line">
+          {data.headline.line2.before}<span class="text-accent">{data.headline.line2.highlight}</span>{data.headline.line2.after}
+        </span>
+      </h1>
+
+      <p class="hero-subheadline">
+        {data.subheadline}
+      </p>
+
+      <div class="hero-cta">
+        <Button
+          href={data.cta.href}
+          variant="primary"
+          size="lg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {data.cta.label}
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </Button>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <div id="video" class="hero-video">
+      <div class="youtube-facade" data-video-id={data.video.youtubeId}>
+        <img
+          src={data.video.thumbnail}
+          alt={data.video.alt}
+          class="video-thumbnail"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="video-overlay">
+          <button class="play-button" aria-label="Play video">
+            <svg class="play-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .hero-section {
+      padding-top: var(--spacing-3xl);
+      padding-bottom: var(--spacing-3xl);
+    }
+  }
+
+  .hero-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hero-headline {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .hero-headline-line {
+    display: block;
+  }
+
+  .hero-subheadline {
+    font-size: var(--font-size-md);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto var(--spacing-md);
+  }
+
+  @media (min-width: 768px) {
+    .hero-subheadline {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .hero-cta {
+      margin-bottom: var(--spacing-2xl);
+    }
+  }
+
+  .hero-video {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .youtube-facade {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background-color: var(--color-background-secondary);
+    cursor: pointer;
+    border: 4px solid #333;
+  }
+
+  .video-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease;
+  }
+
+  .youtube-facade:hover .video-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .play-button {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  @media (min-width: 768px) {
+    .play-button {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .youtube-facade:hover .play-button {
+    transform: scale(1.1);
+    background-color: #fff;
+  }
+
+  .play-icon {
+    width: 28px;
+    height: 28px;
+    margin-left: 4px;
+  }
+
+  @media (min-width: 768px) {
+    .play-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.youtube-facade').forEach(facade => {
+    facade.addEventListener('click', () => {
+      const videoId = facade.getAttribute('data-video-id');
+      if (videoId) {
+        facade.innerHTML = `
+          <iframe
+            src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0"
+            class="w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        `;
+      }
+    });
+  });
+</script>

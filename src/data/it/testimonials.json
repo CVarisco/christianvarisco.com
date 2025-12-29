@@ -1,0 +1,51 @@
+{
+  "title": "Testimonianze",
+  "items": [
+    {
+      "quote": "Christian ci ha aiutato molto a stilare una roadmap iniziale di sviluppo prodotto e a capire come costruire il team tech, identificando le figure necessarie per iniziare con risorse limitate.",
+      "author": "Martina Domenicali",
+      "role": "Co-founder & CSO at Lexroom.ai and Community Builder",
+      "image": "/images/testimonials/martina.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "Il progetto è ancora in corso e finora Christian è stato molto di supporto! Sta guidando l'intero team Tech verso i milestone che abbiamo e si sta assicurando che consegniamo un prodotto a zero difetti ai nostri clienti.",
+      "author": "Giacomo Marchiori",
+      "role": "Founder @Talentware",
+      "image": "/images/testimonials/giacomo.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "Una persona competente, dinamica e sempre disponibile. Un fractional CTO come dovrebbe essere!",
+      "author": "Riccardo Tripodi",
+      "role": "CEO & Co-Founder Liquinvex",
+      "image": "/images/testimonials/riccardo.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "Christian ha dimostrato una straordinaria capacità nel guidare il team tecnico di Recivu. La sua capacità di comprendere e risolvere problemi complessi, scomponendoli in parti piccole, è stata fondamentale.",
+      "author": "Dariush Haghighi",
+      "role": "CEO & Founder at Recivu",
+      "image": "/images/testimonials/dariush.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "Lavorare con Christian è stato un punto di svolta per la nostra startup. Ha portato chiarezza alla nostra roadmap tecnica e ci ha aiutato a dare priorità a ciò che contava davvero per il lancio del nostro MVP.",
+      "author": "Marco Rossi",
+      "role": "Co-founder & CEO at TechStartup",
+      "image": "/images/testimonials/marco.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "L'approccio strategico di Christian alle decisioni tecnologiche ci ha fatto risparmiare mesi di tempo di sviluppo. La sua esperienza con le startup è inestimabile.",
+      "author": "Elena Bianchi",
+      "role": "Founder at InnovateLab",
+      "image": "/images/testimonials/elena.jpg",
+      "rating": 5
+    }
+  ],
+  "cta": {
+    "label": "Mostra altro",
+    "href": "https://www.linkedin.com/in/christianvarisco/details/recommendations/"
+  }
+}

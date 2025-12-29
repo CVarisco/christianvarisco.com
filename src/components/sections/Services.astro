@@ -1,0 +1,67 @@
+---
+import Card from '../ui/Card.astro';
+
+interface Props {
+  data: {
+    title: string;
+    subtitle: string;
+    items: Array<{
+      id: string;
+      icon: string;
+      title: string;
+      problem: string;
+      solution: string;
+    }>;
+  };
+}
+
+const { data } = Astro.props;
+
+// Icon paths for each service
+const icons: Record<string, string> = {
+  product: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />`,
+  tech: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />`,
+  team: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />`,
+};
+---
+
+<section id="Services" class="section bg-background-secondary" data-section="services">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+      <h2 class="mb-4">
+        {data.title.split(' ').map((word, i, arr) =>
+          i === arr.length - 1 ? <span class="text-accent">{word}</span> : `${word} `
+        )}
+      </h2>
+      <p class="text-lg text-text-secondary">{data.subtitle}</p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+      {data.items.map(service => (
+        <Card class="flex flex-col h-full">
+          <!-- Icon -->
+          <div class="w-12 h-12 mb-6 flex items-center justify-center rounded-xl bg-accent/10">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" set:html={icons[service.icon] || icons.product} />
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-2xl font-bold mb-4">{service.title}</h3>
+
+          <!-- Problem -->
+          <div class="mb-4">
+            <p class="text-sm font-semibold text-text-secondary mb-2">The Problem:</p>
+            <p class="text-text-secondary">{service.problem}</p>
+          </div>
+
+          <!-- Solution -->
+          <div class="mt-auto pt-4 border-t border-white/10">
+            <p class="text-sm font-semibold text-accent mb-2">My Solution:</p>
+            <p class="text-text-primary">{service.solution}</p>
+          </div>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>

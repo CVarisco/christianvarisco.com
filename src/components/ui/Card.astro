@@ -1,0 +1,21 @@
+---
+interface Props {
+  class?: string;
+  variant?: 'default' | 'accent';
+}
+
+const { class: className = '', variant = 'default' } = Astro.props;
+
+const baseClasses = 'rounded-2xl p-6 md:p-8';
+
+const variantClasses = {
+  default: 'bg-background-secondary',
+  accent: 'bg-background-secondary border-2 border-accent',
+};
+
+const classes = `${baseClasses} ${variantClasses[variant]} ${className}`;
+---
+
+<div class={classes}>
+  <slot />
+</div>

@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+import SEOHead from '../components/seo/SEOHead.astro';
+import JsonLd from '../components/seo/JsonLd.astro';
+import type { Lang } from '../i18n';
+import { getAlternatePath } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  seo: {
+    title: string;
+    description: string;
+    ogImage?: string;
+  };
+  faqItems?: Array<{ question: string; answer: string }>;
+  services?: Array<{ title: string; solution: string }>;
+}
+
+const { lang, seo, faqItems, services } = Astro.props;
+const currentPath = Astro.url.pathname;
+const alternatePaths = getAlternatePath(lang, currentPath);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <SEOHead
+      title={seo.title}
+      description={seo.description}
+      ogImage={seo.ogImage}
+      lang={lang}
+      alternatePaths={alternatePaths}
+    />
+
+    <JsonLd
+      lang={lang}
+      faqItems={faqItems}
+      services={services}
+    />
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cal.com" />
+    <link rel="dns-prefetch" href="https://cal.com" />
+    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

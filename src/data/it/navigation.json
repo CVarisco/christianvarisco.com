@@ -1,0 +1,20 @@
+{
+  "links": [
+    { "label": "Servizi", "href": "#services" },
+    { "label": "Clienti", "href": "#customers" },
+    { "label": "Testimonianze", "href": "#testimonials" },
+    { "label": "Processo", "href": "#steps" },
+    { "label": "FAQ", "href": "#faq" }
+  ],
+  "cta": {
+    "label": "Contattami",
+    "href": "https://cal.com/christian-varisco/discovery-call"
+  },
+  "socials": [
+    { "label": "X/Twitter", "href": "https://twitter.com/ChriVarisco", "icon": "x" },
+    { "label": "YouTube", "href": "https://www.youtube.com/@christianvarisco", "icon": "youtube" },
+    { "label": "Twitch", "href": "https://www.twitch.tv/christian_varisco", "icon": "twitch" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/christianvarisco/", "icon": "linkedin" },
+    { "label": "GitHub", "href": "https://github.com/CVarisco", "icon": "github" }
+  ]
+}

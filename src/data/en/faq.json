@@ -1,0 +1,38 @@
+{
+  "title": "FAQs",
+  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  "cta": {
+    "label": "Book a FREE consultation",
+    "href": "https://cal.com/christian-varisco/discovery-call"
+  },
+  "items": [
+    {
+      "question": "What services does Christian offer to startups?",
+      "answer": "I solve problems in three key areas: Product, Tech, and Team. For Product, I help you define which features need to be developed and when. For Tech, I lead on what technology to use, how to implement it, and when to roll it out. For Team, I assist in finding and leading the best people to work in your startup, whether they are freelancers or part of an internally hired team."
+    },
+    {
+      "question": "How many startup do you work with in parallel?",
+      "answer": "I work with a maximum of three startups in parallel. This allows me to focus on delivering quality results for each project."
+    },
+    {
+      "question": "Do you write code too?",
+      "answer": "If needed, yes. However, my primary goal is to leverage my experience to guide you on how to build a successful startup, rather than just writing software."
+    },
+    {
+      "question": "Do you have a team?",
+      "answer": "Yes, I have a network of collaborators that includes developers, designers, product managers, and various other professionals. They can step in to assist both me and your startup whenever necessary."
+    },
+    {
+      "question": "What stage startups do you typically work with?",
+      "answer": "I typically work with early-stage startups that have at least a $20k budget to invest in technology (not for me, but for the rest of the team). These startups may or may not have a CTO to collaborate with, and they can either have an internal team or rely on my network of professionals."
+    },
+    {
+      "question": "What is the typical duration of your engagements with startups?",
+      "answer": "Generally, my engagements last between 3 to 9 months to ensure we build a solid foundation in terms of product, technology, and team. However, if needed, I can also provide advisory services for as little as one hour a week, with engagements lasting just one month."
+    },
+    {
+      "question": "How do you handle confidentiality and data security?",
+      "answer": "Before we start working together, it's up to you. I can sign an NDA and term sheet if needed (and if they make sense) to ensure your confidentiality and data security."
+    }
+  ]
+}

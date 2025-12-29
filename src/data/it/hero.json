@@ -1,0 +1,16 @@
+{
+  "headline": {
+    "line1": { "before": "Evita errori ", "highlight": "costosi", "after": "." },
+    "line2": { "before": "Costruiamo la tua startup ", "highlight": "insieme", "after": "." }
+  },
+  "subheadline": "Ciao, sono Christian Varisco, il tuo Fractional CTO di fiducia 🇮🇹. Insieme, trasformeremo le tue idee rivoluzionarie in successi pronti per il mercato.",
+  "cta": {
+    "label": "Prenota una consulenza GRATUITA",
+    "href": "https://cal.com/christian-varisco/discovery-call"
+  },
+  "video": {
+    "youtubeId": "u3sfaDTAULU",
+    "thumbnail": "/images/brand/video-thumbnail.jpg",
+    "alt": "Video di presentazione di Christian Varisco"
+  }
+}

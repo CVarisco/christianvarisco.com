@@ -1,0 +1,32 @@
+{
+  "headline": {
+    "before": "Is your startup's product development on the ",
+    "highlight": "right track",
+    "after": "?"
+  },
+  "subheadline": "Turn obstacles into opportunities with an expert who understands your journey. Team up with me!",
+  "cards": [
+    {
+      "icon": "map",
+      "title": "Are you navigating without a map?",
+      "description": "How often do you find yourself chasing innovation without a clear direction, leading to wasted resources and missed opportunities?",
+      "solution": "Transition from visionary ideas to a robust, scalable product version, ensuring a strong market entry."
+    },
+    {
+      "icon": "process",
+      "title": "Are your processes holding you back?",
+      "description": "Do you lack a cohesive plan, causing your development to lag and pushing your market entry further away?",
+      "solution": "Navigate the complexities of technology, architecture, and development processes with expert guidance."
+    },
+    {
+      "icon": "team",
+      "title": "Do you have the right team in place?",
+      "description": "Are you struggling to find and integrate the tech talent you need, slowing your progress and affecting your product's potential?",
+      "solution": "Identify and integrate the right technical skills, streamlining your path to innovation and growth."
+    }
+  ],
+  "cta": {
+    "label": "Let's get to work",
+    "href": "https://cal.com/christian-varisco/discovery-call"
+  }
+}

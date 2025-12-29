@@ -1,0 +1,294 @@
+---
+interface Props {
+  data: {
+    headline: {
+      before: string;
+      highlight: string;
+      after: string;
+    };
+    subheadline: string;
+    cards: Array<{
+      icon: 'map' | 'process' | 'team';
+      title: string;
+      description: string;
+      solution: string;
+    }>;
+    cta: {
+      label: string;
+      href: string;
+    };
+  };
+}
+
+const { data } = Astro.props;
+
+const icons = {
+  map: `<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Base platform -->
+    <path d="M60 95L20 72V40L60 63V95Z" fill="#333" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M60 95L100 72V40L60 63V95Z" fill="#2a2a2a" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M20 40L60 17L100 40L60 63L20 40Z" fill="#222" stroke="#CBFC01" stroke-width="1.5"/>
+    <!-- Map marker -->
+    <path d="M60 25C52 25 46 31 46 38C46 48 60 58 60 58C60 58 74 48 74 38C74 31 68 25 60 25Z" fill="#CBFC01"/>
+    <circle cx="60" cy="38" r="6" fill="#000"/>
+    <!-- Compass points -->
+    <path d="M38 35L45 40L38 45" stroke="#CBFC01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="85" cy="55" r="3" fill="#CBFC01"/>
+    <circle cx="35" cy="60" r="2" fill="#CBFC01"/>
+  </svg>`,
+  process: `<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cloud -->
+    <ellipse cx="60" cy="28" rx="20" ry="12" fill="#CBFC01"/>
+    <ellipse cx="48" cy="32" rx="12" ry="8" fill="#CBFC01"/>
+    <ellipse cx="72" cy="32" rx="12" ry="8" fill="#CBFC01"/>
+    <!-- Lightning bolt -->
+    <path d="M65 35L55 52H63L55 70L75 48H65L72 35H65Z" fill="#000"/>
+    <!-- Server/Process tower -->
+    <path d="M45 75L60 85L75 75V95L60 105L45 95V75Z" fill="#333" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M45 75L60 65L75 75L60 85L45 75Z" fill="#222" stroke="#CBFC01" stroke-width="1.5"/>
+    <!-- Connection line -->
+    <path d="M60 52V65" stroke="#CBFC01" stroke-width="2" stroke-dasharray="3 3"/>
+    <!-- Dots on server -->
+    <circle cx="52" cy="82" r="2" fill="#CBFC01"/>
+    <circle cx="60" cy="82" r="2" fill="#CBFC01"/>
+    <circle cx="68" cy="82" r="2" fill="#CBFC01"/>
+  </svg>`,
+  team: `<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Bottom left block -->
+    <path d="M25 80L40 88V103L25 95V80Z" fill="#333" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M40 88L55 80V95L40 103V88Z" fill="#2a2a2a" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M25 80L40 72L55 80L40 88L25 80Z" fill="#222" stroke="#CBFC01" stroke-width="1.5"/>
+    <!-- Bottom middle block -->
+    <path d="M45 72L60 80V95L45 87V72Z" fill="#333" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M60 80L75 72V87L60 95V80Z" fill="#2a2a2a" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M45 72L60 64L75 72L60 80L45 72Z" fill="#222" stroke="#CBFC01" stroke-width="1.5"/>
+    <!-- Bottom right block -->
+    <path d="M65 80L80 88V103L65 95V80Z" fill="#333" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M80 88L95 80V95L80 103V88Z" fill="#2a2a2a" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M65 80L80 72L95 80L80 88L65 80Z" fill="#222" stroke="#CBFC01" stroke-width="1.5"/>
+    <!-- Top block -->
+    <path d="M45 52L60 60V75L45 67V52Z" fill="#333" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M60 60L75 52V67L60 75V60Z" fill="#2a2a2a" stroke="#CBFC01" stroke-width="1.5"/>
+    <path d="M45 52L60 44L75 52L60 60L45 52Z" fill="#CBFC01"/>
+    <!-- Small accent cube on top -->
+    <circle cx="60" cy="35" r="5" fill="#CBFC01"/>
+    <circle cx="85" cy="65" r="4" fill="#CBFC01"/>
+  </svg>`
+};
+---
+
+<section class="challenges-section" data-section="challenges">
+  <div class="container">
+    <!-- Header -->
+    <div class="challenges-header">
+      <h2 class="challenges-headline">
+        {data.headline.before}<span class="text-accent">{data.headline.highlight}</span>{data.headline.after}
+      </h2>
+      <p class="challenges-subheadline">
+        {data.subheadline}
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="challenges-grid">
+      {data.cards.map((card) => (
+        <article class="challenge-card">
+          <div class="challenge-icon" set:html={icons[card.icon]} />
+          <h3 class="challenge-title">{card.title}</h3>
+          <p class="challenge-description">{card.description}</p>
+          <p class="challenge-solution">{card.solution}</p>
+        </article>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="challenges-cta">
+      <a
+        href={data.cta.href}
+        class="cta-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {data.cta.label}
+        <svg class="cta-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .challenges-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-background-primary);
+  }
+
+  @media (min-width: 768px) {
+    .challenges-section {
+      padding: var(--spacing-3xl) 0;
+    }
+  }
+
+  .challenges-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .challenges-header {
+      margin-bottom: var(--spacing-2xl);
+    }
+  }
+
+  .challenges-headline {
+    font-size: clamp(1.75rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .challenges-subheadline {
+    font-size: var(--font-size-md);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+  }
+
+  @media (min-width: 768px) {
+    .challenges-subheadline {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .challenges-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .challenges-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing-md);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .challenges-grid {
+      margin-bottom: var(--spacing-2xl);
+    }
+  }
+
+  .challenge-card {
+    background-color: var(--color-background-secondary);
+    border-radius: 0;
+    padding: var(--spacing-md);
+    border: 1px solid var(--Border-tertiary, #444444);
+  }
+
+  @media (min-width: 768px) {
+    .challenge-card {
+      padding: var(--spacing-md) var(--spacing-sm);
+    }
+  }
+
+  .challenge-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .challenge-icon :global(svg) {
+    width: 100px;
+    height: 100px;
+  }
+
+  @media (min-width: 768px) {
+    .challenge-icon {
+      height: 160px;
+    }
+
+    .challenge-icon :global(svg) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .challenge-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-primary);
+  }
+
+  @media (min-width: 768px) {
+    .challenge-title {
+      font-size: var(--font-size-xl);
+    }
+  }
+
+  .challenge-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  @media (min-width: 768px) {
+    .challenge-description {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  .challenge-solution {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    line-height: 1.5;
+  }
+
+  @media (min-width: 768px) {
+    .challenge-solution {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  .challenges-cta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.75rem;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-text-alternate);
+    background-color: var(--color-accent);
+    border-radius: var(--radius-full);
+    transition: all 0.2s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(203, 252, 1, 0.3);
+    color: var(--color-text-alternate);
+  }
+
+  .cta-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+  }
+
+  .cta-button:hover .cta-arrow {
+    transform: translateX(4px);
+  }
+</style>

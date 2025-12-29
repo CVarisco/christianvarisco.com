@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import Hero from '../../components/sections/Hero.astro';
+import Challenges from '../../components/sections/Challenges.astro';
+import Results from '../../components/sections/Results.astro';
+import Testimonials from '../../components/sections/Testimonials.astro';
+import Timeline from '../../components/sections/Timeline.astro';
+import FAQ from '../../components/sections/FAQ.astro';
+import { getTranslations } from '../../i18n/utils';
+import type { Lang } from '../../i18n';
+
+const lang: Lang = 'it';
+const currentPath = Astro.url.pathname;
+
+// Load all translations
+const site = getTranslations(lang, 'site');
+const navigation = getTranslations(lang, 'navigation');
+const hero = getTranslations(lang, 'hero');
+const results = getTranslations(lang, 'results');
+const testimonials = getTranslations(lang, 'testimonials');
+const timeline = getTranslations(lang, 'timeline');
+const faq = getTranslations(lang, 'faq');
+const challenges = getTranslations(lang, 'challenges');
+---
+
+<BaseLayout
+  lang={lang}
+  seo={site.seo}
+  faqItems={faq.items}
+>
+  <Header
+    lang={lang}
+    currentPath={currentPath}
+    navigation={navigation}
+  />
+
+  <main>
+    <Hero data={hero} />
+    <Challenges data={challenges} />
+    <Results data={results} />
+    <Testimonials data={testimonials} />
+    <Timeline data={timeline} />
+    <FAQ data={faq} />
+  </main>
+
+  <Footer
+    lang={lang}
+    navigation={navigation}
+    copyright={site.footer.copyright}
+  />
+</BaseLayout>

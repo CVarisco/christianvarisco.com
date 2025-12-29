@@ -1,0 +1,52 @@
+---
+import type { Lang } from '../../i18n';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  lang: Lang;
+  alternatePaths: Record<Lang, string>;
+}
+
+const { title, description, ogImage = '/images/brand/og-image.jpg', lang, alternatePaths } = Astro.props;
+
+const siteUrl = 'https://christianvarisco.com';
+const canonicalUrl = `${siteUrl}${alternatePaths[lang]}`;
+---
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="author" content="Christian Varisco" />
+<meta name="robots" content="index, follow" />
+
+<!-- Canonical & Language Alternates -->
+<link rel="canonical" href={canonicalUrl} />
+<link rel="alternate" hreflang="en" href={`${siteUrl}${alternatePaths.en}`} />
+<link rel="alternate" hreflang="it" href={`${siteUrl}${alternatePaths.it}`} />
+<link rel="alternate" hreflang="x-default" href={`${siteUrl}${alternatePaths.en}`} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={`${siteUrl}${ogImage}`} />
+<meta property="og:locale" content={lang === 'en' ? 'en_US' : 'it_IT'} />
+<meta property="og:locale:alternate" content={lang === 'en' ? 'it_IT' : 'en_US'} />
+<meta property="og:site_name" content="Christian Varisco" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonicalUrl} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
+<meta name="twitter:creator" content="@ChriVarisco" />
+<meta name="twitter:site" content="@ChriVarisco" />
+
+<!-- Additional SEO -->
+<meta name="theme-color" content="#000000" />
+<meta name="format-detection" content="telephone=no" />

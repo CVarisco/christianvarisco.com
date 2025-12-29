@@ -1,0 +1,38 @@
+{
+  "title": "FAQ",
+  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  "cta": {
+    "label": "Prenota una consulenza GRATUITA",
+    "href": "https://cal.com/christian-varisco/discovery-call"
+  },
+  "items": [
+    {
+      "question": "Quali servizi offre Christian alle startup?",
+      "answer": "Risolvo problemi in tre aree chiave: Prodotto, Tech e Team. Per il Prodotto, ti aiuto a definire quali funzionalità devono essere sviluppate e quando. Per il Tech, guido le decisioni su quale tecnologia usare, come implementarla e quando rilasciarla. Per il Team, aiuto a trovare e guidare le migliori persone per lavorare nella tua startup, che siano freelancer o parte di un team interno."
+    },
+    {
+      "question": "Con quante startup lavori in parallelo?",
+      "answer": "Lavoro con un massimo di tre startup in parallelo. Questo mi permette di concentrarmi sulla qualità dei risultati per ogni progetto."
+    },
+    {
+      "question": "Scrivi anche codice?",
+      "answer": "Se necessario, sì. Tuttavia, il mio obiettivo principale è sfruttare la mia esperienza per guidarti su come costruire una startup di successo, piuttosto che scrivere solo software."
+    },
+    {
+      "question": "Hai un team?",
+      "answer": "Sì, ho una rete di collaboratori che include sviluppatori, designer, product manager e vari altri professionisti. Possono intervenire per assistere sia me che la tua startup ogni volta che è necessario."
+    },
+    {
+      "question": "Con quali stadi di startup lavori tipicamente?",
+      "answer": "Lavoro tipicamente con startup in fase iniziale che hanno almeno un budget di $20k da investire in tecnologia (non per me, ma per il resto del team). Queste startup possono o meno avere un CTO con cui collaborare, e possono avere un team interno o affidarsi alla mia rete di professionisti."
+    },
+    {
+      "question": "Qual è la durata tipica dei tuoi ingaggi con le startup?",
+      "answer": "Generalmente, i miei ingaggi durano tra 3 e 9 mesi per assicurarci di costruire una base solida in termini di prodotto, tecnologia e team. Tuttavia, se necessario, posso anche fornire servizi di advisory per anche solo un'ora a settimana, con ingaggi della durata di un solo mese."
+    },
+    {
+      "question": "Come gestisci riservatezza e sicurezza dei dati?",
+      "answer": "Prima di iniziare a lavorare insieme, dipende da te. Posso firmare un NDA e term sheet se necessario (e se ha senso) per garantire la tua riservatezza e sicurezza dei dati."
+    }
+  ]
+}

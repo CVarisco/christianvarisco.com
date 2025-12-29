@@ -1,0 +1,51 @@
+{
+  "title": "Testimonials",
+  "items": [
+    {
+      "quote": "Christian helped us a lot to draw up an initial product development roadmap and to understand how to build the tech team, identifying the necessary figures to start with limited resources.",
+      "author": "Martina Domenicali",
+      "role": "Co-founder & CSO at Lexroom.ai and Community Builder",
+      "image": "/images/testimonials/martina.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "The project is still ongoing and so far Christian has been very supportive! He is driving the entire Tech team towards the milestones we have and he is making sure we deliver a zero-defect product to our customers.",
+      "author": "Giacomo Marchiori",
+      "role": "Founder @Talentware",
+      "image": "/images/testimonials/giacomo.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "A competent, dynamic and always available person. A fractional CTO as it should be!",
+      "author": "Riccardo Tripodi",
+      "role": "CEO & Co-Founder Liquinvex",
+      "image": "/images/testimonials/riccardo.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "Christian has shown extraordinary ability in leading the Recivu technical team. His ability to understand and solve complex problems, breaking them into small parts, has been fundamental.",
+      "author": "Dariush Haghighi",
+      "role": "CEO & Founder at Recivu",
+      "image": "/images/testimonials/dariush.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "Working with Christian was a game-changer for our startup. He brought clarity to our technical roadmap and helped us prioritize what really mattered for our MVP launch.",
+      "author": "Marco Rossi",
+      "role": "Co-founder & CEO at TechStartup",
+      "image": "/images/testimonials/marco.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "Christian's strategic approach to technology decisions saved us months of development time. His experience with startups is invaluable.",
+      "author": "Elena Bianchi",
+      "role": "Founder at InnovateLab",
+      "image": "/images/testimonials/elena.jpg",
+      "rating": 5
+    }
+  ],
+  "cta": {
+    "label": "Show more",
+    "href": "https://www.linkedin.com/in/christianvarisco/details/recommendations/"
+  }
+}

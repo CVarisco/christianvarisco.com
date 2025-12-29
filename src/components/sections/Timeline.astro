@@ -1,0 +1,332 @@
+---
+interface Props {
+  data: {
+    headline: {
+      before: string;
+      highlight: string;
+    };
+    subheadline: string;
+    stages: Array<{
+      time: string;
+      title: string;
+      description: string;
+      role: string;
+    }>;
+    cta: {
+      label: string;
+      href: string;
+    };
+  };
+}
+
+const { data } = Astro.props;
+---
+
+<section id="steps" class="timeline-section" data-section="timeline">
+  <div class="container">
+    <!-- Header -->
+    <div class="timeline-header">
+      <h2 class="timeline-headline">
+        {data.headline.before}<span class="text-accent">{data.headline.highlight}</span>
+      </h2>
+      <p class="timeline-subheadline">{data.subheadline}</p>
+    </div>
+
+    <!-- Horizontal Timeline -->
+    <div class="timeline-wrapper">
+      <!-- Progress Line -->
+      <div class="progress-line" aria-hidden="true">
+        <div class="progress-line-fill"></div>
+      </div>
+
+      <!-- Stages -->
+      <div class="stages-grid">
+        {data.stages.map((stage, index) => (
+          <div class="stage">
+            <!-- Time marker -->
+            <div class="stage-time">{stage.time}</div>
+
+            <!-- Circle marker -->
+            <div class="stage-marker">
+              <div class="marker-circle"></div>
+            </div>
+
+            <!-- Content card -->
+            <div class="stage-card">
+              <h3 class="stage-title">{stage.title}</h3>
+              <p class="stage-description">{stage.description}</p>
+              <span class="stage-role">{stage.role}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="timeline-cta">
+      <a
+        href={data.cta.href}
+        class="cta-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {data.cta.label}
+        <svg class="cta-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-background-primary);
+  }
+
+  @media (min-width: 768px) {
+    .timeline-section {
+      padding: var(--spacing-3xl) 0;
+    }
+  }
+
+  .timeline-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .timeline-header {
+      margin-bottom: var(--spacing-2xl);
+    }
+  }
+
+  .timeline-headline {
+    font-size: clamp(1.75rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .timeline-subheadline {
+    font-size: var(--font-size-md);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+  }
+
+  @media (min-width: 768px) {
+    .timeline-subheadline {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .timeline-wrapper {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* Progress Line */
+  .progress-line {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .progress-line {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 10%;
+      right: 10%;
+      height: 4px;
+      background-color: var(--color-background-secondary);
+      border-radius: 2px;
+    }
+
+    .progress-line-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent) 100%);
+      border-radius: 2px;
+    }
+  }
+
+  /* Stages Grid */
+  .stages-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  @media (min-width: 768px) {
+    .stages-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--spacing-sm);
+    }
+  }
+
+  .stage {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  @media (min-width: 768px) {
+    .stage {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  /* Time marker */
+  .stage-time {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-accent);
+    white-space: nowrap;
+    min-width: 80px;
+  }
+
+  @media (min-width: 768px) {
+    .stage-time {
+      font-size: var(--font-size-base);
+      min-width: auto;
+      margin-bottom: var(--spacing-xs);
+    }
+  }
+
+  /* Circle marker */
+  .stage-marker {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .stage-marker {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .marker-circle {
+      width: 20px;
+      height: 20px;
+      background-color: var(--color-accent);
+      border-radius: 50%;
+      border: 4px solid var(--color-background-primary);
+      box-shadow: 0 0 0 4px var(--color-accent);
+    }
+  }
+
+  /* Content card */
+  .stage-card {
+    background-color: var(--color-background-secondary);
+    border-radius: 0;
+    padding: var(--spacing-sm);
+    flex: 1;
+    border: 1px solid var(--Border-tertiary, #444444);
+  }
+
+  @media (min-width: 768px) {
+    .stage-card {
+      padding: var(--spacing-md);
+      width: 100%;
+    }
+  }
+
+  .stage-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xxs);
+  }
+
+  @media (min-width: 768px) {
+    .stage-title {
+      font-size: var(--font-size-xl);
+      margin-bottom: var(--spacing-xs);
+    }
+  }
+
+  .stage-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  @media (min-width: 768px) {
+    .stage-description {
+      font-size: var(--font-size-base);
+      margin-bottom: var(--spacing-sm);
+    }
+  }
+
+  .stage-role {
+    display: inline-block;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-alternate);
+    background-color: var(--color-accent);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+  }
+
+  @media (min-width: 768px) {
+    .stage-role {
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  /* CTA */
+  .timeline-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .timeline-cta {
+      margin-top: var(--spacing-2xl);
+    }
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.75rem;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-text-alternate);
+    background-color: var(--color-accent);
+    border-radius: var(--radius-full);
+    transition: all 0.2s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(203, 252, 1, 0.3);
+    color: var(--color-text-alternate);
+  }
+
+  .cta-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+  }
+
+  .cta-button:hover .cta-arrow {
+    transform: translateX(4px);
+  }
+</style>

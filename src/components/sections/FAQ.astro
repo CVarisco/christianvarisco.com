@@ -1,0 +1,235 @@
+---
+interface Props {
+  data: {
+    title: string;
+    subtitle: string;
+    cta: { label: string; href: string };
+    items: Array<{ question: string; answer: string }>;
+  };
+}
+
+const { data } = Astro.props;
+---
+
+<section id="faq" class="faq-section" data-section="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <!-- Left: Header -->
+      <div class="faq-header">
+        <h2 class="faq-title">
+          FA<span class="title-q">Q</span>s
+        </h2>
+        <p class="faq-subtitle">{data.subtitle}</p>
+        <a
+          href={data.cta.href}
+          class="faq-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {data.cta.label}
+          <svg class="cta-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Right: Accordion -->
+      <div class="faq-accordion">
+        {data.items.map((item, index) => (
+          <details class="faq-item" name="faq" open={index === 0}>
+            <summary class="faq-question">
+              <span class="question-text">{item.question}</span>
+              <svg class="chevron-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>{item.answer}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-background-primary);
+  }
+
+  @media (min-width: 768px) {
+    .faq-section {
+      padding: var(--spacing-3xl) 0;
+    }
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  @media (min-width: 1024px) {
+    .faq-grid {
+      grid-template-columns: 1fr 1.5fr;
+      gap: var(--spacing-2xl);
+    }
+  }
+
+  /* Left column */
+  .faq-header {
+    position: relative;
+  }
+
+  @media (min-width: 1024px) {
+    .faq-header {
+      position: sticky;
+      top: 100px;
+      align-self: start;
+    }
+  }
+
+  .faq-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .title-q {
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+  }
+
+  .faq-subtitle {
+    font-size: var(--font-size-md);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+  }
+
+  @media (min-width: 768px) {
+    .faq-subtitle {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .faq-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.5rem;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-text-alternate);
+    background-color: var(--color-accent);
+    border-radius: var(--radius-full);
+    transition: all 0.2s ease;
+  }
+
+  .faq-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(203, 252, 1, 0.3);
+    color: var(--color-text-alternate);
+  }
+
+  .cta-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+  }
+
+  .faq-cta:hover .cta-arrow {
+    transform: translateX(4px);
+  }
+
+  /* Right column - Accordion */
+  .faq-accordion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-question {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .question-text {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    line-height: 1.4;
+  }
+
+  @media (min-width: 768px) {
+    .question-text {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .chevron-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: var(--color-accent);
+    transition: transform 0.2s ease;
+    margin-top: 2px;
+  }
+
+  .faq-item[open] .chevron-icon {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    padding-bottom: var(--spacing-sm);
+  }
+
+  .faq-answer p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+  }
+
+  @media (min-width: 768px) {
+    .faq-answer p {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  /* Animation */
+  .faq-item[open] .faq-answer {
+    animation: fadeIn 0.2s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

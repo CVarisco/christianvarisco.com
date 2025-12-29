@@ -1,0 +1,37 @@
+{
+  "headline": {
+    "before": "Da dove sei a ",
+    "highlight": "dove vuoi arrivare"
+  },
+  "subheadline": "Che tu abbia bisogno di un advisor, un CTO operativo o una consulenza strategica — mi adatto alla tua fase e alle tue esigenze.",
+  "stages": [
+    {
+      "time": "Settimana 1",
+      "title": "Discovery",
+      "description": "Comprendo le tue sfide, il team e gli obiettivi",
+      "role": "Advisor"
+    },
+    {
+      "time": "Mese 1",
+      "title": "Fondamenta",
+      "description": "Definisco strategia, roadmap tecnica e struttura del team",
+      "role": "Consultant"
+    },
+    {
+      "time": "Mese 2-3",
+      "title": "Esecuzione",
+      "description": "Costruiamo, lanciamo e iteriamo con guida esperta",
+      "role": "Fractional CTO"
+    },
+    {
+      "time": "Mese 3+",
+      "title": "Scala",
+      "description": "Consolidiamo i fondamentali e prepariamo la crescita",
+      "role": "Advisor / CTO"
+    }
+  ],
+  "cta": {
+    "label": "Inizia il tuo percorso",
+    "href": "https://cal.com/christian-varisco/discovery-call"
+  }
+}

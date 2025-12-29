@@ -1,0 +1,85 @@
+{
+  "headline": {
+    "before": "Work with me to ",
+    "highlight": "achieve results"
+  },
+  "stats": {
+    "startups": {
+      "value": "000",
+      "label": "Startups I've collaborated with"
+    },
+    "leads": {
+      "value": "€ 00000",
+      "label": "Generated leads"
+    },
+    "funds": {
+      "value": "€ 00000",
+      "label": "Total pre seed funds"
+    }
+  },
+  "caseStudies": {
+    "talentware": {
+      "name": "Talentware",
+      "description": "Talentware is the talent management platform designed to help businesses effectively engage, develop, and retain talent through a skill-based approach.",
+      "achievements": [
+        {
+          "text": "Assembled a robust team, ",
+          "highlight": "ensuring agility and innovation."
+        },
+        {
+          "text": "In just three months, we've already got customers signing up and managed to bag ",
+          "highlight": "€800k in pre-seed",
+          "textAfter": " funds."
+        },
+        {
+          "text": "Formulated a strategic product and ",
+          "highlight": "technical roadmap",
+          "textAfter": ", targeting short-to-medium-term goals."
+        }
+      ]
+    },
+    "liquinvex": {
+      "name": "Liquinvex",
+      "description": "Liquinvex is a mobile app that democratizes the investment in fine wines, offering users a virtual cellar to buy, store, and manage wine investments without the hassles of physical storage.",
+      "achievements": [
+        {
+          "text": "Built a top-notch team ",
+          "highlight": "in just a week."
+        },
+        {
+          "text": "Liquinvex quickly got into ",
+          "highlight": "Nana Bianca accelerator program",
+          "textAfter": ", showing how fast they're growing!"
+        },
+        {
+          "text": "New app features on a weekly basis and the user base saw a ",
+          "highlight": "100% increase."
+        }
+      ]
+    },
+    "lexroom": {
+      "name": "Lexroom.ai",
+      "description": "Lexroom.ai is an AI-powered legal research tool that quickly provides relevant legal sources and drafts opinions based on user queries.",
+      "achievements": [
+        {
+          "text": "Assembled a ",
+          "highlight": "talented team quickly",
+          "textAfter": ", setting the stage for rapid progress."
+        },
+        {
+          "text": "Significant early achievements, including a successful ",
+          "highlight": "€500k pre-seed funding round",
+          "textAfter": " in January 2024."
+        },
+        {
+          "text": "Led the development of the MVP, preparing for ",
+          "highlight": "future growth."
+        }
+      ]
+    }
+  },
+  "cta": {
+    "label": "See my other experiences",
+    "href": "https://www.linkedin.com/in/christianvarisco/"
+  }
+}

@@ -1,0 +1,30 @@
+---
+import type { Lang } from '../../i18n';
+import { languages, getAlternatePath } from '../../i18n';
+
+interface Props {
+  currentLang: Lang;
+  currentPath: string;
+}
+
+const { currentLang, currentPath } = Astro.props;
+const alternatePaths = getAlternatePath(currentLang, currentPath);
+---
+
+<nav class="flex items-center gap-1" aria-label="Language selection">
+  {Object.entries(languages).map(([code, name]) => (
+    <a
+      href={alternatePaths[code as Lang]}
+      hreflang={code}
+      class:list={[
+        'px-2 py-1 text-sm font-medium rounded transition-colors',
+        currentLang === code
+          ? 'bg-accent text-black'
+          : 'text-text-secondary hover:text-white'
+      ]}
+      aria-current={currentLang === code ? 'page' : undefined}
+    >
+      {code.toUpperCase()}
+    </a>
+  ))}
+</nav>

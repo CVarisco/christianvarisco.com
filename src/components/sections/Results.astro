@@ -1,0 +1,392 @@
+---
+interface Achievement {
+  text: string;
+  highlight: string;
+  textAfter?: string;
+}
+
+interface CaseStudy {
+  name: string;
+  description: string;
+  achievements: Achievement[];
+}
+
+interface Props {
+  data: {
+    headline: {
+      before: string;
+      highlight: string;
+    };
+    stats: {
+      startups: { value: string; label: string };
+      leads: { value: string; label: string };
+      funds: { value: string; label: string };
+    };
+    caseStudies: {
+      talentware: CaseStudy;
+      liquinvex: CaseStudy;
+      lexroom: CaseStudy;
+    };
+    cta: {
+      label: string;
+      href: string;
+    };
+  };
+}
+
+const { data } = Astro.props;
+
+const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 2L8 6H4V10L0 14L4 18V22H8L12 26L16 22H20V18L24 14L20 10V6H16L12 2Z" fill="#222" stroke="#CBFC01" stroke-width="1"/>
+  <circle cx="12" cy="14" r="4" fill="#CBFC01"/>
+</svg>`;
+---
+
+<section class="results-section" data-section="results">
+  <div class="container">
+    <!-- Header -->
+    <div class="results-header">
+      <h2 class="results-headline">
+        {data.headline.before}<span class="text-accent">{data.headline.highlight}</span>
+      </h2>
+    </div>
+
+    <!-- Bento Grid -->
+    <div class="bento-grid">
+      <!-- Stat: Startups (top-left) -->
+      <div class="bento-item stat-startups">
+        <div class="stat-card">
+          <span class="stat-value">{data.stats.startups.value}</span>
+          <span class="stat-label">{data.stats.startups.label}</span>
+        </div>
+      </div>
+
+      <!-- Case Study: Talentware (bottom-left) -->
+      <div class="bento-item case-talentware">
+        <div class="case-card">
+          <h3 class="case-logo talentware-logo">
+            <span class="logo-icon">𝕿</span>alentware
+          </h3>
+          <p class="case-description">{data.caseStudies.talentware.description}</p>
+          <ul class="achievements-list">
+            {data.caseStudies.talentware.achievements.map((achievement) => (
+              <li class="achievement-item">
+                <span class="achievement-icon" set:html={achievementIcon} />
+                <span class="achievement-text">
+                  {achievement.text}<span class="text-accent">{achievement.highlight}</span>{achievement.textAfter || ''}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <!-- Case Study: Liquinvex (center, tall) -->
+      <div class="bento-item case-liquinvex">
+        <div class="case-card">
+          <h3 class="case-logo liquinvex-logo">liquinve<span class="logo-x">x</span></h3>
+          <p class="case-description">{data.caseStudies.liquinvex.description}</p>
+          <ul class="achievements-list">
+            {data.caseStudies.liquinvex.achievements.map((achievement) => (
+              <li class="achievement-item">
+                <span class="achievement-icon" set:html={achievementIcon} />
+                <span class="achievement-text">
+                  {achievement.text}<span class="text-accent">{achievement.highlight}</span>{achievement.textAfter || ''}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stat: Leads (top-right) -->
+      <div class="bento-item stat-leads">
+        <div class="stat-card">
+          <span class="stat-value">{data.stats.leads.value}</span>
+          <span class="stat-label">{data.stats.leads.label}</span>
+        </div>
+      </div>
+
+      <!-- Case Study: Lexroom (bottom-right) -->
+      <div class="bento-item case-lexroom">
+        <div class="case-card">
+          <h3 class="case-logo lexroom-logo">LEXR<span class="logo-o">○</span><span class="logo-o">○</span>M.AI</h3>
+          <p class="case-description">{data.caseStudies.lexroom.description}</p>
+          <ul class="achievements-list">
+            {data.caseStudies.lexroom.achievements.map((achievement) => (
+              <li class="achievement-item">
+                <span class="achievement-icon" set:html={achievementIcon} />
+                <span class="achievement-text">
+                  {achievement.text}<span class="text-accent">{achievement.highlight}</span>{achievement.textAfter || ''}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stat: Funds (bottom-center) -->
+      <div class="bento-item stat-funds">
+        <div class="stat-card">
+          <span class="stat-value">{data.stats.funds.value}</span>
+          <span class="stat-label">{data.stats.funds.label}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="results-cta">
+      <a
+        href={data.cta.href}
+        class="cta-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {data.cta.label}
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .results-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-background-primary);
+  }
+
+  @media (min-width: 768px) {
+    .results-section {
+      padding: var(--spacing-3xl) 0;
+    }
+  }
+
+  .results-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  @media (min-width: 768px) {
+    .results-header {
+      margin-bottom: var(--spacing-xl);
+    }
+  }
+
+  .results-headline {
+    font-size: clamp(1.75rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  /* Bento Grid Layout */
+  .bento-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  @media (min-width: 768px) {
+    .bento-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto auto;
+      gap: var(--spacing-sm);
+    }
+
+    .stat-startups {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .case-talentware {
+      grid-column: 1;
+      grid-row: 2 / 4;
+    }
+
+    .case-liquinvex {
+      grid-column: 2;
+      grid-row: 1 / 3;
+    }
+
+    .stat-funds {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .stat-leads {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    .case-lexroom {
+      grid-column: 3;
+      grid-row: 2 / 4;
+    }
+  }
+
+  .bento-item {
+    min-width: 0;
+  }
+
+  /* Stat Cards */
+  .stat-card {
+    background-color: var(--color-background-secondary);
+    border-radius: 0;
+    padding: var(--spacing-md);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--Border-tertiary, #444444);
+    box-shadow: 4px 4px 0 0 var(--color-accent);
+  }
+
+  .stat-value {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--color-accent);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-xxs);
+  }
+
+  .stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+
+  @media (min-width: 768px) {
+    .stat-label {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  /* Case Study Cards */
+  .case-card {
+    background-color: var(--color-background-secondary);
+    border-radius: 0;
+    padding: var(--spacing-md);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--Border-tertiary, #444444);
+  }
+
+  .case-logo {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.02em;
+  }
+
+  @media (min-width: 768px) {
+    .case-logo {
+      font-size: var(--font-size-2xl);
+    }
+  }
+
+  .talentware-logo .logo-icon {
+    font-family: serif;
+    font-style: italic;
+  }
+
+  .liquinvex-logo {
+    font-weight: 400;
+  }
+
+  .liquinvex-logo .logo-x {
+    color: var(--color-accent);
+  }
+
+  .lexroom-logo {
+    letter-spacing: 0.05em;
+  }
+
+  .lexroom-logo .logo-o {
+    color: var(--color-accent);
+  }
+
+  .case-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  @media (min-width: 768px) {
+    .case-description {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  .achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .achievement-item {
+    display: flex;
+    gap: var(--spacing-xxs);
+    align-items: flex-start;
+  }
+
+  .achievement-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin-top: 2px;
+  }
+
+  .achievement-icon :global(svg) {
+    width: 24px;
+    height: 24px;
+  }
+
+  .achievement-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+  }
+
+  @media (min-width: 768px) {
+    .achievement-text {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  /* CTA */
+  .results-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .results-cta {
+      margin-top: var(--spacing-2xl);
+    }
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: var(--radius-full);
+    transition: all 0.2s ease;
+  }
+
+  .cta-button:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+</style>

@@ -1,0 +1,27 @@
+{
+  "title": "Transform your startup with strategic tech leadership",
+  "subtitle": "I solve problems in three key areas",
+  "items": [
+    {
+      "id": "product",
+      "icon": "product",
+      "title": "Product",
+      "problem": "Are your development timelines slipping? Do you feel overwhelmed by technical decisions?",
+      "solution": "I help you define which features need to be developed and when. Creating a clear roadmap from idea to market-ready product."
+    },
+    {
+      "id": "tech",
+      "icon": "tech",
+      "title": "Tech",
+      "problem": "Struggling to choose the right technology stack? Is technical debt slowing you down?",
+      "solution": "I lead on what technology to use, how to implement it, and when to roll it out. Building scalable systems that grow with your business."
+    },
+    {
+      "id": "team",
+      "icon": "team",
+      "title": "Team",
+      "problem": "Having trouble finding and retaining technical talent? Is your team lacking direction?",
+      "solution": "I assist in finding and leading the best people to work in your startup, whether they are freelancers or part of an internally hired team."
+    }
+  ]
+}
