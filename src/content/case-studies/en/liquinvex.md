@@ -1,5 +1,4 @@
 ---
-slug: liquinvex
 ---
 
 ## The Company

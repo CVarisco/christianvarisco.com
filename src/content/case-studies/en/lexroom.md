@@ -1,5 +1,4 @@
 ---
-slug: lexroom
 ---
 
 ## The Company

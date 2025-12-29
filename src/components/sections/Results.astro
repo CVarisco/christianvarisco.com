@@ -19,7 +19,7 @@ interface Props {
     };
     stats: {
       startups: { value: string; label: string };
-      leads: { value: string; label: string };
+      timeToResults: { value: string; label: string };
       funds: { value: string; label: string };
     };
     caseStudies: {
@@ -101,11 +101,11 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
         </div>
       </div>
 
-      <!-- Stat: Leads (top-right) -->
-      <div class="bento-item stat-leads scroll-reveal stagger-2">
+      <!-- Stat: Time to Results (top-right) -->
+      <div class="bento-item stat-time scroll-reveal stagger-2">
         <div class="stat-card">
-          <span class="stat-value">{data.stats.leads.value}</span>
-          <span class="stat-label">{data.stats.leads.label}</span>
+          <span class="stat-value">{data.stats.timeToResults.value}</span>
+          <span class="stat-label">{data.stats.timeToResults.label}</span>
         </div>
       </div>
 
@@ -143,8 +143,6 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       <a
         href={data.cta.href}
         class="cta-button"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         {data.cta.label}
       </a>
@@ -215,7 +213,7 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       grid-row: 3;
     }
 
-    .stat-leads {
+    .stat-time {
       grid-column: 3;
       grid-row: 1;
     }

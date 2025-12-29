@@ -5,16 +5,16 @@
   },
   "stats": {
     "startups": {
-      "value": "000",
-      "label": "Startups I've collaborated with"
+      "value": "+16",
+      "label": "Startups I worked with"
     },
-    "leads": {
-      "value": "€ 00000",
-      "label": "Generated leads"
+    "timeToResults": {
+      "value": "3-6 months",
+      "label": "Average time to results"
     },
     "funds": {
-      "value": "€ 00000",
-      "label": "Total pre seed funds"
+      "value": "€13M+",
+      "label": "Raised by the startups I worked with"
     }
   },
   "caseStudies": {
@@ -80,6 +80,6 @@
   },
   "cta": {
     "label": "See my other experiences",
-    "href": "https://www.linkedin.com/in/christianvarisco/"
+    "href": "/en/case-studies/"
   }
 }

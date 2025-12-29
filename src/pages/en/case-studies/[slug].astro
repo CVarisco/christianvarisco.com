@@ -84,9 +84,9 @@ const { Content } = entry ? await entry.render() : { Content: null };
           {Content && <Content />}
         </div>
 
-        <!-- Testimonial - Full width -->
+        <!-- Testimonial -->
         {caseStudy.testimonial && (
-          <aside class="testimonial-section">
+          <aside class="testimonial-section" id="testimonial-component">
             <div class="testimonial-card">
               <StarRating rating={caseStudy.testimonial.rating} />
               <blockquote class="testimonial-quote">
@@ -109,6 +109,17 @@ const { Content } = entry ? await entry.render() : { Content: null };
         )}
       </div>
     </article>
+
+    <!-- Script to move testimonial to placeholder if exists -->
+    <script is:inline>
+      (function() {
+        const placeholder = document.getElementById('testimonial-placeholder');
+        const testimonial = document.getElementById('testimonial-component');
+        if (placeholder && testimonial) {
+          placeholder.replaceWith(testimonial);
+        }
+      })();
+    </script>
 
     <!-- Footer CTA -->
     <CaseStudyCTA data={caseStudiesData.detailPage.footerCTA} />
@@ -232,6 +243,20 @@ const { Content } = entry ? await entry.render() : { Content: null };
     height: auto;
     margin: var(--spacing-lg) 0;
     border: 1px solid var(--Border-tertiary, #444444);
+  }
+
+  /* Exclude testimonial images from content-wrapper styles */
+  .content-wrapper :global(.testimonial-section img) {
+    width: auto;
+    margin: 0;
+    border: none;
+  }
+
+  .content-wrapper :global(.author-image) {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   /* Testimonial Section - Full width */
