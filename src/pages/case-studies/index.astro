@@ -59,7 +59,7 @@ const caseStudies = getTranslations(lang, 'caseStudies');
     <section class="case-studies-grid-section">
       <div class="container">
         <div class="case-studies-grid">
-          {caseStudies.items.map((item, index) => (
+          {caseStudies.items.filter(item => !item.comingSoon).map((item, index) => (
             <CaseStudyCard
               slug={item.slug}
               company={item.company}
