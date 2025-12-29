@@ -1,0 +1,297 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/layout/Header.astro';
+import Footer from '../../../components/layout/Footer.astro';
+import CaseStudyHero from '../../../components/case-studies/CaseStudyHero.astro';
+import CaseStudyMeta from '../../../components/case-studies/CaseStudyMeta.astro';
+import CaseStudyCTA from '../../../components/case-studies/CaseStudyCTA.astro';
+import StarRating from '../../../components/ui/StarRating.astro';
+import { getTranslations } from '../../../i18n/utils';
+import type { Lang } from '../../../i18n';
+
+const lang: Lang = 'it';
+
+export async function getStaticPaths() {
+  const caseStudies = getTranslations('it', 'caseStudies');
+  return caseStudies.items.map((item) => ({
+    params: { slug: item.slug },
+    props: { caseStudy: item },
+  }));
+}
+
+const { slug } = Astro.params;
+const { caseStudy } = Astro.props;
+const currentPath = Astro.url.pathname;
+
+// Load translations
+const site = getTranslations(lang, 'site');
+const navigation = getTranslations(lang, 'navigation');
+const caseStudiesData = getTranslations(lang, 'caseStudies');
+
+// Get markdown content
+const entries = await getCollection('case-studies');
+const entry = entries.find((e) => e.id === `it/${slug}.md`);
+const { Content } = entry ? await entry.render() : { Content: null };
+---
+
+<BaseLayout
+  lang={lang}
+  seo={caseStudy.seo}
+  caseStudy={caseStudy}
+>
+  <Header
+    lang={lang}
+    currentPath={currentPath}
+    navigation={navigation}
+  />
+
+  <main class="case-study-detail">
+    <!-- Back Link -->
+    <div class="container">
+      <a href={caseStudiesData.detailPage.backLink.href} class="back-link">
+        <svg class="back-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+        </svg>
+        {caseStudiesData.detailPage.backLink.label}
+      </a>
+    </div>
+
+    <!-- Hero -->
+    <div class="container">
+      <CaseStudyHero
+        company={caseStudy.company}
+        logo={caseStudy.logo}
+        heroImage={caseStudy.heroImage}
+      />
+    </div>
+
+    <!-- Meta -->
+    <CaseStudyMeta
+      company={caseStudy.company}
+      industry={caseStudy.industry}
+      product={caseStudy.product}
+      website={caseStudy.website}
+      stats={caseStudy.stats}
+      labels={caseStudiesData.detailPage.labels}
+    />
+
+    <!-- Content -->
+    <article class="case-study-content">
+      <div class="container">
+        <div class="content-wrapper">
+          {Content && <Content />}
+
+          <!-- Testimonial -->
+          {caseStudy.testimonial && (
+            <aside class="testimonial-section">
+              <div class="testimonial-card">
+                <StarRating rating={caseStudy.testimonial.rating} />
+                <blockquote class="testimonial-quote">
+                  {caseStudy.testimonial.quote}
+                </blockquote>
+                <div class="testimonial-author">
+                  <img
+                    src={caseStudy.testimonial.image}
+                    alt={`Foto di ${caseStudy.testimonial.author}`}
+                    class="author-image"
+                    loading="lazy"
+                  />
+                  <div class="author-info">
+                    <span class="author-name">{caseStudy.testimonial.author}</span>
+                    <span class="author-role">{caseStudy.testimonial.role}</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          )}
+        </div>
+      </div>
+    </article>
+
+    <!-- Footer CTA -->
+    <CaseStudyCTA data={caseStudiesData.detailPage.footerCTA} />
+  </main>
+
+  <Footer
+    lang={lang}
+    navigation={navigation}
+    copyright={site.footer.copyright}
+  />
+</BaseLayout>
+
+<style>
+  .case-study-detail {
+    padding-top: var(--spacing-md);
+  }
+
+  @media (min-width: 768px) {
+    .case-study-detail {
+      padding-top: var(--spacing-lg);
+    }
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xxs);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    margin-bottom: var(--spacing-md);
+    transition: color 0.2s ease;
+  }
+
+  .back-link:hover {
+    color: var(--color-accent);
+  }
+
+  .back-arrow {
+    width: 16px;
+    height: 16px;
+  }
+
+  .case-study-content {
+    padding: var(--spacing-xl) 0;
+  }
+
+  @media (min-width: 768px) {
+    .case-study-content {
+      padding: var(--spacing-2xl) 0;
+    }
+  }
+
+  .content-wrapper {
+    max-width: 800px;
+  }
+
+  /* Markdown content styles */
+  .content-wrapper :global(h2) {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-primary);
+  }
+
+  .content-wrapper :global(h2:first-child) {
+    margin-top: 0;
+  }
+
+  .content-wrapper :global(h3) {
+    font-size: clamp(1.125rem, 3vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-primary);
+  }
+
+  .content-wrapper :global(p) {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  @media (min-width: 768px) {
+    .content-wrapper :global(p) {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .content-wrapper :global(ul),
+  .content-wrapper :global(ol) {
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+  }
+
+  .content-wrapper :global(li) {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xxs);
+  }
+
+  @media (min-width: 768px) {
+    .content-wrapper :global(li) {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .content-wrapper :global(strong) {
+    color: var(--color-text-primary);
+    font-weight: 600;
+  }
+
+  .content-wrapper :global(img) {
+    width: 100%;
+    height: auto;
+    margin: var(--spacing-lg) 0;
+    border: 1px solid var(--Border-tertiary, #444444);
+  }
+
+  /* Testimonial Section */
+  .testimonial-section {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--Border-tertiary, #444444);
+  }
+
+  .testimonial-card {
+    background-color: var(--color-background-secondary);
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--color-accent);
+  }
+
+  @media (min-width: 768px) {
+    .testimonial-card {
+      padding: var(--spacing-lg);
+    }
+  }
+
+  .testimonial-quote {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    margin: var(--spacing-sm) 0;
+    font-style: italic;
+  }
+
+  @media (min-width: 768px) {
+    .testimonial-quote {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+  }
+
+  .author-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author-name {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+
+  .author-role {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+  }
+</style>

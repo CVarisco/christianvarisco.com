@@ -1,0 +1,194 @@
+---
+interface Props {
+  company: string;
+  industry: string;
+  product: string;
+  website: string;
+  stats: Array<{ value: string; label: string }>;
+  labels: {
+    company: string;
+    industry: string;
+    product: string;
+    url: string;
+  };
+}
+
+const { company, industry, product, website, stats, labels } = Astro.props;
+---
+
+<section class="case-study-meta">
+  <div class="container">
+    <div class="meta-grid">
+      <!-- Info Column -->
+      <div class="meta-info">
+        <div class="meta-item">
+          <span class="meta-label">{labels.company}:</span>
+          <span class="meta-value">{company}</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">{labels.industry}:</span>
+          <span class="meta-value">{industry}</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">{labels.product}:</span>
+          <span class="meta-value">{product}</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">{labels.url}:</span>
+          <a href={website} class="meta-link" target="_blank" rel="noopener noreferrer">
+            {website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="meta-stats">
+        {stats.map((stat) => (
+          <div class="stat-card">
+            <span class="stat-value">{stat.value}</span>
+            <span class="stat-label">{stat.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .case-study-meta {
+    padding: var(--spacing-md) 0;
+    background-color: var(--color-background-primary);
+    border-bottom: 1px solid var(--Border-tertiary, #444444);
+  }
+
+  @media (min-width: 768px) {
+    .case-study-meta {
+      padding: var(--spacing-lg) 0;
+    }
+  }
+
+  .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  @media (min-width: 768px) {
+    .meta-grid {
+      grid-template-columns: 1fr auto;
+      align-items: start;
+      gap: var(--spacing-xl);
+    }
+  }
+
+  .meta-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xs) var(--spacing-md);
+  }
+
+  @media (min-width: 640px) {
+    .meta-info {
+      grid-template-columns: repeat(4, auto);
+      gap: var(--spacing-lg);
+    }
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .meta-label {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .meta-value {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+  }
+
+  @media (min-width: 768px) {
+    .meta-value {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  .meta-link {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+  }
+
+  .meta-link:hover {
+    color: var(--color-accent);
+  }
+
+  @media (min-width: 768px) {
+    .meta-link {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  .meta-stats {
+    display: flex;
+    gap: var(--spacing-sm);
+  }
+
+  @media (min-width: 768px) {
+    .meta-stats {
+      gap: var(--spacing-md);
+    }
+  }
+
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-background-secondary);
+    border: 2px solid var(--color-accent);
+    min-width: 100px;
+  }
+
+  @media (min-width: 768px) {
+    .stat-card {
+      padding: var(--spacing-md) var(--spacing-lg);
+      min-width: 140px;
+    }
+  }
+
+  .stat-value {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-accent);
+    line-height: 1;
+  }
+
+  @media (min-width: 768px) {
+    .stat-value {
+      font-size: var(--font-size-2xl);
+    }
+  }
+
+  .stat-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  @media (min-width: 768px) {
+    .stat-label {
+      font-size: var(--font-size-sm);
+    }
+  }
+</style>

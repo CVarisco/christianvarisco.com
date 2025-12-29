@@ -1,0 +1,96 @@
+---
+import Button from '../ui/Button.astro';
+
+interface Props {
+  data: {
+    title: {
+      before: string;
+      highlight: string;
+      after?: string;
+    };
+    subtitle?: string;
+    cta: {
+      label: string;
+      href: string;
+    };
+  };
+}
+
+const { data } = Astro.props;
+---
+
+<section class="case-study-cta">
+  <div class="container">
+    <div class="cta-content">
+      <h2 class="cta-title">
+        {data.title.before}<span class="text-accent">{data.title.highlight}</span>{data.title.after || ''}
+      </h2>
+      {data.subtitle && (
+        <p class="cta-subtitle">{data.subtitle}</p>
+      )}
+      <div class="cta-button">
+        <Button
+          href={data.cta.href}
+          variant="primary"
+          size="lg"
+          target={data.cta.href.startsWith('http') ? '_blank' : undefined}
+          rel={data.cta.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+        >
+          {data.cta.label}
+          <svg class="cta-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .case-study-cta {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-background-primary);
+  }
+
+  @media (min-width: 768px) {
+    .case-study-cta {
+      padding: var(--spacing-3xl) 0;
+    }
+  }
+
+  .cta-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .cta-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .cta-subtitle {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+  }
+
+  @media (min-width: 768px) {
+    .cta-subtitle {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .cta-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-arrow {
+    width: 20px;
+    height: 20px;
+  }
+</style>

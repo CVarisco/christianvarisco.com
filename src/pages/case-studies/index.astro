@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import Button from '../../components/ui/Button.astro';
+import CaseStudyCard from '../../components/case-studies/CaseStudyCard.astro';
+import CaseStudyCTA from '../../components/case-studies/CaseStudyCTA.astro';
+import { getTranslations } from '../../i18n/utils';
+import type { Lang } from '../../i18n';
+
+const lang: Lang = 'en';
+const currentPath = Astro.url.pathname;
+
+// Load translations
+const site = getTranslations(lang, 'site');
+const navigation = getTranslations(lang, 'navigation');
+const caseStudies = getTranslations(lang, 'caseStudies');
+---
+
+<BaseLayout
+  lang={lang}
+  seo={caseStudies.listPage.seo}
+>
+  <Header
+    lang={lang}
+    currentPath={currentPath}
+    navigation={navigation}
+  />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="case-studies-hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title hero-animate hero-delay-1">
+            {caseStudies.listPage.hero.title.before}<span class="text-accent">{caseStudies.listPage.hero.title.highlight}</span>{caseStudies.listPage.hero.title.after}
+          </h1>
+          <p class="hero-subtitle hero-animate hero-delay-2">
+            {caseStudies.listPage.hero.subtitle}
+          </p>
+          <div class="hero-cta hero-animate hero-delay-3">
+            <Button
+              href={caseStudies.listPage.hero.cta.href}
+              variant="primary"
+              size="lg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {caseStudies.listPage.hero.cta.label}
+              <svg class="cta-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section class="case-studies-grid-section">
+      <div class="container">
+        <div class="case-studies-grid">
+          {caseStudies.items.map((item, index) => (
+            <CaseStudyCard
+              slug={item.slug}
+              company={item.company}
+              thumbnail={item.thumbnail}
+              logo={item.logo}
+              shortDescription={item.shortDescription}
+              lang={lang}
+              index={index}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <CaseStudyCTA data={caseStudies.listPage.footerCTA} />
+  </main>
+
+  <Footer
+    lang={lang}
+    navigation={navigation}
+    copyright={site.footer.copyright}
+  />
+</BaseLayout>
+
+<style>
+  .case-studies-hero {
+    padding: var(--spacing-xl) 0;
+  }
+
+  @media (min-width: 768px) {
+    .case-studies-hero {
+      padding: var(--spacing-3xl) 0 var(--spacing-xl);
+    }
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+  }
+
+  @media (min-width: 768px) {
+    .hero-subtitle {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+  }
+
+  .cta-arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+  .case-studies-grid-section {
+    padding: var(--spacing-lg) 0 var(--spacing-xl);
+  }
+
+  @media (min-width: 768px) {
+    .case-studies-grid-section {
+      padding: var(--spacing-xl) 0 var(--spacing-3xl);
+    }
+  }
+
+  .case-studies-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  @media (min-width: 640px) {
+    .case-studies-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .case-studies-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

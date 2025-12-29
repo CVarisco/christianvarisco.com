@@ -1,0 +1,135 @@
+{
+  "listPage": {
+    "seo": {
+      "title": "Case Study | Christian Varisco",
+      "description": "Scopri come ho aiutato le startup a costruire prodotti di successo, raccogliere finanziamenti e scalare i loro team tecnici. Risultati reali da partnership reali."
+    },
+    "hero": {
+      "title": {
+        "before": "Incontra i ",
+        "highlight": "team",
+        "after": " che stanno costruendo il futuro"
+      },
+      "subtitle": "Dalle idee in fase iniziale ai prodotti pronti per il mercato. I nostri clienti includono aziende e startup nei settori HR tech, fintech, legal tech e altro.",
+      "cta": {
+        "label": "Prenota una consulenza GRATUITA",
+        "href": "https://cal.com/christian-varisco/discovery-call"
+      }
+    },
+    "footerCTA": {
+      "title": {
+        "before": "Pronto a ",
+        "highlight": "costruire",
+        "after": " la tua startup?"
+      },
+      "subtitle": "Discutiamo di come posso aiutarti a raggiungere i tuoi obiettivi tecnici e di business.",
+      "cta": {
+        "label": "Iniziamo a lavorare",
+        "href": "https://cal.com/christian-varisco/discovery-call"
+      }
+    }
+  },
+  "detailPage": {
+    "backLink": {
+      "label": "Torna ai case study",
+      "href": "/it/case-studies/"
+    },
+    "testimonialTitle": "Cosa dicono",
+    "footerCTA": {
+      "title": {
+        "before": "Vedi le mie altre ",
+        "highlight": "esperienze"
+      },
+      "cta": {
+        "label": "Vedi le mie altre esperienze",
+        "href": "/it/case-studies/"
+      }
+    },
+    "labels": {
+      "company": "Azienda",
+      "industry": "Settore",
+      "product": "Prodotto",
+      "url": "Sito web"
+    }
+  },
+  "items": [
+    {
+      "slug": "talentware",
+      "company": "Talentware",
+      "industry": "HR Tech",
+      "product": "Piattaforma SaaS",
+      "website": "https://talentware.io",
+      "thumbnail": "/images/case-studies/talentware-thumb.jpg",
+      "logo": "/images/case-studies/talentware-logo.svg",
+      "heroImage": "/images/case-studies/talentware-hero.jpg",
+      "shortDescription": "Piattaforma di talent management progettata per aiutare le aziende a coinvolgere, sviluppare e trattenere i talenti attraverso un approccio basato sulle competenze.",
+      "stats": [
+        { "value": "€800k", "label": "Pre-seed raccolti" },
+        { "value": "3 mesi", "label": "Da zero a clienti paganti" }
+      ],
+      "testimonial": {
+        "quote": "Il progetto è ancora in corso e finora Christian è stato molto di supporto! Sta guidando l'intero team Tech verso i milestone che abbiamo e si sta assicurando che consegniamo un prodotto a zero difetti ai nostri clienti.",
+        "author": "Giacomo Marchiori",
+        "role": "Founder @Talentware",
+        "image": "/images/testimonials/giacomo.jpg",
+        "rating": 5
+      },
+      "seo": {
+        "title": "Case Study Talentware | Christian Varisco",
+        "description": "Come ho aiutato Talentware a raccogliere €800k in pre-seed e passare dall'idea a clienti paganti in soli 3 mesi."
+      }
+    },
+    {
+      "slug": "liquinvex",
+      "company": "Liquinvex",
+      "industry": "Fintech",
+      "product": "App Mobile",
+      "website": "https://liquinvex.com",
+      "thumbnail": "/images/case-studies/liquinvex-thumb.jpg",
+      "logo": "/images/case-studies/liquinvex-logo.svg",
+      "heroImage": "/images/case-studies/liquinvex-hero.jpg",
+      "shortDescription": "App mobile che democratizza l'investimento in vini pregiati, offrendo agli utenti una cantina virtuale per acquistare, conservare e gestire investimenti vinicoli.",
+      "stats": [
+        { "value": "100%", "label": "Aumento base utenti" },
+        { "value": "1 settimana", "label": "Team assemblato" }
+      ],
+      "testimonial": {
+        "quote": "Una persona competente, dinamica e sempre disponibile. Un fractional CTO come dovrebbe essere!",
+        "author": "Riccardo Tripodi",
+        "role": "CEO & Co-Founder Liquinvex",
+        "image": "/images/testimonials/riccardo.jpg",
+        "rating": 5
+      },
+      "seo": {
+        "title": "Case Study Liquinvex | Christian Varisco",
+        "description": "Come ho aiutato Liquinvex a costruire un team di prima classe in una settimana e raggiungere una crescita del 100% della base utenti."
+      }
+    },
+    {
+      "slug": "lexroom",
+      "company": "Lexroom.ai",
+      "industry": "Legal Tech",
+      "product": "Piattaforma AI",
+      "website": "https://lexroom.ai",
+      "thumbnail": "/images/case-studies/lexroom-thumb.jpg",
+      "logo": "/images/case-studies/lexroom-logo.svg",
+      "heroImage": "/images/case-studies/lexroom-hero.jpg",
+      "shortDescription": "Strumento di ricerca legale basato su AI che fornisce rapidamente fonti legali rilevanti e redige pareri basati sulle query degli utenti.",
+      "stats": [
+        { "value": "€500k", "label": "Pre-seed raccolti" },
+        { "value": "2024", "label": "Round di successo" }
+      ],
+      "testimonial": {
+        "quote": "Christian ci ha aiutato molto a stilare una roadmap iniziale di sviluppo prodotto e a capire come costruire il team tech, identificando le figure necessarie per iniziare con risorse limitate.",
+        "author": "Martina Domenicali",
+        "role": "Co-founder & CSO at Lexroom.ai and Community Builder",
+        "image": "/images/testimonials/martina.jpg",
+        "rating": 5
+      },
+      "seo": {
+        "title": "Case Study Lexroom.ai | Christian Varisco",
+        "description": "Come ho aiutato Lexroom.ai a ottenere €500k in pre-seed costruendo una solida base tecnica e un team talentuoso."
+      }
+    }
+  ]
+}

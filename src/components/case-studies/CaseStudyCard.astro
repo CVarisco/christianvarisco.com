@@ -1,0 +1,115 @@
+---
+interface Props {
+  slug: string;
+  company: string;
+  thumbnail: string;
+  logo: string;
+  shortDescription: string;
+  lang: 'en' | 'it';
+  index?: number;
+}
+
+const { slug, company, thumbnail, logo, shortDescription, lang, index = 0 } = Astro.props;
+const href = lang === 'en' ? `/case-studies/${slug}/` : `/it/case-studies/${slug}/`;
+---
+
+<a href={href} class={`case-study-card scroll-reveal stagger-${(index % 3) + 1}`}>
+  <div class="card-image">
+    <img
+      src={thumbnail}
+      alt={`${company} case study thumbnail`}
+      loading="lazy"
+      class="thumbnail"
+    />
+    <img
+      src={logo}
+      alt={`${company} logo`}
+      class="logo"
+      loading="lazy"
+    />
+  </div>
+  <div class="card-content">
+    <h3 class="card-title">{company}</h3>
+    <p class="card-description">{shortDescription}</p>
+  </div>
+</a>
+
+<style>
+  .case-study-card {
+    display: block;
+    text-decoration: none;
+    background-color: var(--color-background-secondary);
+    border: 1px solid var(--Border-tertiary, #444444);
+    transition: transform 0.2s ease, border-color 0.2s ease, opacity 0.6s ease;
+    overflow: hidden;
+  }
+
+  .case-study-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-accent);
+  }
+
+  .card-image {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    background-color: var(--color-background-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+
+  .logo {
+    position: absolute;
+    max-width: 60%;
+    max-height: 50%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
+
+  .card-content {
+    padding: var(--spacing-sm);
+  }
+
+  @media (min-width: 768px) {
+    .card-content {
+      padding: var(--spacing-md);
+    }
+  }
+
+  .card-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xxs);
+  }
+
+  @media (min-width: 768px) {
+    .card-title {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  .card-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .card-description {
+      font-size: var(--font-size-base);
+    }
+  }
+</style>

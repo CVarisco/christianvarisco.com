@@ -19,6 +19,8 @@ import navigationEn from '../data/en/navigation.json';
 import navigationIt from '../data/it/navigation.json';
 import challengesEn from '../data/en/challenges.json';
 import challengesIt from '../data/it/challenges.json';
+import caseStudiesEn from '../data/en/case-studies.json';
+import caseStudiesIt from '../data/it/case-studies.json';
 
 const translations = {
   en: {
@@ -31,6 +33,7 @@ const translations = {
     results: resultsEn,
     navigation: navigationEn,
     challenges: challengesEn,
+    caseStudies: caseStudiesEn,
   },
   it: {
     site: siteIt,
@@ -42,6 +45,7 @@ const translations = {
     results: resultsIt,
     navigation: navigationIt,
     challenges: challengesIt,
+    caseStudies: caseStudiesIt,
   },
 } as const;
 

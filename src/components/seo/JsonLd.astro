@@ -1,13 +1,27 @@
 ---
 import type { Lang } from '../../i18n';
 
+interface CaseStudy {
+  company: string;
+  website: string;
+  heroImage: string;
+  seo: { title: string; description: string };
+  testimonial?: {
+    quote: string;
+    author: string;
+    role: string;
+    rating: number;
+  };
+}
+
 interface Props {
   lang: Lang;
   faqItems?: Array<{ question: string; answer: string }>;
   services?: Array<{ title: string; solution: string }>;
+  caseStudy?: CaseStudy;
 }
 
-const { lang, faqItems = [], services = [] } = Astro.props;
+const { lang, faqItems = [], services = [], caseStudy } = Astro.props;
 
 const siteUrl = 'https://christianvarisco.com';
 
@@ -116,6 +130,41 @@ const webPageSchema = {
   "about": { "@id": `${siteUrl}/#person` },
   "mainEntity": { "@id": `${siteUrl}/#person` }
 };
+
+// Case Study Article Schema
+const caseStudyArticleSchema = caseStudy ? {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": caseStudy.seo.title,
+  "description": caseStudy.seo.description,
+  "image": `${siteUrl}${caseStudy.heroImage}`,
+  "author": { "@id": `${siteUrl}/#person` },
+  "publisher": { "@id": `${siteUrl}/#organization` },
+  "datePublished": new Date().toISOString(),
+  "about": {
+    "@type": "Organization",
+    "name": caseStudy.company,
+    "url": caseStudy.website
+  }
+} : null;
+
+// Case Study Review Schema (from testimonial)
+const caseStudyReviewSchema = caseStudy?.testimonial ? {
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": caseStudy.testimonial.rating,
+    "bestRating": 5
+  },
+  "author": {
+    "@type": "Person",
+    "name": caseStudy.testimonial.author,
+    "jobTitle": caseStudy.testimonial.role
+  },
+  "reviewBody": caseStudy.testimonial.quote,
+  "itemReviewed": { "@id": `${siteUrl}/#person` }
+} : null;
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
@@ -125,3 +174,5 @@ const webPageSchema = {
 {serviceSchemas.map(schema => (
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
 ))}
+{caseStudyArticleSchema && <script type="application/ld+json" set:html={JSON.stringify(caseStudyArticleSchema)} />}
+{caseStudyReviewSchema && <script type="application/ld+json" set:html={JSON.stringify(caseStudyReviewSchema)} />}

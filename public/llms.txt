@@ -29,6 +29,21 @@ Find and integrate the right technical talent, whether freelancers or internal h
 - Lexroom.ai: EUR 500k pre-seed funding
 - Liquinvex: Accepted into Nana Bianca accelerator
 
+## Case Studies
+Detailed case studies showcasing Christian's work with startups:
+
+### Talentware (HR Tech)
+Talent management platform helping businesses engage and retain talent. Achievements: EUR 800k pre-seed raised, paying customers in 3 months.
+[Read full case study](https://christianvarisco.com/case-studies/talentware/)
+
+### Liquinvex (Fintech)
+Mobile app democratizing wine investment with virtual cellars. Achievements: 100% user base growth, team assembled in 1 week, Nana Bianca accelerator acceptance.
+[Read full case study](https://christianvarisco.com/case-studies/liquinvex/)
+
+### Lexroom.ai (Legal Tech)
+AI-powered legal research tool for finding sources and drafting opinions. Achievements: EUR 500k pre-seed raised in January 2024.
+[Read full case study](https://christianvarisco.com/case-studies/lexroom/)
+
 ## Contact
 - Website: https://christianvarisco.com
 - LinkedIn: https://linkedin.com/in/christianvarisco
@@ -39,6 +54,7 @@ Find and integrate the right technical talent, whether freelancers or internal h
 ## Links
 - [Home](https://christianvarisco.com)
 - [Services](https://christianvarisco.com/#Services)
+- [Case Studies](https://christianvarisco.com/case-studies/)
 - [Testimonials](https://christianvarisco.com/#Testimonials)
 - [Process](https://christianvarisco.com/#Steps)
 - [FAQ](https://christianvarisco.com/#Faq)

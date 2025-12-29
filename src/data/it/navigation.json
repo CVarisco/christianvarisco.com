@@ -1,7 +1,7 @@
 {
   "links": [
     { "label": "Servizi", "href": "#services" },
-    { "label": "Clienti", "href": "#customers" },
+    { "label": "Case Study", "href": "/it/case-studies/" },
     { "label": "Testimonianze", "href": "#testimonials" },
     { "label": "Processo", "href": "#steps" },
     { "label": "FAQ", "href": "#faq" }
