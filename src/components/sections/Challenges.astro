@@ -91,8 +91,8 @@ const icons = {
 
     <!-- Cards Grid -->
     <div class="challenges-grid">
-      {data.cards.map((card) => (
-        <article class="challenge-card">
+      {data.cards.map((card, index) => (
+        <article class={`challenge-card scroll-reveal stagger-${index + 1}`}>
           <div class="challenge-icon" set:html={icons[card.icon]} />
           <h3 class="challenge-title">{card.title}</h3>
           <p class="challenge-description">{card.description}</p>
@@ -186,6 +186,12 @@ const icons = {
     border-radius: 0;
     padding: var(--spacing-md);
     border: 1px solid var(--Border-tertiary, #444444);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .challenge-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-accent);
   }
 
   @media (min-width: 768px) {
@@ -193,6 +199,8 @@ const icons = {
       padding: var(--spacing-md) var(--spacing-sm);
     }
   }
+
+  /* Scroll entrance animation - handled by .scroll-reveal class in global.css */
 
   .challenge-icon {
     display: flex;

@@ -223,6 +223,38 @@ a:hover {
    ANIMATIONS
    ============================================ */
 
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(203, 252, 1, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(203, 252, 1, 0);
+  }
+}
+
+@keyframes progressGrow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* Legacy fade-in (keeping for backwards compatibility) */
 @keyframes fade-in {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -230,4 +262,66 @@ a:hover {
 
 .animate-fade-in {
   animation: fade-in 0.5s ease forwards;
+}
+
+/* Scroll-triggered animations using Intersection Observer (JS-powered) */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for cards - works with JS-triggered animations */
+.stagger-1 { transition-delay: 0s; }
+.stagger-2 { transition-delay: 0.1s; }
+.stagger-3 { transition-delay: 0.15s; }
+.stagger-4 { transition-delay: 0.2s; }
+.stagger-5 { transition-delay: 0.25s; }
+.stagger-6 { transition-delay: 0.3s; }
+
+/* Legacy animate-on-scroll for backwards compatibility */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero stagger animation classes */
+.hero-animate {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.hero-delay-1 { animation-delay: 0s; }
+.hero-delay-2 { animation-delay: 0.1s; }
+.hero-delay-3 { animation-delay: 0.2s; }
+.hero-delay-4 { animation-delay: 0.3s; }
+.hero-delay-5 { animation-delay: 0.4s; }
+
+/* Accessibility: Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-on-scroll,
+  .hero-animate {
+    opacity: 1;
+    transform: none;
+  }
 }

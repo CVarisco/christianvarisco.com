@@ -54,7 +54,7 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
     <!-- Bento Grid -->
     <div class="bento-grid">
       <!-- Stat: Startups (top-left) -->
-      <div class="bento-item stat-startups">
+      <div class="bento-item stat-startups scroll-reveal stagger-1">
         <div class="stat-card">
           <span class="stat-value">{data.stats.startups.value}</span>
           <span class="stat-label">{data.stats.startups.label}</span>
@@ -62,7 +62,7 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       </div>
 
       <!-- Case Study: Talentware (bottom-left) -->
-      <div class="bento-item case-talentware">
+      <div class="bento-item case-talentware scroll-reveal stagger-2">
         <div class="case-card">
           <h3 class="case-logo talentware-logo">
             <span class="logo-icon">𝕿</span>alentware
@@ -82,7 +82,7 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       </div>
 
       <!-- Case Study: Liquinvex (center, tall) -->
-      <div class="bento-item case-liquinvex">
+      <div class="bento-item case-liquinvex scroll-reveal stagger-3">
         <div class="case-card">
           <h3 class="case-logo liquinvex-logo">liquinve<span class="logo-x">x</span></h3>
           <p class="case-description">{data.caseStudies.liquinvex.description}</p>
@@ -100,7 +100,7 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       </div>
 
       <!-- Stat: Leads (top-right) -->
-      <div class="bento-item stat-leads">
+      <div class="bento-item stat-leads scroll-reveal stagger-2">
         <div class="stat-card">
           <span class="stat-value">{data.stats.leads.value}</span>
           <span class="stat-label">{data.stats.leads.label}</span>
@@ -108,7 +108,7 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       </div>
 
       <!-- Case Study: Lexroom (bottom-right) -->
-      <div class="bento-item case-lexroom">
+      <div class="bento-item case-lexroom scroll-reveal stagger-4">
         <div class="case-card">
           <h3 class="case-logo lexroom-logo">LEXR<span class="logo-o">○</span><span class="logo-o">○</span>M.AI</h3>
           <p class="case-description">{data.caseStudies.lexroom.description}</p>
@@ -126,7 +126,7 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       </div>
 
       <!-- Stat: Funds (bottom-center) -->
-      <div class="bento-item stat-funds">
+      <div class="bento-item stat-funds scroll-reveal stagger-5">
         <div class="stat-card">
           <span class="stat-value">{data.stats.funds.value}</span>
           <span class="stat-label">{data.stats.funds.label}</span>
@@ -237,6 +237,12 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
     justify-content: center;
     border: 1px solid var(--Border-tertiary, #444444);
     box-shadow: 4px 4px 0 0 var(--color-accent);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .stat-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 0 var(--color-accent);
   }
 
   .stat-value {
@@ -268,7 +274,15 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
     display: flex;
     flex-direction: column;
     border: 1px solid var(--Border-tertiary, #444444);
+    transition: transform 0.2s ease, border-color 0.2s ease;
   }
+
+  .case-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-accent);
+  }
+
+  /* Bento grid scroll animation - handled by .scroll-reveal class in global.css */
 
   .case-logo {
     font-size: var(--font-size-xl);

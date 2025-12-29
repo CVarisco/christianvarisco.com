@@ -28,8 +28,8 @@ const { data } = Astro.props;
 
     <!-- Testimonials Grid -->
     <div class="testimonials-grid">
-      {data.items.map(testimonial => (
-        <article class="testimonial-card">
+      {data.items.map((testimonial, index) => (
+        <article class={`testimonial-card scroll-reveal stagger-${(index % 3) + 1}`}>
           <!-- Stars -->
           <div class="stars">
             {[1, 2, 3, 4, 5].map(() => (
@@ -129,7 +129,15 @@ const { data } = Astro.props;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--Border-tertiary, #444444);
+    transition: transform 0.2s ease, border-color 0.2s ease, opacity 0.6s ease;
   }
+
+  .testimonial-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-accent);
+  }
+
+  /* Scroll animation - handled by .scroll-reveal class in global.css */
 
   .stars {
     display: flex;
