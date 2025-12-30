@@ -36,9 +36,7 @@ const { data } = Astro.props;
         </span>
       </h1>
 
-      <p class="hero-subheadline hero-animate hero-delay-3">
-        {data.subheadline}
-      </p>
+      <p class="hero-subheadline hero-animate hero-delay-3" set:html={data.subheadline} />
 
       <div class="hero-cta hero-animate hero-delay-4">
         <Button

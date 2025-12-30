@@ -6,28 +6,44 @@
   "subheadline": "Che tu abbia bisogno di un advisor, un CTO operativo o una consulenza strategica — mi adatto alla tua fase e alle tue esigenze.",
   "stages": [
     {
-      "time": "Settimana 1",
+      "time": "Week 1",
       "title": "Discovery",
-      "description": "Comprendo le tue sfide, il team e gli obiettivi",
-      "role": "Advisor"
+      "description": "Capisco a fondo le tue sfide, il team e dove vuoi arrivare",
+      "deliverables": [
+        "Assessment tecnico e organizzativo",
+        "Mappatura delle priorità",
+        "Report con raccomandazioni"
+      ]
     },
     {
-      "time": "Mese 1",
-      "title": "Fondamenta",
-      "description": "Definisco strategia, roadmap tecnica e struttura del team",
-      "role": "Consultant"
+      "time": "Week 2-3",
+      "title": "Strategy",
+      "description": "Definiamo insieme la roadmap e le priorità strategiche",
+      "deliverables": [
+        "Roadmap tecnica",
+        "Architettura di riferimento",
+        "Piano d'azione prioritizzato"
+      ]
     },
     {
-      "time": "Mese 2-3",
-      "title": "Esecuzione",
-      "description": "Costruiamo, lanciamo e iteriamo con guida esperta",
-      "role": "Fractional CTO"
+      "time": "Month 1-3",
+      "title": "Execution",
+      "description": "Costruiamo su basi solide, fianco a fianco",
+      "deliverables": [
+        "Implementazione guidata",
+        "Processi e best practice",
+        "Team allineato e formato"
+      ]
     },
     {
-      "time": "Mese 3+",
-      "title": "Scala",
-      "description": "Consolidiamo i fondamentali e prepariamo la crescita",
-      "role": "Advisor / CTO"
+      "time": "Month 3+",
+      "title": "Scale",
+      "description": "Consolidiamo le fondamenta e prepariamo la crescita",
+      "deliverables": [
+        "Fondamenta solide per scalare",
+        "Team autonomo",
+        "Supporto continuativo"
+      ]
     }
   ],
   "cta": {

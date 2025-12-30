@@ -8,26 +8,42 @@
     {
       "time": "Week 1",
       "title": "Discovery",
-      "description": "Understand your challenges, team, and goals",
-      "role": "Advisor"
+      "description": "Deep dive into your challenges, team, and goals",
+      "deliverables": [
+        "Technical and organizational assessment",
+        "Priority mapping",
+        "Report with recommendations"
+      ]
     },
     {
-      "time": "Month 1",
-      "title": "Foundations",
-      "description": "Define strategy, tech roadmap, and team structure",
-      "role": "Consultant"
+      "time": "Week 2-3",
+      "title": "Strategy",
+      "description": "Define the roadmap and strategic priorities together",
+      "deliverables": [
+        "Technical roadmap",
+        "Reference architecture",
+        "Prioritized action plan"
+      ]
     },
     {
-      "time": "Month 2-3",
+      "time": "Month 1-3",
       "title": "Execution",
-      "description": "Build, launch, and iterate with expert guidance",
-      "role": "Fractional CTO"
+      "description": "Build on solid foundations, side by side",
+      "deliverables": [
+        "Guided implementation",
+        "Processes and best practices",
+        "Aligned and trained team"
+      ]
     },
     {
       "time": "Month 3+",
       "title": "Scale",
-      "description": "Consolidate fundamentals and prepare for growth",
-      "role": "Advisor / CTO"
+      "description": "Consolidate foundations and prepare for growth",
+      "deliverables": [
+        "Solid foundations to scale",
+        "Autonomous team",
+        "Ongoing support"
+      ]
     }
   ],
   "cta": {

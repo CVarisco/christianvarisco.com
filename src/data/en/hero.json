@@ -3,7 +3,7 @@
     "line1": { "before": "Avoid ", "highlight": "expensive", "after": " mistakes." },
     "line2": { "before": "Let's build your startup ", "highlight": "together", "after": "." }
   },
-  "subheadline": "Hi, I'm Christian Varisco, Fractional CTO 🇮🇹. I help founders build team, product, and architecture on solid foundations.",
+  "subheadline": "Hi, I'm Christian Varisco, Fractional CTO 🇮🇹.<br>I help founders build team, product, and architecture on solid foundations.",
   "cta": {
     "label": "Book a FREE consultation",
     "href": "https://cal.com/christian-varisco/discovery-call"
