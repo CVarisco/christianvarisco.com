@@ -1,8 +1,6 @@
 ---
 ---
 
-## L'Azienda
-
 Liquinvex è un marketplace di vini pregiati dove gli utenti possono comprare bottiglie rare, investire nel vino e vendere attraverso la piattaforma. Il target sono investitori che vogliono diversificare i portafogli d'investimento con posizioni in vini pregiati.
 
 ## La Sfida
@@ -20,6 +18,7 @@ Ho proposto uno sblocco immediato: **sviluppo gratuito per la prima settimana**,
 ### Team Assembly
 
 Ho coordinato quattro professionisti freelance fidati:
+
 - **Backend developer**
 - **Frontend developer**
 - **Product manager**

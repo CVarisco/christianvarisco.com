@@ -38,22 +38,24 @@
         }
       ]
     },
-    "liquinvex": {
-      "name": "Liquinvex",
-      "description": "Liquinvex è un'app mobile che democratizza l'investimento in vini pregiati, offrendo agli utenti una cantina virtuale per acquistare, conservare e gestire investimenti vinicoli senza i problemi dello stoccaggio fisico.",
+    "pausetiv": {
+      "name": "Pausetiv",
+      "description": "Pausetiv è una piattaforma che aiuta le donne a scoprire e affrontare la menopausa con un approccio medico strutturato, collegando pazienti e professionisti sanitari.",
       "achievements": [
         {
-          "text": "Costruito un team di prima classe ",
-          "highlight": "in una sola settimana."
+          "text": "Da zero a live ",
+          "highlight": "in soli 4 mesi",
+          "textAfter": " con un team freelance costruito da zero."
         },
         {
-          "text": "Liquinvex è entrato rapidamente nel ",
-          "highlight": "programma acceleratore Nana Bianca",
-          "textAfter": ", dimostrando quanto velocemente stanno crescendo!"
+          "text": "Piattaforma ",
+          "highlight": "medical-grade",
+          "textAfter": " con interfaccia curata dal giorno zero."
         },
         {
-          "text": "Nuove funzionalità dell'app su base settimanale e la base utenti ha visto un ",
-          "highlight": "aumento del 100%."
+          "text": "Prime ",
+          "highlight": "partnership B2B",
+          "textAfter": " con aziende per welfare benefit."
         }
       ]
     },

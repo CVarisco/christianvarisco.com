@@ -1,8 +1,6 @@
 ---
 ---
 
-## L'Azienda
-
 Pausetiv è una piattaforma che aiuta le donne a scoprire e affrontare la menopausa con un approccio medico strutturato: uno strumento clinico vero che collega pazienti e professionisti sanitari.
 
 **Il loro target?** Donne che vogliono affrontare la menopausa con supporto medico qualificato, e aziende che cercano benefit welfare concreti per le proprie dipendenti.
@@ -23,7 +21,7 @@ La situazione era classica early-stage: **visione chiara, problema forte e zero 
 
 Avevano wireframe ben fatti, un'idea precisa di cosa costruire ma nessuno che potesse trasformare tutto questo in una piattaforma funzionante.
 
-*La prima cosa che mi ha colpito non è stato il prodotto… È stata Clarice.*
+_La prima cosa che mi ha colpito non è stato il prodotto… È stata Clarice._
 
 Founder tosta, preparata, con una visione cristallina sul problema che voleva risolvere. Stava costruendo uno strumento medico vero per un problema sottovalutato e poco affrontato: **la menopausa**.
 

@@ -1,8 +1,6 @@
 ---
 ---
 
-## The Company
-
 Liquinvex is a premium wine marketplace where users can buy rare bottles, invest in wine, and sell through the platform. The target is investors who want to diversify their investment portfolios with positions in fine wines.
 
 ## The Challenge
@@ -20,6 +18,7 @@ I proposed an immediate unblock: **free development for the first week**, then e
 ### Team Assembly
 
 I coordinated four trusted freelance professionals:
+
 - **Backend developer**
 - **Frontend developer**
 - **Product manager**

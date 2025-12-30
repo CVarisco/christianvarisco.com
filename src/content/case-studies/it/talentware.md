@@ -1,8 +1,6 @@
 ---
 ---
 
-## L'Azienda
-
 Talentware è una startup che aiuta le grandi aziende a gestire i talenti con un approccio AI skill-based. Invece di ragionare per ruoli, mappano le competenze reali dei dipendenti e usano AI per suggerire percorsi di carriera, piani di sviluppo e successioni automatiche.
 
 **Il loro target?** Enterprise che vogliono trattenere talenti e ottimizzare performance attraverso la gestione strategica delle skill.
@@ -22,11 +20,11 @@ Mi chiamano a fine 2023. Tre co-founder brillanti, reduci da un acceleratore, co
 
 Avevano una visione chiara: rivoluzionare l'HR tech con un approccio skill-based che nessuno stava facendo davvero bene.
 
-*Ma la cosa che mi ha colpito di più era che sapevano perfettamente di cosa avevano bisogno. Non stavano cercando uno sviluppatore qualsiasi o un consulente generico che risolvesse tutto con template prestampati.*
+_Ma la cosa che mi ha colpito di più era che sapevano perfettamente di cosa avevano bisogno. Non stavano cercando uno sviluppatore qualsiasi o un consulente generico che risolvesse tutto con template prestampati._
 
 Serviva qualcuno che potesse **costruire un'infrastruttura enterprise-ready dal giorno zero**, **gestire team tecnici in crescita, e soprattutto navigare le complessità del B2B enterprise** senza sbattere contro i muri tipici delle startup.
 
-"*Dobbiamo costruire tutto pensando già a dove vogliamo arrivare*" è stata la prima cosa che ci siamo detti in quella riunione iniziale a quattro. E già da quella frase ho capito che sarebbe stato un progetto diverso dal solito.
+"_Dobbiamo costruire tutto pensando già a dove vogliamo arrivare_" è stata la prima cosa che ci siamo detti in quella riunione iniziale a quattro. E già da quella frase ho capito che sarebbe stato un progetto diverso dal solito.
 
 ![Il team Talentware](/images/case-studies/talentware-team.jpg)
 
@@ -42,11 +40,11 @@ Quando vendi a grandi aziende una piattaforma HR per mappare skill e gestire car
 
 Il primo mese l'ho passato ad analizzare a fondo il loro business model.
 
-*Chi erano davvero i clienti target, che volumi di dati dovevamo aspettarci, quali compliance sarebbero arrivate nel lungo termine. Da lì sono partite tutte le scelte tecniche successive.*
+_Chi erano davvero i clienti target, che volumi di dati dovevamo aspettarci, quali compliance sarebbero arrivate nel lungo termine. Da lì sono partite tutte le scelte tecniche successive._
 
 La strategia che abbiamo deciso insieme era pensare alla certificazione ISO 27001 dal giorno zero, anche se non serviva subito.
 
-Invece di costruire qualcosa che funzionasse e poi doverla adattare alle compliance (*approccio costoso e rischioso*), abbiamo impostato architettura, processi e documentazione pensando già a quella certificazione futura che sapevamo sarebbe arrivata.
+Invece di costruire qualcosa che funzionasse e poi doverla adattare alle compliance (_approccio costoso e rischioso_), abbiamo impostato architettura, processi e documentazione pensando già a quella certificazione futura che sapevamo sarebbe arrivata.
 
 L'architettura single-tenant era praticamente inevitabile per il loro mercato. Ogni cliente enterprise doveva avere la sua istanza completamente isolata, per sicurezza, per personalizzazione, per tranquillità mentale dei loro buyer.
 
@@ -80,11 +78,11 @@ Quando un frontend developer ci ha lasciati all'improvviso nel bel mezzo di uno 
 
 Le RFP (Request for Proposal) enterprise sono state una scoperta interessante, un mondo completamente diverso dal B2C.
 
-*Non basta avere un buon prodotto che funziona. Devi documentare ogni aspetto tecnico in dettaglio, dimostrare compliance su decine di framework diversi, spiegare architetture complesse a buyer che conoscono il mercato meglio di te.*
+_Non basta avere un buon prodotto che funziona. Devi documentare ogni aspetto tecnico in dettaglio, dimostrare compliance su decine di framework diversi, spiegare architetture complesse a buyer che conoscono il mercato meglio di te._
 
 Ho supportato direttamente il team su tre RFP importanti, e tutte sono andate a buon fine grazie anche alla solidità dell'infrastruttura che avevamo costruito.
 
-Il momento più delicato è stato quando abbiamo iniziato **la ricerca del CTO interno**. Non era solo questione di trovare un profilo tecnicamente valido (*cosa già complicata*) ma qualcuno che potesse prendere in mano tutto l'ecosistema che avevamo costruito e farlo crescere ulteriormente senza perdere la vision iniziale. Risultato? L'abbiamo trovato e ha già iniziato.
+Il momento più delicato è stato quando abbiamo iniziato **la ricerca del CTO interno**. Non era solo questione di trovare un profilo tecnicamente valido (_cosa già complicata_) ma qualcuno che potesse prendere in mano tutto l'ecosistema che avevamo costruito e farlo crescere ulteriormente senza perdere la vision iniziale. Risultato? L'abbiamo trovato e ha già iniziato.
 
 ## I fattori decisivi
 

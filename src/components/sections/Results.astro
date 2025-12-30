@@ -24,7 +24,7 @@ interface Props {
     };
     caseStudies: {
       talentware: CaseStudy;
-      liquinvex: CaseStudy;
+      pausetiv: CaseStudy;
       lexroom: CaseStudy;
     };
     cta: {
@@ -81,15 +81,15 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
         </div>
       </div>
 
-      <!-- Case Study: Liquinvex (center, tall) -->
-      <div class="bento-item case-liquinvex scroll-reveal stagger-3">
+      <!-- Case Study: Pausetiv (center, tall) -->
+      <div class="bento-item case-pausetiv scroll-reveal stagger-3">
         <div class="case-card">
           <div class="case-logo">
-            <img src="/images/logos/liquinvex.svg" alt="Liquinvex" class="logo-img" />
+            <img src="/images/logos/pausetiv.svg" alt="Pausetiv" class="logo-img" />
           </div>
-          <p class="case-description">{data.caseStudies.liquinvex.description}</p>
+          <p class="case-description">{data.caseStudies.pausetiv.description}</p>
           <ul class="achievements-list">
-            {data.caseStudies.liquinvex.achievements.map((achievement) => (
+            {data.caseStudies.pausetiv.achievements.map((achievement) => (
               <li class="achievement-item">
                 <span class="achievement-icon" set:html={achievementIcon} />
                 <span class="achievement-text">
@@ -203,7 +203,7 @@ const achievementIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="n
       grid-row: 2 / 4;
     }
 
-    .case-liquinvex {
+    .case-pausetiv {
       grid-column: 2;
       grid-row: 1 / 3;
     }
