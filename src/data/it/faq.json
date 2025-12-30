@@ -1,38 +1,66 @@
 {
   "title": "FAQ",
-  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  "subtitle": "Hai domande? Ecco le risposte più frequenti su come lavoro e cosa posso fare per te.",
   "cta": {
     "label": "Prenota una consulenza GRATUITA",
     "href": "https://cal.com/christian-varisco/discovery-call"
   },
   "items": [
     {
-      "question": "Quali servizi offre Christian alle startup?",
-      "answer": "Risolvo problemi in tre aree chiave: Prodotto, Tech e Team. Per il Prodotto, ti aiuto a definire quali funzionalità devono essere sviluppate e quando. Per il Tech, guido le decisioni su quale tecnologia usare, come implementarla e quando rilasciarla. Per il Team, aiuto a trovare e guidare le migliori persone per lavorare nella tua startup, che siano freelancer o parte di un team interno."
+      "question": "Cosa significa \"Fractional\"?",
+      "answer": "\"Fractional\" vuol dire che non lavori con me a tempo pieno, ma solo per la parte che ti serve. È un modello flessibile: invece di assumere un CTO full-time, ottieni competenze da C-level senza i costi e l'impegno di un'assunzione permanente."
+    },
+    {
+      "question": "Perché lavorare con un Fractional CTO?",
+      "answer": "Perché hai dal primo giorno un CTO senior che porta esperienza, best practice e visione strategica, senza i costi e i vincoli di un full-time. Posso lavorare come advisor o come Fractional CTO, a seconda delle tue necessità."
+    },
+    {
+      "question": "Quali sono i tuoi servizi?",
+      "answer": "Mi occupo di 3 aspetti principali: Prodotto, Tech e Team. Per il Prodotto, ti aiuto a capire quali feature sviluppare (e quali no), perché, come e quando. Per la parte Tech, mi occupo di scegliere la giusta tecnologia per rendere l'azienda stabile e duratura. Per il Team, ti aiuto a selezionare i migliori talenti (freelance o dipendenti) per la tua startup, creando un ambiente forte, veloce e orientato alla crescita. E ovviamente a guidarlo attraverso il percorso di sviluppo."
+    },
+    {
+      "question": "Con che tipo di clienti lavori?",
+      "answer": "Lavoro principalmente con startup early-stage o con aziende più strutturate. Queste realtà possono avere o meno un CTO interno, un team già attivo oppure basarsi sul mio network di professionisti. Generalmente i miei clienti hanno almeno un budget di €30-50k da investire in tecnologia (non per me, ma per il resto del team)."
     },
     {
       "question": "Con quante startup lavori in parallelo?",
       "answer": "Lavoro con un massimo di tre startup in parallelo. Questo mi permette di concentrarmi sulla qualità dei risultati per ogni progetto."
     },
     {
+      "question": "Qual è la durata tipica di una collaborazione?",
+      "answer": "Generalmente i miei ingaggi durano da un minimo di 3 mesi fino a 18 mesi, per costruire una base solida in termini di prodotto, tecnologia e team. Se invece ti serve supporto più leggero, posso lavorare come advisor anche per una sola ora a settimana."
+    },
+    {
       "question": "Scrivi anche codice?",
-      "answer": "Se necessario, sì. Tuttavia, il mio obiettivo principale è sfruttare la mia esperienza per guidarti su come costruire una startup di successo, piuttosto che scrivere solo software."
+      "answer": "Sì, non mi sono mai fermato dallo scrivere codice. Solo che non è il mio servizio principale: lo faccio per i clienti solo in casi d'emergenza. La mia priorità resta aiutarti a costruire una startup di successo."
     },
     {
       "question": "Hai un team?",
-      "answer": "Sì, ho una rete di collaboratori che include sviluppatori, designer, product manager e vari altri professionisti. Possono intervenire per assistere sia me che la tua startup ogni volta che è necessario."
+      "answer": "Sì, ho un network di freelance di fiducia che ho selezionato negli anni. Di solito mi affiancano developers, designers, product managers e altri professionisti. Possono entrare fin dall'inizio nel progetto, oppure essere attivati più avanti in base alle necessità."
     },
     {
-      "question": "Con quali stadi di startup lavori tipicamente?",
-      "answer": "Lavoro tipicamente con startup in fase iniziale che hanno almeno un budget di $20k da investire in tecnologia (non per me, ma per il resto del team). Queste startup possono o meno avere un CTO con cui collaborare, e possono avere un team interno o affidarsi alla mia rete di professionisti."
+      "question": "Puoi aiutarmi a creare il mio team tech?",
+      "answer": "Sì. Che tu parta da zero o abbia già qualcuno a bordo, ti aiuto a costruire il team giusto. Possiamo usare il mio network di professionisti oppure cercare insieme persone esterne da inserire."
     },
     {
-      "question": "Qual è la durata tipica dei tuoi ingaggi con le startup?",
-      "answer": "Generalmente, i miei ingaggi durano tra 3 e 9 mesi per assicurarci di costruire una base solida in termini di prodotto, tecnologia e team. Tuttavia, se necessario, posso anche fornire servizi di advisory per anche solo un'ora a settimana, con ingaggi della durata di un solo mese."
+      "question": "Ha senso collaborare se ho già un CTO full-time?",
+      "answer": "Sì, assolutamente. Non vengo a sostituire nessuno: se necessario, posso affiancare la persona e dare supporto extra su progetti specifici, oppure accompagnare l'attuale CTO per una crescita più veloce."
+    },
+    {
+      "question": "Se serve, ti interfacci anche con investitori?",
+      "answer": "Sì, fa parte del mio lavoro. Posso partecipare alle call con investitori o advisor, raccontare in modo chiaro la parte tech e rispondere alle loro domande. L'obiettivo è dare credibilità al progetto e far vedere che dietro c'è una guida tecnica solida."
+    },
+    {
+      "question": "Puoi valutare i miei fornitori o aiutarmi a trovarne di nuovi?",
+      "answer": "Sì. Posso aiutarti a scegliere i partner giusti (o fare una valutazione su quelli già attivi), che sia il cloud provider, un'agenzia esterna o un fornitore tech, valutando costi, affidabilità e scalabilità. L'obiettivo è farti risparmiare tempo e soldi, portando soluzioni già testate sul campo."
+    },
+    {
+      "question": "Cosa succede se la startup cresce e serve un CTO full-time?",
+      "answer": "Se capita è perché stiamo facendo un buon lavoro: vuol dire che la startup sta crescendo. In quel caso ti aiuto nella transizione: partecipo alla selezione del nuovo CTO, lo formo e passo il testimone in modo efficace. Se serve, posso anche restare come advisor, così non perdi continuità."
     },
     {
       "question": "Come gestisci riservatezza e sicurezza dei dati?",
-      "answer": "Prima di iniziare a lavorare insieme, dipende da te. Posso firmare un NDA e term sheet se necessario (e se ha senso) per garantire la tua riservatezza e sicurezza dei dati."
+      "answer": "Definiamo tutto nel contratto di collaborazione. Se necessario, posso firmare un NDA per garantire la tua riservatezza e sicurezza dei dati."
     }
   ]
 }

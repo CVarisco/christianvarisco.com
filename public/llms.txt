@@ -28,9 +28,9 @@ Design and build the right architecture for each stage. Make technical choices t
 Support founders in their first key technical hires. Define roles, processes, and tech culture. Build teams that can stand on their own.
 
 ## Engagement Details
-- Works with maximum 3-4 startups in parallel to ensure quality focus
-- Typical engagement duration: 3-12 months
-- Minimum startup budget: EUR 50k-100k for technology investment
+- Works with maximum 3 startups in parallel to ensure quality focus
+- Typical engagement duration: 3-18 months
+- Minimum startup budget: EUR 30-50k for technology investment
 - Average time to market: 3-6 months
 - Can also provide advisory services (as little as 1 hour/week)
 
@@ -84,6 +84,44 @@ AI-powered legal research tool for finding sources and drafting opinions.
 2. **Discuss Goals** - Understand your startup's technical challenges
 3. **Execute & Launch** - Receive a tailor-made offer and start building
 
+## Frequently Asked Questions
+
+### What does "Fractional" mean?
+"Fractional" means you don't work with me full-time, but only for the part you need. It's a flexible model: instead of hiring a full-time CTO, you get C-level expertise without the costs and commitment of a permanent hire.
+
+### Why work with a Fractional CTO?
+From day one you get a senior CTO who brings experience, best practices, and strategic vision, without the costs and constraints of a full-time hire. I can work as an advisor or as a Fractional CTO, depending on your needs.
+
+### What are your services?
+I focus on 3 main areas: Product (which features to develop and when), Tech (choosing the right technology for stability and growth), and Team (selecting and guiding the best talent for your startup).
+
+### What type of clients do you work with?
+I mainly work with early-stage startups or more established companies. These organizations may or may not have an internal CTO, an existing team, or they can rely on my network of professionals. Generally, my clients have at least a EUR 30-50k budget to invest in technology.
+
+### Do you write code?
+Yes, I've never stopped writing code. But it's not my main service: I only do it for clients in emergency situations. My priority is helping you build a successful startup.
+
+### Do you have a team?
+Yes, I have a trusted network of freelancers I've selected over the years (developers, designers, product managers). They can join from the start of the project or be activated later based on needs.
+
+### Can you help me build my tech team?
+Yes. Whether you're starting from scratch or already have someone on board, I help you build the right team using my network or searching for external people.
+
+### Does it make sense to collaborate if I already have a full-time CTO?
+Yes, absolutely. I'm not here to replace anyone: I can support them on specific projects or work alongside your current CTO for faster growth.
+
+### Do you interface with investors?
+Yes, it's part of my job. I can join calls with investors or advisors, clearly explain the tech side and answer their questions to give credibility to the project.
+
+### Can you evaluate vendors or help find new ones?
+Yes. I can help you choose the right partners (cloud providers, agencies, tech vendors), assessing costs, reliability, and scalability.
+
+### What happens if the startup grows and needs a full-time CTO?
+If that happens, it means the startup is growing. I help with the transition: participate in selecting the new CTO, train them, and hand over effectively. I can also stay on as an advisor.
+
+### How do you handle confidentiality and data security?
+We define everything in the collaboration agreement. If needed, I can sign an NDA to ensure your confidentiality and data security.
+
 ## Contact
 - Website: https://christianvarisco.com
 - LinkedIn: https://linkedin.com/in/christianvarisco
@@ -102,5 +140,5 @@ AI-powered legal research tool for finding sources and drafting opinions.
 - [Italian Version](https://christianvarisco.com/it/)
 
 ---
-Last updated: December 2024
+Last updated: December 2025
 Languages: English, Italian
