@@ -6,22 +6,22 @@
       "id": "product",
       "icon": "product",
       "title": "Product",
-      "problem": "Are your development timelines slipping? Do you feel overwhelmed by technical decisions?",
-      "solution": "I help you define which features need to be developed and when. Creating a clear roadmap from idea to market-ready product."
+      "problem": "You've validated the idea, but turning it into a real product is another story. What to build first? How to avoid wasting months on the wrong features?",
+      "solution": "I define the roadmap with you. I prioritize features that matter for the market and build foundations for growth without having to redo everything."
     },
     {
       "id": "tech",
       "icon": "tech",
       "title": "Tech",
-      "problem": "Struggling to choose the right technology stack? Is technical debt slowing you down?",
-      "solution": "I lead on what technology to use, how to implement it, and when to roll it out. Building scalable systems that grow with your business."
+      "problem": "You need an architecture that can handle growth, but every decision feels binding. How do you build without having to redo everything in six months?",
+      "solution": "I design and build the right architecture for this stage. I make technical choices that give you flexibility, not debt."
     },
     {
       "id": "team",
       "icon": "team",
       "title": "Team",
-      "problem": "Having trouble finding and retaining technical talent? Is your team lacking direction?",
-      "solution": "I assist in finding and leading the best people to work in your startup, whether they are freelancers or part of an internally hired team."
+      "problem": "It's time for your first technical hires. Who to hire? How to evaluate them? How to get them working well together?",
+      "solution": "I support you in key hires. I define roles, processes, and tech culture. I build a team that can stand on its own."
     }
   ]
 }

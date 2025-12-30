@@ -6,22 +6,22 @@
       "id": "product",
       "icon": "product",
       "title": "Prodotto",
-      "problem": "Le tue tempistiche di sviluppo stanno slittando? Ti senti sopraffatto dalle decisioni tecniche?",
-      "solution": "Ti aiuto a definire quali funzionalità devono essere sviluppate e quando. Creando una roadmap chiara dall'idea al prodotto pronto per il mercato."
+      "problem": "Hai validato l'idea, ma trasformarla in un prodotto vero è un'altra storia. Cosa costruire prima? Come evitare di sprecare mesi su feature sbagliate?",
+      "solution": "Definisco insieme a te la roadmap. Prioritizzo le funzionalità che contano per il mercato, costruisco le fondamenta per crescere senza dover rifare tutto."
     },
     {
       "id": "tech",
       "icon": "tech",
       "title": "Tech",
-      "problem": "Fai fatica a scegliere lo stack tecnologico giusto? Il debito tecnico ti sta rallentando?",
-      "solution": "Guido le decisioni su quale tecnologia usare, come implementarla e quando rilasciarla. Costruendo sistemi scalabili che crescono con il tuo business."
+      "problem": "Serve un'architettura che regga la crescita, ma ogni decisione sembra vincolante. Come costruire senza rifare tutto tra sei mesi?",
+      "solution": "Progetto e costruisco l'architettura giusta per questa fase. Faccio scelte tecniche che ti danno flessibilità, non debito."
     },
     {
       "id": "team",
       "icon": "team",
       "title": "Team",
-      "problem": "Hai difficoltà a trovare e trattenere talenti tecnici? Il tuo team manca di direzione?",
-      "solution": "Aiuto a trovare e guidare le migliori persone per lavorare nella tua startup, che siano freelancer o parte di un team interno."
+      "problem": "È il momento dei primi hiring tecnici. Chi assumere? Come valutarli? Come farli lavorare bene insieme?",
+      "solution": "Ti affianco negli inserimenti chiave. Definisco ruoli, processi e cultura tech. Costruisco un team che può camminare con le proprie gambe."
     }
   ]
 }
