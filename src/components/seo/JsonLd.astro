@@ -45,6 +45,7 @@ const personSchema = {
     "https://www.twitch.tv/christian_varisco"
   ],
   "knowsAbout": [
+    "Fractional CTO Services",
     "Startup Development",
     "Technical Leadership",
     "Product Management",
@@ -52,8 +53,21 @@ const personSchema = {
     "Software Architecture",
     "MVP Development",
     "Technology Strategy",
-    "Agile Methodologies"
+    "Agile Methodologies",
+    "Enterprise Architecture",
+    "ISO 27001 Compliance",
+    "B2B SaaS",
+    "HealthTech",
+    "HR Tech",
+    "Legal Tech",
+    "Fintech",
+    "AI/ML Integration"
   ],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Professional Experience",
+    "description": "16+ startups assisted, EUR 13M+ raised by clients"
+  },
   "worksFor": {
     "@type": "Organization",
     "name": "Christian Varisco Consulting"
@@ -73,10 +87,46 @@ const organizationSchema = {
   "url": siteUrl,
   "logo": `${siteUrl}/images/brand/logo.svg`,
   "description": lang === 'en'
-    ? "Fractional CTO services for early-stage startups in Italy and Europe"
-    : "Servizi di Fractional CTO per startup in fase iniziale in Italia ed Europa",
+    ? "Fractional CTO services for early-stage startups. 16+ startups assisted, EUR 13M+ raised by clients. Expertise in Product Strategy, Technical Leadership, and Team Building."
+    : "Servizi di Fractional CTO per startup in fase iniziale. 16+ startup assistite, EUR 13M+ raccolti dai clienti. Esperienza in Product Strategy, Technical Leadership e Team Building.",
   "areaServed": ["Italy", "Europe"],
   "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.95",
+    "reviewCount": "10",
+    "bestRating": "5"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Fractional CTO Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Product Strategy",
+          "description": "Define features and roadmap from idea to market-ready product"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Technical Leadership",
+          "description": "Technology decisions, architecture design, and scalable systems"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Team Building",
+          "description": "Find and lead technical talent, build autonomous teams"
+        }
+      }
+    ]
+  },
   "founder": { "@id": `${siteUrl}/#person` },
   "contactPoint": {
     "@type": "ContactPoint",

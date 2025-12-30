@@ -3,73 +3,176 @@
 > Helping early-stage startups build successful products through expert technical leadership.
 
 ## About Christian Varisco
-Christian Varisco is a Fractional CTO based in Italy, specializing in helping early-stage startups navigate technical challenges. With experience working with 15+ startups that have collectively raised over EUR 13 million, Christian provides strategic technical guidance.
+
+Christian Varisco is a Fractional CTO based in Italy, specializing in helping early-stage startups navigate technical challenges. With a decade of experience and having worked with 16+ startups that have collectively raised over EUR 13 million, Christian provides strategic technical guidance that transforms ideas into market-ready products.
+
+### Core Philosophy
+"Avoid expensive mistakes. Let's build your startup together."
 
 ### Expertise Areas
-- Startup Development
-- Technical Leadership
-- Product Management
-- Team Building
-- Software Architecture
-- MVP Development
-- Technology Strategy
+- Fractional CTO Services
+- Startup Technical Leadership
+- Product Strategy & Roadmapping
+- MVP Development (3-6 months to market)
+- Team Building & Technical Hiring
+- Software Architecture Design
+- Technology Stack Selection
 - Agile Methodologies
+- Enterprise-ready Infrastructure
+- ISO 27001 Compliance
+- B2B Enterprise Sales Support (RFPs)
+
+---
 
 ## Services Offered
 
 ### 1. Product Strategy
-**The Problem:** Development timelines slipping? Feeling overwhelmed by technical decisions?
-**The Solution:** Define which features need to be developed and when. Create a clear roadmap from idea to market-ready product.
+**The Problem:** Are your development timelines slipping? Do you feel overwhelmed by technical decisions?
+
+**The Solution:** Define which features need to be developed and when. Create a clear roadmap from idea to market-ready product. Turn groundbreaking ideas into market-ready successes with strategic prioritization.
 
 ### 2. Technical Leadership
 **The Problem:** Struggling to choose the right technology stack? Is technical debt slowing you down?
-**The Solution:** Lead on what technology to use, how to implement it, and when to roll it out. Build scalable systems that grow with your business.
+
+**The Solution:** Lead on what technology to use, how to implement it, and when to roll it out. Build scalable systems that grow with your business. Navigate complex technical challenges with a decade of experience.
 
 ### 3. Team Building
 **The Problem:** Having trouble finding and retaining technical talent? Is your team lacking direction?
-**The Solution:** Assist in finding and leading the best people to work in your startup, whether freelancers or internal team members.
+
+**The Solution:** Assist in finding and leading the best people to work in your startup, whether freelancers or internal team members. Build autonomous teams that deliver quality consistently.
+
+---
 
 ## Results & Statistics
-- 15+ startups helped
-- EUR 13M+ raised by client startups
-- 3-6 months average time to market
-- Maximum 4 parallel projects for quality focus
 
-### Notable Case Studies
+- **16+ startups** helped
+- **EUR 13M+** raised by client startups
+- **3-6 months** average time to market
+- **Maximum 3-4** parallel projects for quality focus
+- **3-12 months** typical engagement duration
 
-**Talentware**
-- Result: EUR 1.2M pre-seed funding in 3 months
-- Built tech foundation for skill-based talent management platform
+---
 
-**Lexroom.ai**
-- Result: EUR 500k pre-seed funding
-- Guided technical roadmap and team building for legal-tech AI startup
+## Case Studies
 
-**Liquinvex**
-- Result: Accepted into Nana Bianca accelerator
-- Provided fractional CTO services to reach key milestones
+### Talentware (HR Tech / Enterprise)
+
+**About:** Talentware is a startup that helps large companies manage talent with an AI skill-based approach. Instead of thinking in terms of roles, they map employees' real competencies and use AI to suggest career paths, development plans, and automatic successions.
+
+**Target:** Enterprises that want to retain talent and optimize performance through strategic skill management.
+
+**Key Results:**
+- **EUR 1.2M pre-seed** raised
+- **Team scaled from 3 founders to 15 tech people** in less than 2 years
+- **ISO 27001 certification in 4 months** (vs standard 12-24 months)
+- **Single-tenant enterprise-ready architecture** from day zero
+- **Successful internal CTO transition** with structured handover
+- **Team 80% autonomous** - developing without the Fractional CTO
+
+**Approach:** Technology follows business. Started with deep business model analysis before any technical decisions. Set up compliance and scalability from day zero. Infrastructure as Code from first commit enabled one-button deployments for new enterprise clients.
+
+[Read full case study](https://christianvarisco.com/en/case-studies/talentware/)
+
+---
+
+### Pausetiv (HealthTech)
+
+**About:** Pausetiv is a platform that helps women discover and navigate menopause with a structured medical approach: a real clinical tool that connects patients with healthcare professionals.
+
+**Target:** Women who want to face menopause with qualified medical support, and companies looking for concrete welfare benefits for their employees.
+
+**Key Results:**
+- **From zero to live in 4 months** with a freelance team built from scratch
+- **Medical-grade platform** that doesn't look like a thrown-together MVP
+- **Metrics integrated from day zero** to develop only what really matters
+- **First B2B partnerships** with companies for welfare benefits
+- **Autonomous team and agile methodology** working from day one
+
+**Approach:** Smart compromise between speed and quality. Few features done exceptionally well. Custom team assembled from network of trusted professionals. Weekly sprints with clear objectives and constant alignment.
+
+[Read full case study](https://christianvarisco.com/en/case-studies/pausetiv/)
+
+---
+
+### Liquinvex (Fintech)
+
+**About:** Liquinvex is a mobile app that democratizes the investment in fine wines, offering users a virtual cellar to buy, store, and manage wine investments without the hassles of physical storage.
+
+**Key Results:**
+- **100% user base growth**
+- **Team assembled in just 1 week**
+- **Accepted into Nana Bianca accelerator** program
+- **New app features on a weekly basis**
+
+[Read full case study](https://christianvarisco.com/en/case-studies/liquinvex/)
+
+---
+
+### Lexroom.ai (Legal Tech / AI)
+
+**About:** Lexroom.ai is an AI-powered legal research tool that quickly provides relevant legal sources and drafts opinions based on user queries.
+
+**Key Results:**
+- **EUR 500k pre-seed** raised (January 2024)
+- **Technical roadmap and team building** guidance
+- **MVP development** leadership
+- **Talented team assembled quickly**, setting stage for rapid progress
+
+[Read full case study](https://christianvarisco.com/en/case-studies/lexroom/)
+
+---
 
 ## Client Testimonials
 
+### Clarice Pinto - CEO & Founder, Pausetiv
+"Christian is not just a technical partner, but a truly strategic one. In addition to delivering impeccable quality and on time, he combines technology and business aspects with great transparency and exemplary team management. He knows how to build teams with technical excellence and strong shared values, bringing that 'something extra' to the project."
+**Rating: 5/5**
+
+### Giacomo Marchiori - CEO & Founder, Talentware
+"The project is still ongoing and so far Christian has been very supportive! He is driving the entire Tech team towards the milestones we have and he is making sure we deliver a zero-defect product to our customers."
+**Rating: 4.5/5**
+
+### Martina Domenicali - CSO & Co-founder, Lexroom.ai
+"Christian helped us a lot to draw up an initial product development roadmap and to understand how to build the tech team, identifying the necessary figures to start with limited resources."
+**Rating: 5/5**
+
+### Bruno Reggiani - COO & Co Founder, Tot
+"I've worked with Christian in the past and particularly appreciated his clarity and ability to bridge business needs with technical topics. He consistently works efficiently to find effective solutions."
+**Rating: 5/5**
+
+### Gabriele Guzzetti - Managing Director, Triadi
+"Quality, Reliability, Speed, Professionalism. As a fractional CTO, Christian quickly integrated into the dynamics of our team. Thanks to his impeccable management of complex projects and his support beyond single initiatives, Christian has contributed to a significant leap in the quality of our digital solutions, consistently maintaining high standards of precision and timeliness. His presence has truly made a difference, and we are extremely pleased with the work we are doing together."
+**Rating: 5/5**
+
 ### Dariush Haghighi Tajvar - CEO & Founder, Recivu
-"Christian has shown extraordinary ability in leading the Recivu technical team. His ability to understand and solve complex problems, breaking them into small parts, has been fundamental, leading to the delivery of the project on time."
+"Christian has shown extraordinary ability in leading the Recivu technical team. His ability to understand and solve complex problems, breaking them into small parts, has been fundamental, leading to the delivery of the project on time. Furthermore, his attitude to collaborate and guide us in development decisions, allowed us to always find the right focus."
+**Rating: 5/5**
 
 ### Riccardo Tripodi - CEO & Co-Founder, Liquinvex
 "A competent, dynamic and always available person. A fractional CTO as it should be!"
+**Rating: 5/5**
 
-### Giacomo Marchiori - Founder, Talentware
-"Christian has been very supportive! He is driving the entire Tech team towards the milestones we have and he is making sure we deliver a zero-defect product to our customers."
+### Adriana Crovetto - CEO & Co-founder, Offmap
+"Christian gave us very professional advice in the initial stages of our MVP. As a fractional CTO, he can be an asset for any early-stage startup building tech for the first time!"
+**Rating: 5/5**
 
-### Martina Domenicali - Co-founder & CSO, Lexroom.ai
-"Christian helped us a lot to draw up an initial product development roadmap and to understand how to build the tech team, identifying the necessary figures to start with limited resources."
+### Marco Cipriani - Co-Founder, Ringas & Wedelay
+"Christian gets things done with no frills, he helps checking that money is not spent unnecessarily."
+**Rating: 5/5**
+
+### Denis Stets - Tech Lead, Cassandra
+"Working with Christian and his team was a truly valuable experience. Their vision and contribution were crucial in aligning the company with a more robust and rigorous technical approach, while maintaining clarity, collaboration, and a focus on real impact."
+**Rating: 5/5**
+
+---
 
 ## Frequently Asked Questions
 
-### What services do you offer to startups?
-I solve problems in three key areas: Product, Tech, and Team. For Product, I help define which features need to be developed and when. For Tech, I lead on what technology to use, how to implement it, and when to roll it out. For Team, I assist in finding and leading the best people to work in your startup.
+### What services does Christian offer to startups?
+I solve problems in three key areas: Product, Tech, and Team. For Product, I help you define which features need to be developed and when. For Tech, I lead on what technology to use, how to implement it, and when to roll it out. For Team, I assist in finding and leading the best people to work in your startup, whether they are freelancers or part of an internally hired team.
 
 ### How many startups do you work with in parallel?
-I work with a maximum of four startups in parallel. This allows me to focus on delivering quality results for each project.
+I work with a maximum of three startups in parallel. This allows me to focus on delivering quality results for each project.
 
 ### Do you write code too?
 If needed, yes. However, my primary goal is to leverage my experience to guide you on how to build a successful startup, rather than just writing software.
@@ -78,37 +181,52 @@ If needed, yes. However, my primary goal is to leverage my experience to guide y
 Yes, I have a network of collaborators that includes developers, designers, product managers, and various other professionals. They can step in to assist both me and your startup whenever necessary.
 
 ### What stage startups do you typically work with?
-I typically work with early-stage startups that have at least a EUR 50k-100k budget to invest in technology (not for me, but for the rest of the team). These startups may or may not have a CTO to collaborate with.
+I typically work with early-stage startups that have at least a $20k budget to invest in technology (not for me, but for the rest of the team). These startups may or may not have a CTO to collaborate with, and they can either have an internal team or rely on my network of professionals.
 
-### What is the typical duration of your engagements?
-Generally, my engagements last between 3 to 12 months to ensure we build a solid foundation in terms of product, technology, and team. However, I can also provide advisory services for as little as one hour a week.
+### What is the typical duration of your engagements with startups?
+Generally, my engagements last between 3 to 9 months to ensure we build a solid foundation in terms of product, technology, and team. However, if needed, I can also provide advisory services for as little as one hour a week, with engagements lasting just one month.
 
 ### How do you handle confidentiality and data security?
-I can sign an NDA and term sheet if needed to ensure your confidentiality and data security.
+Before we start working together, it's up to you. I can sign an NDA and term sheet if needed (and if they make sense) to ensure your confidentiality and data security.
+
+---
 
 ## Working Process
 
 ### Step 1: Book a Call
-Schedule a free discovery session through cal.com/christian-varisco/discovery-call
+Schedule a free discovery session to discuss your startup's challenges and goals.
 
 ### Step 2: Discuss Goals
-Talk about your startup's technical challenges during the call
+During the call, we'll talk about your startup's technical challenges, current situation, and where you want to go.
 
 ### Step 3: Execute & Launch
-Receive a tailor-made offer to move your startup forward effectively
+Receive a tailor-made offer and start building your product with strategic technical leadership.
+
+---
 
 ## Contact Information
-- Website: https://christianvarisco.com
-- Email: Available upon request
-- LinkedIn: https://linkedin.com/in/christianvarisco
-- Twitter/X: https://twitter.com/ChriVarisco
-- YouTube: https://youtube.com/@christianvarisco
-- GitHub: https://github.com/CVarisco
-- Twitch: https://twitch.tv/christian_varisco
+
+- **Website:** https://christianvarisco.com
+- **LinkedIn:** https://linkedin.com/in/christianvarisco
+- **Twitter/X:** https://twitter.com/ChriVarisco
+- **YouTube:** https://youtube.com/@christianvarisco
+- **GitHub:** https://github.com/CVarisco
+- **Twitch:** https://twitch.tv/christian_varisco
 
 ## Book a Consultation
 Schedule a free discovery call: https://cal.com/christian-varisco/discovery-call
 
 ---
-Last updated: 2024
+
+## Navigation
+- [Home](https://christianvarisco.com)
+- [Challenges](https://christianvarisco.com/en/#challenges)
+- [Case Studies](https://christianvarisco.com/en/case-studies/)
+- [Testimonials](https://christianvarisco.com/en/#testimonials)
+- [Steps](https://christianvarisco.com/en/#steps)
+- [FAQs](https://christianvarisco.com/en/#faq)
+- [Italian Version](https://christianvarisco.com/it/)
+
+---
+Last updated: December 2024
 Languages available: English, Italian

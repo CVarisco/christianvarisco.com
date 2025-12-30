@@ -3,59 +3,104 @@
 > Helping early-stage startups build successful products through expert technical leadership.
 
 ## About
-Christian Varisco is a Fractional CTO based in Italy, specializing in helping early-stage startups navigate technical challenges. With experience working with 15+ startups that have collectively raised over EUR 13 million, Christian provides strategic technical guidance in Product Development, Technology Architecture, and Team Building.
+Christian Varisco is a Fractional CTO based in Italy, specializing in helping early-stage startups navigate technical challenges. With experience working with 16+ startups that have collectively raised over EUR 13 million, Christian provides strategic technical guidance in Product Development, Technology Architecture, and Team Building.
+
+## Core Expertise
+- Fractional CTO Services
+- Startup Technical Leadership
+- Product Strategy & Roadmapping
+- MVP Development (3-6 months to market)
+- Team Building & Hiring
+- Software Architecture Design
+- Technology Stack Selection
+- Agile Methodologies
+- Enterprise-ready Infrastructure (ISO 27001)
 
 ## Services
 
 ### Product Strategy
-Define which features to develop and when, creating a clear roadmap from idea to market-ready product.
+Define which features to develop and when, creating a clear roadmap from idea to market-ready product. Turn groundbreaking ideas into market-ready successes.
 
 ### Technical Leadership
-Lead technology decisions, architecture design, and implementation strategies. Build scalable systems that grow with your business.
+Lead technology decisions, architecture design, and implementation strategies. Build scalable systems that grow with your business. Navigate complex technical challenges with a decade of experience.
 
 ### Team Building
-Find and integrate the right technical talent, whether freelancers or internal hires. Provide direction and mentorship.
+Find and integrate the right technical talent, whether freelancers or internal hires. Provide direction, mentorship, and build autonomous teams that deliver quality.
 
 ## Engagement Details
-- Works with maximum 4 startups in parallel to ensure quality focus
+- Works with maximum 3-4 startups in parallel to ensure quality focus
 - Typical engagement duration: 3-12 months
 - Minimum startup budget: EUR 50k-100k for technology investment
 - Average time to market: 3-6 months
+- Can also provide advisory services (as little as 1 hour/week)
 
 ## Notable Results
-- 15+ startups assisted
+- 16+ startups assisted
 - EUR 13M+ raised by client startups
-- Talentware: EUR 1.2M pre-seed in 3 months
+- Talentware: EUR 1.2M pre-seed, ISO 27001 in 4 months, team of 15
 - Lexroom.ai: EUR 500k pre-seed funding
-- Liquinvex: Accepted into Nana Bianca accelerator
+- Pausetiv: From zero to live in 4 months with medical-grade platform
+- Liquinvex: Accepted into Nana Bianca accelerator, 100% user growth
 
 ## Case Studies
-Detailed case studies showcasing Christian's work with startups:
 
-### Talentware (HR Tech)
-Talent management platform helping businesses engage and retain talent. Achievements: EUR 800k pre-seed raised, paying customers in 3 months.
+### Talentware (HR Tech / Enterprise)
+AI skill-based talent management platform helping enterprises engage, develop, and retain talent.
+**Key Results:**
+- EUR 1.2M pre-seed raised
+- Team scaled from 3 founders to 15 tech people
+- ISO 27001 certification in 4 months (vs standard 12-24 months)
+- Single-tenant enterprise-ready architecture from day zero
+- Successful CTO handover to internal hire
 [Read full case study](https://christianvarisco.com/case-studies/talentware/)
 
+### Pausetiv (HealthTech)
+Medical platform helping women discover and navigate menopause with structured clinical support.
+**Key Results:**
+- From zero code to live in 4 months
+- Medical-grade platform with polished UX
+- First B2B partnerships with companies for welfare benefits
+- Custom freelance team assembled from scratch
+[Read full case study](https://christianvarisco.com/case-studies/pausetiv/)
+
 ### Liquinvex (Fintech)
-Mobile app democratizing wine investment with virtual cellars. Achievements: 100% user base growth, team assembled in 1 week, Nana Bianca accelerator acceptance.
+Mobile app democratizing wine investment with virtual cellars.
+**Key Results:**
+- 100% user base growth
+- Team assembled in 1 week
+- Accepted into Nana Bianca accelerator
 [Read full case study](https://christianvarisco.com/case-studies/liquinvex/)
 
-### Lexroom.ai (Legal Tech)
-AI-powered legal research tool for finding sources and drafting opinions. Achievements: EUR 500k pre-seed raised in January 2024.
+### Lexroom.ai (Legal Tech / AI)
+AI-powered legal research tool for finding sources and drafting opinions.
+**Key Results:**
+- EUR 500k pre-seed raised (January 2024)
+- Technical roadmap and team building guidance
+- MVP development leadership
 [Read full case study](https://christianvarisco.com/case-studies/lexroom/)
+
+## Working Process
+1. **Book a Call** - Free discovery session
+2. **Discuss Goals** - Understand your startup's technical challenges
+3. **Execute & Launch** - Receive a tailor-made offer and start building
 
 ## Contact
 - Website: https://christianvarisco.com
 - LinkedIn: https://linkedin.com/in/christianvarisco
 - Twitter/X: https://twitter.com/ChriVarisco
 - GitHub: https://github.com/CVarisco
+- YouTube: https://youtube.com/@christianvarisco
 - Book a consultation: https://cal.com/christian-varisco/discovery-call
 
-## Links
+## Navigation
 - [Home](https://christianvarisco.com)
-- [Services](https://christianvarisco.com/#Services)
-- [Case Studies](https://christianvarisco.com/case-studies/)
-- [Testimonials](https://christianvarisco.com/#Testimonials)
-- [Process](https://christianvarisco.com/#Steps)
-- [FAQ](https://christianvarisco.com/#Faq)
+- [Challenges](https://christianvarisco.com/en/#challenges)
+- [Case Studies](https://christianvarisco.com/en/case-studies/)
+- [Testimonials](https://christianvarisco.com/en/#testimonials)
+- [Steps](https://christianvarisco.com/en/#steps)
+- [FAQs](https://christianvarisco.com/en/#faq)
 - [Italian Version](https://christianvarisco.com/it/)
+
+---
+Last updated: December 2024
+Languages: English, Italian
