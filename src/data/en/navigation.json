@@ -4,7 +4,8 @@
     { "label": "Case Studies", "href": "/en/case-studies/" },
     { "label": "Testimonials", "href": "/en/#testimonials" },
     { "label": "Steps", "href": "/en/#steps" },
-    { "label": "FAQs", "href": "/en/#faq" }
+    { "label": "FAQs", "href": "/en/#faq" },
+    { "label": "Newsletter", "href": "https://newsletter.christianvarisco.com" }
   ],
   "cta": {
     "label": "Get in touch",
