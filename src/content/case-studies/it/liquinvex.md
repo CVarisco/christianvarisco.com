@@ -69,6 +69,8 @@ Lo stack era **React Native per il mobile, Laravel per il backend, PostgreSQL pe
 
 Abbiamo dovuto rifare diverse parti del codice originale, ma niente di trascendentale. Il focus era rilasciare valore velocemente, non riscrivere tutto alla perfezione.
 
+<div id="testimonial-placeholder"></div>
+
 ## La notte del telefono hackerato
 
 Una delle funzionalità più critiche per Liquinvex erano le **push notifications**.
@@ -110,12 +112,6 @@ Abbiamo costruito funzionalità critiche come:
 Il team freelance che ho portato dentro? **È ancora con loro oggi…** Fanno fix, piccole implementazioni e supporto continuo (non hanno dovuto ricostruire nulla da zero).
 
 **E alla fine, abbiamo lavorato insieme per due anni.**
-
-## The Founder's Voice
-
-*"Una persona competente, dinamica, e sempre disponibile. Un fractional CTO come si deve!"*
-
-— Riccardo, Co-founder Liquinvex
 
 ## La verità scomoda del B2C consumer
 
