@@ -206,21 +206,3 @@ const { data } = Astro.props;
   }
 </style>
 
-<script>
-  document.querySelectorAll('.youtube-facade').forEach(facade => {
-    facade.addEventListener('click', () => {
-      const videoId = facade.getAttribute('data-video-id');
-      if (videoId) {
-        facade.innerHTML = `
-          <iframe
-            src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0"
-            class="w-full h-full"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        `;
-      }
-    });
-  });
-</script>
