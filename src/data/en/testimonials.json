@@ -30,10 +30,10 @@
       "rating": 4.5
     },
     {
-      "quote": "A competent, dynamic and always available person. A fractional CTO as it should be!",
-      "author": "Riccardo Tripodi",
-      "role": "CEO & Co-Founder Liquinvex",
-      "image": "/images/testimonials/riccardo.jpg",
+      "quote": "We started working with Chris at a very delicate stage of our business, where precision and speed were critical. He exceeded our expectations, automating in days processes that had been draining our time for months, and identifying technical bottlenecks we hadn't even been able to clearly see, always bringing practical solutions. Most importantly, he consistently showed a strong human side, being understanding, responsive, and genuinely easy to work with throughout.",
+      "author": "Gaia Salizzoni",
+      "role": "Founder & CEO at Hale",
+      "image": "/images/testimonials/gaia.jpg",
       "rating": 5
     },
     {
@@ -41,6 +41,13 @@
       "author": "Gabriele Guzzetti",
       "role": "Managing Director at Triadi",
       "image": "/images/testimonials/gabriele.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "A competent, dynamic and always available person. A fractional CTO as it should be!",
+      "author": "Riccardo Tripodi",
+      "role": "CEO & Co-Founder Liquinvex",
+      "image": "/images/testimonials/riccardo.jpg",
       "rating": 5
     },
     {

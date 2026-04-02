@@ -213,7 +213,11 @@ const caseStudyReviewSchema = caseStudy?.testimonial ? {
     "jobTitle": caseStudy.testimonial.role
   },
   "reviewBody": caseStudy.testimonial.quote,
-  "itemReviewed": { "@id": `${siteUrl}/#person` }
+  "itemReviewed": {
+    "@type": "Person",
+    "name": "Christian Varisco",
+    "url": siteUrl
+  }
 } : null;
 ---
 

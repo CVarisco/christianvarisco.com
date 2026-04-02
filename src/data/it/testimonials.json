@@ -30,10 +30,10 @@
       "rating": 4.5
     },
     {
-      "quote": "Una persona competente, dinamica e sempre disponibile. Un fractional CTO come dovrebbe essere!",
-      "author": "Riccardo Tripodi",
-      "role": "CEO & Co-Founder Liquinvex",
-      "image": "/images/testimonials/riccardo.jpg",
+      "quote": "Abbiamo iniziato a lavorare con Chris in una fase molto delicata del nostro business, dove precisione e velocità erano fondamentali. Ha superato le nostre aspettative, automatizzando in pochi giorni processi che ci portavano via mesi, e identificando colli di bottiglia tecnici che non eravamo nemmeno riusciti a vedere chiaramente, portando sempre soluzioni pratiche. Soprattutto, ha costantemente dimostrato una forte sensibilità umana, essendo comprensivo, reattivo e genuinamente facile con cui lavorare.",
+      "author": "Gaia Salizzoni",
+      "role": "Founder & CEO at Hale",
+      "image": "/images/testimonials/gaia.jpg",
       "rating": 5
     },
     {
@@ -41,6 +41,13 @@
       "author": "Gabriele Guzzetti",
       "role": "Managing Director at Triadi",
       "image": "/images/testimonials/gabriele.jpg",
+      "rating": 5
+    },
+    {
+      "quote": "Una persona competente, dinamica e sempre disponibile. Un fractional CTO come dovrebbe essere!",
+      "author": "Riccardo Tripodi",
+      "role": "CEO & Co-Founder Liquinvex",
+      "image": "/images/testimonials/riccardo.jpg",
       "rating": 5
     },
     {
