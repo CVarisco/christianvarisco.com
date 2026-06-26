@@ -106,6 +106,32 @@
       }
     },
     {
+      "slug": "tot",
+      "company": "Tot.",
+      "industry": "Fintech",
+      "product": "App Mobile Nativa",
+      "website": "https://www.tot.money",
+      "thumbnail": "/images/logos/tot.svg",
+      "heroImage": "/images/case-studies/tot-hero.jpg",
+      "shortDescription": "Tot è la fintech 100% italiana che semplifica la gestione finanziaria e amministrativa delle imprese: conto, carte business e fatturazione in un unico ambiente.",
+      "stats": [
+        { "value": "6 mesi", "label": "Da zero a store" },
+        { "value": ">50%", "label": "Clienti su mobile" }
+      ],
+      "testimonial": {
+        "quote": "Ho lavorato con Christian in passato e ho particolarmente apprezzato la sua chiarezza e capacità di collegare le esigenze di business con gli aspetti tecnici. Lavora in modo costante ed efficiente per trovare soluzioni efficaci.",
+        "author": "Bruno",
+        "role": "Tot",
+        "image": "/images/testimonials/bruno.png",
+        "rating": 5
+      },
+      "seo": {
+        "title": "Christian Varisco x Tot | Da web maturo ad app nativa in 6 mesi",
+        "description": "Come ho aiutato Tot a portare una piattaforma web matura dentro un'app nativa: live su iOS e Android in 6 mesi e usata da oltre il 50% dei clienti.",
+        "ogImage": "/images/case-studies/og/tot-og.png"
+      }
+    },
+    {
       "slug": "pausetiv",
       "company": "Pausetiv",
       "industry": "Health Tech",
@@ -182,13 +208,6 @@
       "slug": "wedelay",
       "company": "Wedelay",
       "thumbnail": "/images/logos/wedelay.svg",
-      "shortDescription": "Coming soon",
-      "comingSoon": true
-    },
-    {
-      "slug": "tot",
-      "company": "Tot.",
-      "thumbnail": "/images/logos/tot.svg",
       "shortDescription": "Coming soon",
       "comingSoon": true
     }

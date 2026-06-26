@@ -44,6 +44,16 @@ Support founders in their first key technical hires. Define roles, processes, an
 
 ## Case Studies
 
+### Tot (Fintech / Scale-up)
+100% Italian fintech offering business accounts and cards for entrepreneurs; native mobile app for managing a company from your phone.
+**Key Results:**
+- Native mobile app live on iOS and Android in 6 months, starting from scratch
+- Over 50% of Tot customers run their business from the app
+- Custom web-mobile communication layer reusing the mature web platform inside a React Native app
+- Continuous development with new features released every month
+- Collaboration ongoing since January 2025
+[Read full case study](https://christianvarisco.com/case-studies/tot/)
+
 ### Talentware (HR Tech / Enterprise)
 AI skill-based talent management platform helping enterprises engage, develop, and retain talent.
 **Key Results:**
