@@ -12,15 +12,15 @@
     },
     {
       "question": "Why work with a Fractional CTO?",
-      "answer": "Because from day one you get a senior CTO who brings experience, best practices, and strategic vision, without the costs and constraints of a full-time hire. I can work as an advisor or as a Fractional CTO, depending on your needs."
+      "answer": "After a round you need senior ownership of product, tech, and team — without hiring a full-time CTO yet. I come in for execution: priorities, architecture that can evolve, and a team that delivers."
     },
     {
       "question": "What are your services?",
-      "answer": "I focus on 3 main areas: Product, Tech, and Team. For Product, I help you figure out which features to develop (and which not to), why, how, and when. For Tech, I choose the right technology to make your company stable and long-lasting. For Team, I help you select the best talent (freelancers or employees) for your startup, creating a strong, fast, growth-oriented environment. And of course, I guide them through the development journey."
+      "answer": "Product (what to build, what to cut, in what order), Tech (leadership and, when useful, hands-on/IC — including with AI), Team (hiring, structure, making delivery stick). Focus: startups already live, typically seed or pre-seed."
     },
     {
       "question": "What type of clients do you work with?",
-      "answer": "I mainly work with early-stage startups or more established companies. These organizations may or may not have an internal CTO, an existing team, or they can rely on my network of professionals. Generally, my clients have at least a €30-50k budget to invest in technology (not for me, but for the rest of the team)."
+      "answer": "Mostly funded early-stage startups that are already in market — seed or pre-seed — where execution after the round is the bottleneck. Clients I have worked with include Lexroom and Talentware. Often there’s no strong CTO, or the current tech doesn’t scale for development. Clients usually have real tech budget in play (roughly €30–50k+ for the broader team, not for me alone)."
     },
     {
       "question": "How many startups do you work with in parallel?",
@@ -32,7 +32,7 @@
     },
     {
       "question": "Do you write code too?",
-      "answer": "Yes, I've never stopped writing code. But it's not my main service: I only do it for clients in emergency situations. My priority is helping you build a successful startup."
+      "answer": "Yes, when it unblocks — emergencies, critical paths, or speed with AI-assisted delivery. Default is leadership of product/tech/team; IC is a tool, not the offer."
     },
     {
       "question": "Do you have a team?",
@@ -44,7 +44,7 @@
     },
     {
       "question": "Does it make sense to collaborate if I already have a full-time CTO?",
-      "answer": "Yes, absolutely. I'm not here to replace anyone: if needed, I can support them and provide extra help on specific projects, or work alongside your current CTO for faster growth."
+      "answer": "Yes. I’m not here to replace them. I complement when you need more execution capacity, sharper prioritization, or help making the stack and team shippable again."
     },
     {
       "question": "Do you also interface with investors if needed?",

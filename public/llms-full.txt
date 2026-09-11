@@ -1,128 +1,159 @@
-# Christian Varisco - Fractional CTO (Full Content)
+# Christian Varisco — Fractional CTO — Contenuto completo / Full content
 
-> Helping early-stage startups build successful products through expert technical leadership.
+> Christian Varisco è un Fractional CTO a Milano che aiuta startup seed/pre-seed già live nell’execution post-round su prodotto, tech e team, quando manca un CTO forte o la tech rallenta lo sviluppo.
 
-## About Christian Varisco
+> Christian Varisco is a Fractional CTO in Milan who helps already-live seed/pre-seed startups with post-round execution on product, tech, and team when the CTO is missing/weak or the stack slows development.
 
-Christian Varisco is a Fractional CTO based in Italy, specializing in helping early-stage startups navigate technical challenges. With a decade of experience and having worked with 16+ startups that have collectively raised over EUR 13 million, Christian provides strategic technical guidance that transforms ideas into market-ready products.
+## Italiano
 
-### Core Philosophy
-"Avoid expensive mistakes. Let's build your startup together."
+### Clienti e focus
 
-### Expertise Areas
-- Fractional CTO Services
-- Startup Technical Leadership
-- Product Strategy & Roadmapping
-- MVP Development (3-6 months to market)
-- Team Building & Technical Hiring
-- Software Architecture Design
-- Technology Stack Selection
-- Agile Methodologies
-- Enterprise-ready Infrastructure
-- ISO 27001 Compliance
-- B2B Enterprise Sales Support (RFPs)
+Tra i clienti con cui Christian ha lavorato ci sono Lexroom e Talentware.
+Christian lavora soprattutto con startup seed e pre-seed finanziate e già sul mercato. Il collo di bottiglia è l’execution dopo il round: priorità confuse, roadmap in ritardo, un CTO assente o sovraccarico, oppure debito tecnico che rallenta lo sviluppo. Il focus è la velocità con cui il team costruisce e rilascia, non la capacità di gestire più traffico.
 
----
+Startup pre-prodotto che cercano soltanto un primo MVP da zero non sono il focus dell’offerta attuale. I case study documentano risultati storici e possono includere lanci iniziali. Un CTO full-time già presente può essere affiancato per aumentare la capacità di execution.
 
-## Services Offered
+### Servizi
+- **Prodotto:** cosa costruire, cosa tagliare, in che ordine. Priorità e roadmap per rilasciare ciò che conta dopo il round.
+- **Tech:** leadership tecnica, architettura evolutiva, riduzione del debito tecnico e pratiche engineering che velocizzano lo sviluppo. Interventi hands-on/IC, anche con AI, quando sbloccano la delivery. L’IC è uno strumento, non l’offerta principale.
+- **Team:** hiring, struttura, decisioni e responsabilità chiare. Team autonomi che consegnano con continuità.
 
-### 1. Product Strategy
-**The Problem:** Are your development timelines slipping? Do you feel overwhelmed by technical decisions?
+### Collaborazione
+- Base: Milano, Italia. Area servita: Italia ed Europa. Lingue: italiano e inglese.
+- Massimo 3 startup in parallelo.
+- Durata tipica: 3–18 mesi. Disponibile anche advisory da un’ora a settimana.
+- Budget tech indicativo: €30–50k+ per il team più ampio, non il compenso del solo Fractional CTO.
+- [Discovery call gratuita](https://cal.com/christian-varisco/discovery-call).
 
-**The Solution:** Define which features need to be developed and when. Create a clear roadmap from idea to market-ready product. Turn groundbreaking ideas into market-ready successes with strategic prioritization.
+### Risultati pubblicati
+16+ startup assistite. €13M+ raccolti dalle startup clienti. I risultati seguenti sono documentati nei case study.
 
-### 2. Technical Leadership
-**The Problem:** Struggling to choose the right technology stack? Is technical debt slowing you down?
+- [Lexroom.ai](https://christianvarisco.com/case-studies/lexroom/): €500k pre-seed durante la collaborazione; roadmap tecnica, costruzione del team e autonomia operativa dopo 6 mesi di affiancamento.
+- [Talentware](https://christianvarisco.com/case-studies/talentware/): €1.2M pre-seed; team tech cresciuto fino a 15 persone; ISO 27001 in 4 mesi; passaggio a un CTO interno.
+- [Tot](https://christianvarisco.com/case-studies/tot/): app nativa live su iOS e Android in 6 mesi; utilizzata da oltre il 50% dei clienti Tot; nuove feature ogni mese.
+- [Pausetiv](https://christianvarisco.com/case-studies/pausetiv/): piattaforma medica live in 4 mesi; team freelance costruito per il progetto; prime partnership B2B per welfare aziendale.
+- [Liquinvex](https://christianvarisco.com/case-studies/liquinvex/): sviluppo sbloccato e prodotto live in 1 settimana; ingresso nell’acceleratore Nana Bianca dopo 6 mesi.
 
-**The Solution:** Lead on what technology to use, how to implement it, and when to roll it out. Build scalable systems that grow with your business. Navigate complex technical challenges with a decade of experience.
+### FAQ
 
-### 3. Team Building
-**The Problem:** Having trouble finding and retaining technical talent? Is your team lacking direction?
+#### Cosa significa "Fractional"?
+"Fractional" vuol dire che non lavori con me a tempo pieno, ma solo per la parte che ti serve. È un modello flessibile: invece di assumere un CTO full-time, ottieni competenze da C-level senza i costi e l'impegno di un'assunzione permanente.
 
-**The Solution:** Assist in finding and leading the best people to work in your startup, whether freelancers or internal team members. Build autonomous teams that deliver quality consistently.
+#### Perché lavorare con un Fractional CTO?
+Dopo un round ti serve ownership senior su prodotto, tech e team — senza assumere subito un CTO full-time. Entro per l’execution: priorità, un’architettura che possa evolvere, un team che consegna.
 
----
+#### Quali sono i tuoi servizi?
+Prodotto (cosa costruire, cosa tagliare, in che ordine), Tech (leadership e, quando serve, hands-on/IC — anche con AI), Team (hiring, struttura, delivery che tiene). Focus: startup già live, tipicamente seed o pre-seed.
 
-## Results & Statistics
+#### Con che tipo di clienti lavori?
+Soprattutto startup early-stage finanziate e già sul mercato — seed o pre-seed — dove il collo di bottiglia è l’execution dopo il round. Tra i clienti con cui ho lavorato ci sono Lexroom e Talentware. Spesso manca un CTO forte, oppure la tech attuale non scala per lo sviluppo. Di solito c’è budget tech reale in campo (indicativamente €30–50k+ per il team più ampio, non solo per me).
 
-- **16+ startups** helped
-- **EUR 13M+** raised by client startups
-- **3-6 months** average time to market
-- **Maximum 3-4** parallel projects for quality focus
-- **3-12 months** typical engagement duration
+#### Con quante startup lavori in parallelo?
+Lavoro con un massimo di tre startup in parallelo. Questo mi permette di concentrarmi sulla qualità dei risultati per ogni progetto.
 
----
+#### Qual è la durata tipica di una collaborazione?
+Generalmente i miei ingaggi durano da un minimo di 3 mesi fino a 18 mesi, per costruire una base solida in termini di prodotto, tecnologia e team. Se invece ti serve supporto più leggero, posso lavorare come advisor anche per una sola ora a settimana.
 
-## Case Studies
+#### Scrivi anche codice?
+Sì, quando sblocca — emergenze, path critici, o velocità con delivery assistita da AI. Il default è leadership di prodotto/tech/team; l’IC è uno strumento, non l’offerta.
 
-### Talentware (HR Tech / Enterprise)
+#### Hai un team?
+Sì, ho un network di freelance di fiducia che ho selezionato negli anni. Di solito mi affiancano developers, designers, product managers e altri professionisti. Possono entrare fin dall'inizio nel progetto, oppure essere attivati più avanti in base alle necessità.
 
-**About:** Talentware is a startup that helps large companies manage talent with an AI skill-based approach. Instead of thinking in terms of roles, they map employees' real competencies and use AI to suggest career paths, development plans, and automatic successions.
+#### Puoi aiutarmi a creare il mio team tech?
+Sì. Che tu parta da zero o abbia già qualcuno a bordo, ti aiuto a costruire il team giusto. Possiamo usare il mio network di professionisti oppure cercare insieme persone esterne da inserire.
 
-**Target:** Enterprises that want to retain talent and optimize performance through strategic skill management.
+#### Ha senso collaborare se ho già un CTO full-time?
+Sì. Non sono qui per sostituirlo. Completo quando serve più capacità di execution, priorità più nette, o aiuto a rendere di nuovo shippabili stack e team.
 
-**Key Results:**
-- **EUR 1.2M pre-seed** raised
-- **Team scaled from 3 founders to 15 tech people** in less than 2 years
-- **ISO 27001 certification in 4 months** (vs standard 12-24 months)
-- **Single-tenant enterprise-ready architecture** from day zero
-- **Successful internal CTO transition** with structured handover
-- **Team 80% autonomous** - developing without the Fractional CTO
+#### Se serve, ti interfacci anche con investitori?
+Sì, fa parte del mio lavoro. Posso partecipare alle call con investitori o advisor, raccontare in modo chiaro la parte tech e rispondere alle loro domande. L'obiettivo è dare credibilità al progetto e far vedere che dietro c'è una guida tecnica solida.
 
-**Approach:** Technology follows business. Started with deep business model analysis before any technical decisions. Set up compliance and scalability from day zero. Infrastructure as Code from first commit enabled one-button deployments for new enterprise clients.
+#### Puoi valutare i miei fornitori o aiutarmi a trovarne di nuovi?
+Sì. Posso aiutarti a scegliere i partner giusti (o fare una valutazione su quelli già attivi), che sia il cloud provider, un'agenzia esterna o un fornitore tech, valutando costi, affidabilità e scalabilità. L'obiettivo è farti risparmiare tempo e soldi, portando soluzioni già testate sul campo.
 
-[Read full case study](https://christianvarisco.com/en/case-studies/talentware/)
+#### Cosa succede se la startup cresce e serve un CTO full-time?
+Se capita è perché stiamo facendo un buon lavoro: vuol dire che la startup sta crescendo. In quel caso ti aiuto nella transizione: partecipo alla selezione del nuovo CTO, lo formo e passo il testimone in modo efficace. Se serve, posso anche restare come advisor, così non perdi continuità.
 
----
+#### Come gestisci riservatezza e sicurezza dei dati?
+Definiamo tutto nel contratto di collaborazione. Se necessario, posso firmare un NDA per garantire la tua riservatezza e sicurezza dei dati.
 
-### Pausetiv (HealthTech)
+## English
 
-**About:** Pausetiv is a platform that helps women discover and navigate menopause with a structured medical approach: a real clinical tool that connects patients with healthcare professionals.
+### Clients and focus
 
-**Target:** Women who want to face menopause with qualified medical support, and companies looking for concrete welfare benefits for their employees.
+Clients Christian has worked with include Lexroom and Talentware.
+Christian primarily works with funded seed and pre-seed startups already in market. The bottleneck is post-round execution: unclear priorities, a slipping roadmap, an absent or overstretched CTO, or technical debt that slows development. The focus is how quickly the team builds and ships, rather than traffic capacity.
 
-**Key Results:**
-- **From zero to live in 4 months** with a freelance team built from scratch
-- **Medical-grade platform** that doesn't look like a thrown-together MVP
-- **Metrics integrated from day zero** to develop only what really matters
-- **First B2B partnerships** with companies for welfare benefits
-- **Autonomous team and agile methodology** working from day one
+Pre-product startups seeking only a first MVP from scratch are not the focus of the current offer. Case studies document historical results and may include initial launches. An existing full-time CTO can be supported with additional execution capacity.
 
-**Approach:** Smart compromise between speed and quality. Few features done exceptionally well. Custom team assembled from network of trusted professionals. Weekly sprints with clear objectives and constant alignment.
+### Services
+- **Product:** what to build, what to cut, and in what order. Priorities and roadmaps that help the team ship what matters after the round.
+- **Tech:** technical leadership, evolving architecture, technical debt reduction, and engineering practices that speed development. Hands-on/IC contributions, including with AI, when they unblock delivery. IC is a tool, not the primary offer.
+- **Team:** hiring, structure, clear decisions, and ownership. Autonomous teams that deliver consistently.
 
-[Read full case study](https://christianvarisco.com/en/case-studies/pausetiv/)
+### Engagement
+- Based in Milan, Italy. Serves Italy and Europe. Languages: Italian and English.
+- Maximum 3 startups in parallel.
+- Typical duration: 3–18 months. Advisory is also available from one hour a week.
+- Indicative tech budget: €30–50k+ for the broader team, not the Fractional CTO’s fee alone.
+- [Free discovery call](https://cal.com/christian-varisco/discovery-call).
 
----
+### Published results
+16+ startups assisted. €13M+ raised by client startups. The following results are documented in case studies.
 
-### Liquinvex (Fintech)
+- [Lexroom.ai](https://christianvarisco.com/en/case-studies/lexroom/): €500k pre-seed during the collaboration; technical roadmap, team building, and operational autonomy after 6 months of support.
+- [Talentware](https://christianvarisco.com/en/case-studies/talentware/): €1.2M pre-seed; tech team grew to 15 people; ISO 27001 in 4 months; handover to an internal CTO.
+- [Tot](https://christianvarisco.com/en/case-studies/tot/): native app live on iOS and Android in 6 months; used by over 50% of Tot customers; new features every month.
+- [Pausetiv](https://christianvarisco.com/en/case-studies/pausetiv/): medical platform live in 4 months; freelance team assembled for the project; first B2B partnerships for employee welfare.
+- [Liquinvex](https://christianvarisco.com/en/case-studies/liquinvex/): development unblocked and product live in 1 week; accepted into the Nana Bianca accelerator after 6 months.
 
-**About:** Liquinvex is a mobile app that democratizes the investment in fine wines, offering users a virtual cellar to buy, store, and manage wine investments without the hassles of physical storage.
+### FAQ
 
-**Key Results:**
-- **100% user base growth**
-- **Team assembled in just 1 week**
-- **Accepted into Nana Bianca accelerator** program
-- **New app features on a weekly basis**
+#### What does "Fractional" mean?
+"Fractional" means you don't work with me full-time, but only for the part you need. It's a flexible model: instead of hiring a full-time CTO, you get C-level expertise without the costs and commitment of a permanent hire.
 
-[Read full case study](https://christianvarisco.com/en/case-studies/liquinvex/)
+#### Why work with a Fractional CTO?
+After a round you need senior ownership of product, tech, and team — without hiring a full-time CTO yet. I come in for execution: priorities, architecture that can evolve, and a team that delivers.
 
----
+#### What are your services?
+Product (what to build, what to cut, in what order), Tech (leadership and, when useful, hands-on/IC — including with AI), Team (hiring, structure, making delivery stick). Focus: startups already live, typically seed or pre-seed.
 
-### Lexroom.ai (Legal Tech / AI)
+#### What type of clients do you work with?
+Mostly funded early-stage startups that are already in market — seed or pre-seed — where execution after the round is the bottleneck. Clients I have worked with include Lexroom and Talentware. Often there’s no strong CTO, or the current tech doesn’t scale for development. Clients usually have real tech budget in play (roughly €30–50k+ for the broader team, not for me alone).
 
-**About:** Lexroom.ai is an AI-powered legal research tool that quickly provides relevant legal sources and drafts opinions based on user queries.
+#### How many startups do you work with in parallel?
+I work with a maximum of three startups in parallel. This allows me to focus on delivering quality results for each project.
 
-**Key Results:**
-- **EUR 500k pre-seed** raised (January 2024)
-- **Technical roadmap and team building** guidance
-- **MVP development** leadership
-- **Talented team assembled quickly**, setting stage for rapid progress
+#### What is the typical duration of a collaboration?
+Generally, my engagements last from a minimum of 3 months up to 18 months, to build a solid foundation in terms of product, technology, and team. If you need lighter support, I can also work as an advisor for just one hour a week.
 
-[Read full case study](https://christianvarisco.com/en/case-studies/lexroom/)
+#### Do you write code too?
+Yes, when it unblocks — emergencies, critical paths, or speed with AI-assisted delivery. Default is leadership of product/tech/team; IC is a tool, not the offer.
 
----
+#### Do you have a team?
+Yes, I have a trusted network of freelancers I've selected over the years. I usually work alongside developers, designers, product managers, and other professionals. They can join from the start of the project, or be activated later based on needs.
+
+#### Can you help me build my tech team?
+Yes. Whether you're starting from scratch or already have someone on board, I help you build the right team. We can use my network of professionals or search together for external people to bring in.
+
+#### Does it make sense to collaborate if I already have a full-time CTO?
+Yes. I’m not here to replace them. I complement when you need more execution capacity, sharper prioritization, or help making the stack and team shippable again.
+
+#### Do you also interface with investors if needed?
+Yes, it's part of my job. I can join calls with investors or advisors, clearly explain the tech side and answer their questions. The goal is to give credibility to the project and show there's solid technical leadership behind it.
+
+#### Can you evaluate my vendors or help me find new ones?
+Yes. I can help you choose the right partners (or evaluate existing ones), whether it's a cloud provider, an external agency, or a tech vendor, assessing costs, reliability, and scalability. The goal is to save you time and money by bringing field-tested solutions.
+
+#### What happens if the startup grows and needs a full-time CTO?
+If that happens, it's because we're doing a good job: it means the startup is growing. In that case, I help with the transition: I participate in selecting the new CTO, train them, and hand over effectively. If needed, I can also stay on as an advisor, so you don't lose continuity.
+
+#### How do you handle confidentiality and data security?
+We define everything in the collaboration agreement. If needed, I can sign an NDA to ensure your confidentiality and data security.
 
 ## Client Testimonials
+
 
 ### Clarice Pinto - CEO & Founder, Pausetiv
 "Christian is not just a technical partner, but a truly strategic one. In addition to delivering impeccable quality and on time, he combines technology and business aspects with great transparency and exemplary team management. He knows how to build teams with technical excellence and strong shared values, bringing that 'something extra' to the project."
@@ -164,69 +195,23 @@ Christian Varisco is a Fractional CTO based in Italy, specializing in helping ea
 "Working with Christian and his team was a truly valuable experience. Their vision and contribution were crucial in aligning the company with a more robust and rigorous technical approach, while maintaining clarity, collaboration, and a focus on real impact."
 **Rating: 5/5**
 
----
+## Link / Links
 
-## Frequently Asked Questions
+- [Sito canonico — italiano](https://christianvarisco.com/)
+- [English website](https://christianvarisco.com/en)
+- [Case study — italiano](https://christianvarisco.com/case-studies/)
+- [Case studies — English](https://christianvarisco.com/en/case-studies/)
+- [FAQ — italiano](https://christianvarisco.com/#faq)
+- [FAQ — English](https://christianvarisco.com/en/#faq)
+- [Newsletter](https://newsletter.christianvarisco.com)
+- [Discovery call — Cal.com](https://cal.com/christian-varisco/discovery-call)
+- [LinkedIn](https://www.linkedin.com/in/christianvarisco/)
+- [GitHub](https://github.com/CVarisco)
+- [YouTube](https://www.youtube.com/@christianvarisco)
+- [Twitter/X](https://twitter.com/ChriVarisco)
+- [Twitch](https://www.twitch.tv/christian_varisco)
+- [Sintesi / Summary](https://christianvarisco.com/llms.txt)
+- [Contenuto completo / Full content](https://christianvarisco.com/llms-full.txt)
 
-### What services does Christian offer to startups?
-I solve problems in three key areas: Product, Tech, and Team. For Product, I help you define which features need to be developed and when. For Tech, I lead on what technology to use, how to implement it, and when to roll it out. For Team, I assist in finding and leading the best people to work in your startup, whether they are freelancers or part of an internally hired team.
-
-### How many startups do you work with in parallel?
-I work with a maximum of three startups in parallel. This allows me to focus on delivering quality results for each project.
-
-### Do you write code too?
-If needed, yes. However, my primary goal is to leverage my experience to guide you on how to build a successful startup, rather than just writing software.
-
-### Do you have a team?
-Yes, I have a network of collaborators that includes developers, designers, product managers, and various other professionals. They can step in to assist both me and your startup whenever necessary.
-
-### What stage startups do you typically work with?
-I typically work with early-stage startups that have at least a $20k budget to invest in technology (not for me, but for the rest of the team). These startups may or may not have a CTO to collaborate with, and they can either have an internal team or rely on my network of professionals.
-
-### What is the typical duration of your engagements with startups?
-Generally, my engagements last between 3 to 9 months to ensure we build a solid foundation in terms of product, technology, and team. However, if needed, I can also provide advisory services for as little as one hour a week, with engagements lasting just one month.
-
-### How do you handle confidentiality and data security?
-Before we start working together, it's up to you. I can sign an NDA and term sheet if needed (and if they make sense) to ensure your confidentiality and data security.
-
----
-
-## Working Process
-
-### Step 1: Book a Call
-Schedule a free discovery session to discuss your startup's challenges and goals.
-
-### Step 2: Discuss Goals
-During the call, we'll talk about your startup's technical challenges, current situation, and where you want to go.
-
-### Step 3: Execute & Launch
-Receive a tailor-made offer and start building your product with strategic technical leadership.
-
----
-
-## Contact Information
-
-- **Website:** https://christianvarisco.com
-- **LinkedIn:** https://linkedin.com/in/christianvarisco
-- **Twitter/X:** https://twitter.com/ChriVarisco
-- **YouTube:** https://youtube.com/@christianvarisco
-- **GitHub:** https://github.com/CVarisco
-- **Twitch:** https://twitch.tv/christian_varisco
-
-## Book a Consultation
-Schedule a free discovery call: https://cal.com/christian-varisco/discovery-call
-
----
-
-## Navigation
-- [Home](https://christianvarisco.com)
-- [Challenges](https://christianvarisco.com/en/#challenges)
-- [Case Studies](https://christianvarisco.com/en/case-studies/)
-- [Testimonials](https://christianvarisco.com/en/#testimonials)
-- [Steps](https://christianvarisco.com/en/#steps)
-- [FAQs](https://christianvarisco.com/en/#faq)
-- [Italian Version](https://christianvarisco.com/it/)
-
----
-Last updated: December 2024
-Languages available: English, Italian
+Ultimo aggiornamento / Last updated: 2026-09-11
+Lingue / Languages: italiano, English

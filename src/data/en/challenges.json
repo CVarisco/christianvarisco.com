@@ -1,32 +1,32 @@
 {
   "headline": {
-    "before": "Is your startup's product development on the ",
-    "highlight": "right track",
+    "before": "After the round: is execution still moving ",
+    "highlight": "as fast as it should",
     "after": "?"
   },
   "subheadline": "Turn obstacles into opportunities with an expert who understands your journey. Team up with me!",
   "cards": [
     {
       "icon": "isometric-9",
-      "title": "Are you navigating without a map?",
-      "description": "How often do you find yourself chasing innovation without a clear direction, leading to wasted resources and missed opportunities?",
-      "solution": "Transition from visionary ideas to a robust, scalable product version, ensuring a strong market entry."
+      "title": "Is post-round execution stalling?",
+      "description": "Funding closed, but priorities blur, the roadmap slips, and weeks go by without real shipping.",
+      "solution": "Get a clear product and tech plan so the team ships what matters — not everything."
     },
     {
       "icon": "isometric-2",
-      "title": "Are your processes holding you back?",
-      "description": "Do you lack a cohesive plan, causing your development to lag and pushing your market entry further away?",
-      "solution": "Navigate the complexities of technology, architecture, and development processes with expert guidance."
+      "title": "Is your tech slowing development — not users?",
+      "description": "The product is live, but the codebase and ways of working make every feature slower and riskier than it should be.",
+      "solution": "Fix what blocks delivery: architecture, process, and engineering practices that scale how you build."
     },
     {
       "icon": "isometric-33",
-      "title": "Do you have the right team in place?",
-      "description": "Are you struggling to find and integrate the tech talent you need, slowing your progress and affecting your product's potential?",
-      "solution": "Identify and integrate the right technical skills, streamlining your path to innovation and growth."
+      "title": "Missing a strong CTO — or is the one you have stretched thin?",
+      "description": "Leadership gaps show up as slow decisions, weak hiring, and a team that can’t keep the pace the business needs.",
+      "solution": "I step in on product, tech, and team — leading, and hands-on when it unlocks speed."
     }
   ],
   "cta": {
-    "label": "Let's get to work",
+    "label": "Let’s unblock execution",
     "href": "https://cal.com/christian-varisco/discovery-call"
   }
 }

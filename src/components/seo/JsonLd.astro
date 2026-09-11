@@ -33,8 +33,8 @@ const personSchema = {
   "name": "Christian Varisco",
   "jobTitle": "Fractional CTO",
   "description": lang === 'en'
-    ? "Fractional CTO helping early stage startups through tech challenges with a decade of experience"
-    : "Fractional CTO che aiuta le startup in fase iniziale con le sfide tecnologiche con un decennio di esperienza",
+    ? "Christian Varisco is a Fractional CTO in Milan who helps already-live seed/pre-seed startups with post-round execution on product, tech, and team when the CTO is missing/weak or the stack slows development."
+    : "Christian Varisco è un Fractional CTO a Milano che aiuta startup seed/pre-seed già live nell’execution post-round su prodotto, tech e team, quando manca un CTO forte o la tech rallenta lo sviluppo.",
   "url": siteUrl,
   "image": `${siteUrl}/images/brand/christian-varisco.jpg`,
   "sameAs": [
@@ -46,12 +46,15 @@ const personSchema = {
   ],
   "knowsAbout": [
     "Fractional CTO Services",
-    "Startup Development",
+    "Post-round Execution",
+    "Seed and Pre-seed Startups",
     "Technical Leadership",
-    "Product Management",
+    "Product Strategy",
     "Team Building",
     "Software Architecture",
-    "MVP Development",
+    "Technical Debt",
+    "Development Velocity",
+    "AI-assisted Delivery",
     "Technology Strategy",
     "Agile Methodologies",
     "Enterprise Architecture",
@@ -87,8 +90,8 @@ const organizationSchema = {
   "url": siteUrl,
   "logo": `${siteUrl}/images/brand/logo.svg`,
   "description": lang === 'en'
-    ? "Fractional CTO services for early-stage startups. 16+ startups assisted, EUR 13M+ raised by clients. Expertise in Product Strategy, Technical Leadership, and Team Building."
-    : "Servizi di Fractional CTO per startup in fase iniziale. 16+ startup assistite, EUR 13M+ raccolti dai clienti. Esperienza in Product Strategy, Technical Leadership e Team Building.",
+    ? "Fractional CTO services in Milan for funded seed and pre-seed startups already in market. Post-round execution across product, tech, and team when there is no strong CTO or the stack slows development: product priorities, technical leadership and hands-on delivery when needed, and team building. 16+ startups assisted; EUR 13M+ raised by clients."
+    : "Servizi di Fractional CTO a Milano per startup seed e pre-seed finanziate e già sul mercato. Execution post-round su prodotto, tech e team quando manca un CTO forte o la tech rallenta lo sviluppo: priorità di prodotto, leadership tecnica e delivery hands-on quando serve, e costruzione del team. 16+ startup assistite; EUR 13M+ raccolti dai clienti.",
   "areaServed": ["Italy", "Europe"],
   "priceRange": "$$",
   "aggregateRating": {
@@ -106,7 +109,9 @@ const organizationSchema = {
         "itemOffered": {
           "@type": "Service",
           "name": "Product Strategy",
-          "description": "Define features and roadmap from idea to market-ready product"
+          "description": lang === 'en'
+            ? "Set post-round product priorities for already-live seed and pre-seed startups: what to build, what to cut, and in what order."
+            : "Definire le priorità di prodotto dopo il round per startup seed e pre-seed già live: cosa costruire, cosa tagliare e in che ordine."
         }
       },
       {
@@ -114,7 +119,9 @@ const organizationSchema = {
         "itemOffered": {
           "@type": "Service",
           "name": "Technical Leadership",
-          "description": "Technology decisions, architecture design, and scalable systems"
+          "description": lang === 'en'
+            ? "Lead technical decisions, reduce technical debt, and evolve architecture and engineering practices for faster development. Contribute hands-on, including with AI-assisted delivery, when it unblocks execution."
+            : "Guidare le decisioni tecniche, ridurre il debito tecnico e far evolvere architettura e pratiche engineering per velocizzare lo sviluppo. Intervenire hands-on, anche con delivery assistita da AI, quando sblocca l’execution."
         }
       },
       {
@@ -122,7 +129,9 @@ const organizationSchema = {
         "itemOffered": {
           "@type": "Service",
           "name": "Team Building",
-          "description": "Find and lead technical talent, build autonomous teams"
+          "description": lang === 'en'
+            ? "Hire and lead technical talent, clarify team structure, and build autonomous teams that deliver consistently after the round."
+            : "Selezionare e guidare talenti tech, chiarire la struttura del team e costruire team autonomi che consegnano con continuità dopo il round."
         }
       }
     ]
@@ -168,9 +177,9 @@ const webPageSchema = {
     ? "Christian Varisco | Fractional CTO | Italy"
     : "Christian Varisco | Fractional CTO | Italia",
   "description": lang === 'en'
-    ? "I help early stage startups through their tech challenges"
-    : "Aiuto le startup in fase iniziale ad affrontare le loro sfide tecnologiche",
-  "url": lang === 'en' ? siteUrl : `${siteUrl}/it`,
+    ? "Christian Varisco is a Fractional CTO in Milan who helps already-live seed/pre-seed startups with post-round execution on product, tech, and team when the CTO is missing/weak or the stack slows development."
+    : "Christian Varisco è un Fractional CTO a Milano che aiuta startup seed/pre-seed già live nell’execution post-round su prodotto, tech e team, quando manca un CTO forte o la tech rallenta lo sviluppo.",
+  "url": lang === 'en' ? `${siteUrl}/en` : `${siteUrl}/`,
   "inLanguage": lang,
   "isPartOf": {
     "@type": "WebSite",
