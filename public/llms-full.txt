@@ -20,7 +20,7 @@ Startup pre-prodotto che cercano soltanto un primo MVP da zero non sono il focus
 
 ### Collaborazione
 - Base: Milano, Italia. Area servita: Italia ed Europa. Lingue: italiano e inglese.
-- Massimo 3 startup in parallelo.
+- Massimo 5 startup in parallelo.
 - Durata tipica: 3–18 mesi. Disponibile anche advisory da un’ora a settimana.
 - Budget tech indicativo: €30–50k+ per il team più ampio, non il compenso del solo Fractional CTO.
 - [Discovery call gratuita](https://cal.com/christian-varisco/discovery-call).
@@ -49,7 +49,7 @@ Prodotto (cosa costruire, cosa tagliare, in che ordine), Tech (leadership e, qua
 Soprattutto startup early-stage finanziate e già sul mercato — seed o pre-seed — dove il collo di bottiglia è l’execution dopo il round. Tra i clienti con cui ho lavorato ci sono Lexroom e Talentware. Spesso manca un CTO forte, oppure la tech attuale non scala per lo sviluppo. Di solito c’è budget tech reale in campo (indicativamente €30–50k+ per il team più ampio, non solo per me).
 
 #### Con quante startup lavori in parallelo?
-Lavoro con un massimo di tre startup in parallelo. Questo mi permette di concentrarmi sulla qualità dei risultati per ogni progetto.
+Lavoro con un massimo di cinque startup in parallelo. Questo mi permette di concentrarmi sulla qualità dei risultati per ogni progetto.
 
 #### Qual è la durata tipica di una collaborazione?
 Generalmente i miei ingaggi durano da un minimo di 3 mesi fino a 18 mesi, per costruire una base solida in termini di prodotto, tecnologia e team. Se invece ti serve supporto più leggero, posso lavorare come advisor anche per una sola ora a settimana.
@@ -94,7 +94,7 @@ Pre-product startups seeking only a first MVP from scratch are not the focus of 
 
 ### Engagement
 - Based in Milan, Italy. Serves Italy and Europe. Languages: Italian and English.
-- Maximum 3 startups in parallel.
+- Maximum 5 startups in parallel.
 - Typical duration: 3–18 months. Advisory is also available from one hour a week.
 - Indicative tech budget: €30–50k+ for the broader team, not the Fractional CTO’s fee alone.
 - [Free discovery call](https://cal.com/christian-varisco/discovery-call).
@@ -123,7 +123,7 @@ Product (what to build, what to cut, in what order), Tech (leadership and, when 
 Mostly funded early-stage startups that are already in market — seed or pre-seed — where execution after the round is the bottleneck. Clients I have worked with include Lexroom and Talentware. Often there’s no strong CTO, or the current tech doesn’t scale for development. Clients usually have real tech budget in play (roughly €30–50k+ for the broader team, not for me alone).
 
 #### How many startups do you work with in parallel?
-I work with a maximum of three startups in parallel. This allows me to focus on delivering quality results for each project.
+I work with a maximum of five startups in parallel. This allows me to focus on delivering quality results for each project.
 
 #### What is the typical duration of a collaboration?
 Generally, my engagements last from a minimum of 3 months up to 18 months, to build a solid foundation in terms of product, technology, and team. If you need lighter support, I can also work as an advisor for just one hour a week.

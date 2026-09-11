@@ -20,7 +20,7 @@ Startup pre-prodotto che cercano soltanto un primo MVP da zero non sono il focus
 
 ### Collaborazione
 - Base: Milano, Italia. Area servita: Italia ed Europa. Lingue: italiano e inglese.
-- Massimo 3 startup in parallelo.
+- Massimo 5 startup in parallelo.
 - Durata tipica: 3–18 mesi. Disponibile anche advisory da un’ora a settimana.
 - Budget tech indicativo: €30–50k+ per il team più ampio, non il compenso del solo Fractional CTO.
 - [Discovery call gratuita](https://cal.com/christian-varisco/discovery-call).
@@ -50,7 +50,7 @@ Pre-product startups seeking only a first MVP from scratch are not the focus of 
 
 ### Engagement
 - Based in Milan, Italy. Serves Italy and Europe. Languages: Italian and English.
-- Maximum 3 startups in parallel.
+- Maximum 5 startups in parallel.
 - Typical duration: 3–18 months. Advisory is also available from one hour a week.
 - Indicative tech budget: €30–50k+ for the broader team, not the Fractional CTO’s fee alone.
 - [Free discovery call](https://cal.com/christian-varisco/discovery-call).
